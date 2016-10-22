@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:es.ua.dlsi.ooh="http://www.dlsi.ua.es/ooh/conceptualView/1.0.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <es.ua.dlsi.ooh:ConceptualModel xmi:id="_7YfjkJhFEeamA_JC3ucrJw" name="Fight4Fit"/>
+  <notation:Diagram xmi:id="_7aegkJhFEeamA_JC3ucrJw" type="ConceptualView" element="_7YfjkJhFEeamA_JC3ucrJw" name="default.domainModel" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_7aegkZhFEeamA_JC3ucrJw"/>
+  </notation:Diagram>
+</xmi:XMI>
