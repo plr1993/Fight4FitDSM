@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Fight4FitGenNHibernate"
+		                   namespace="Fight4FitGenNHibernate.EN.Fight4Fit">
+		    
+		    
+			
+				<class name="ComentarioEN" table="Comentario"> 
+				  	
+						<id name="Id" column="idComentario" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+			
+			
+		  			
+						<bag name="Usuario" >
+							<key>
+							
+								
+								<column name="FK_idComentario_idComentario"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN"/>
+					    </bag>
+					
+			
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ComentarioENReadAllHQL">from ComentarioEN</query>
+		</hibernate-mapping>
+	
