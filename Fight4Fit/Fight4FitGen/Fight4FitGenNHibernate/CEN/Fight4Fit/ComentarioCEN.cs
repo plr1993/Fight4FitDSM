@@ -38,23 +38,57 @@ public IComentarioCAD get_IComentarioCAD ()
         return this._IComentarioCAD;
 }
 
-public int New_ ()
+public int PublicarComentario (int p_foto, int p_evento, string p_Titulo, string p_Texto)
 {
         ComentarioEN comentarioEN = null;
         int oid;
 
         //Initialized ComentarioEN
         comentarioEN = new ComentarioEN ();
+
+        if (p_foto != -1) {
+                // El argumento p_foto -> Property foto es oid = false
+                // Lista de oids id
+                comentarioEN.Foto = new Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN ();
+                comentarioEN.Foto.Id = p_foto;
+        }
+
+
+        if (p_evento != -1) {
+                // El argumento p_evento -> Property evento es oid = false
+                // Lista de oids id
+                comentarioEN.Evento = new Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN ();
+                comentarioEN.Evento.Id = p_evento;
+        }
+
+        comentarioEN.Titulo = p_Titulo;
+
+        comentarioEN.Texto = p_Texto;
+
         //Call to ComentarioCAD
 
-        oid = _IComentarioCAD.New_ (comentarioEN);
+        oid = _IComentarioCAD.PublicarComentario (comentarioEN);
         return oid;
 }
 
-public void Destroy (int id
-                     )
+public void BorrarComentario (int id
+                              )
 {
-        _IComentarioCAD.Destroy (id);
+        _IComentarioCAD.BorrarComentario (id);
+}
+
+public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Texto)
+{
+        ComentarioEN comentarioEN = null;
+
+        //Initialized ComentarioEN
+        comentarioEN = new ComentarioEN ();
+        comentarioEN.Id = p_Comentario_OID;
+        comentarioEN.Titulo = p_Titulo;
+        comentarioEN.Texto = p_Texto;
+        //Call to ComentarioCAD
+
+        _IComentarioCAD.EditarComentario (comentarioEN);
 }
 }
 }

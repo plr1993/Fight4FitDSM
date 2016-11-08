@@ -6,9 +6,16 @@ namespace Fight4FitGenNHibernate.EN.Fight4Fit
 public partial class ComentarioEN
 {
 /**
- *	Atributo usuario
+ *	Atributo reporte
  */
-private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario;
+private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte;
+
+
+
+/**
+ *	Atributo foto
+ */
+private Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto;
 
 
 
@@ -19,11 +26,38 @@ private int id;
 
 
 
+/**
+ *	Atributo evento
+ */
+private Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento;
 
 
 
-public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> Usuario {
-        get { return usuario; } set { usuario = value;  }
+/**
+ *	Atributo titulo
+ */
+private string titulo;
+
+
+
+/**
+ *	Atributo texto
+ */
+private string texto;
+
+
+
+
+
+
+public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> Reporte {
+        get { return reporte; } set { reporte = value;  }
+}
+
+
+
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN Foto {
+        get { return foto; } set { foto = value;  }
 }
 
 
@@ -34,34 +68,60 @@ public virtual int Id {
 
 
 
-
-
-public ComentarioEN()
-{
-        usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN Evento {
+        get { return evento; } set { evento = value;  }
 }
 
 
 
-public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario
+public virtual string Titulo {
+        get { return titulo; } set { titulo = value;  }
+}
+
+
+
+public virtual string Texto {
+        get { return texto; } set { texto = value;  }
+}
+
+
+
+
+
+public ComentarioEN()
+{
+        reporte = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN>();
+}
+
+
+
+public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto
                     )
 {
-        this.init (Id, usuario);
+        this.init (Id, reporte, foto, evento, titulo, texto);
 }
 
 
 public ComentarioEN(ComentarioEN comentario)
 {
-        this.init (Id, comentario.Usuario);
+        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto)
 {
         this.Id = id;
 
 
-        this.Usuario = usuario;
+        this.Reporte = reporte;
+
+        this.Foto = foto;
+
+        this.Evento = evento;
+
+        this.Titulo = titulo;
+
+        this.Texto = texto;
 }
 
 public override bool Equals (object obj)

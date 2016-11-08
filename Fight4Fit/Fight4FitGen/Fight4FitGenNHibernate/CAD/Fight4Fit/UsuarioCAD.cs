@@ -95,6 +95,7 @@ public void ModifyDefault (UsuarioEN usuario)
 
 
 
+
                 session.Update (usuarioEN);
                 SessionCommit ();
         }
@@ -119,13 +120,6 @@ public string CrearUsuario (UsuarioEN usuario)
         try
         {
                 SessionInitializeTransaction ();
-                if (usuario.Comentario != null) {
-                        // Argumento OID y no colección.
-                        usuario.Comentario = (Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN), usuario.Comentario.Id);
-
-                        usuario.Comentario.Usuario
-                        .Add (usuario);
-                }
 
                 session.Save (usuario);
                 SessionCommit ();
@@ -145,6 +139,58 @@ public string CrearUsuario (UsuarioEN usuario)
         }
 
         return usuario.Email;
+}
+
+public void DarDeBaja (string Email
+                       )
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                UsuarioEN usuarioEN = (UsuarioEN)session.Load (typeof(UsuarioEN), Email);
+                session.Delete (usuarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in UsuarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
+public void ModificarPerfil (UsuarioEN usuario)
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                UsuarioEN usuarioEN = (UsuarioEN)session.Load (typeof(UsuarioEN), usuario.Email);
+
+                usuarioEN.Password = usuario.Password;
+
+                session.Update (usuarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in UsuarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
 }
 }
 }

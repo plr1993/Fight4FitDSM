@@ -91,6 +91,16 @@ public void ModifyDefault (SoporteEN soporte)
                 SessionInitializeTransaction ();
                 SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), soporte.Id);
 
+
+
+                soporteEN.Titulo = soporte.Titulo;
+
+
+                soporteEN.Texto = soporte.Texto;
+
+
+                soporteEN.Respuesta = soporte.Respuesta;
+
                 session.Update (soporteEN);
                 SessionCommit ();
         }
@@ -110,11 +120,18 @@ public void ModifyDefault (SoporteEN soporte)
 }
 
 
-public int New_ (SoporteEN soporte)
+public int NuevaConsulta (SoporteEN soporte)
 {
         try
         {
                 SessionInitializeTransaction ();
+                if (soporte.Usuario != null) {
+                        // Argumento OID y no colección.
+                        soporte.Usuario = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), soporte.Usuario.Email);
+
+                        soporte.Usuario.Soporte
+                        .Add (soporte);
+                }
 
                 session.Save (soporte);
                 SessionCommit ();
@@ -136,8 +153,8 @@ public int New_ (SoporteEN soporte)
         return soporte.Id;
 }
 
-public void Destroy (int id
-                     )
+public void EliminarConsulta (int id
+                              )
 {
         try
         {

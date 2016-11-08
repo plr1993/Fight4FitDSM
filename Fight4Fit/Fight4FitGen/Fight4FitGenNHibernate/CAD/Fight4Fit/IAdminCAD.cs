@@ -13,6 +13,6 @@ void ModifyDefault (AdminEN admin);
 
 
 
-string CrearAdmin (AdminEN admin);
+string CrearUsuarioAdmin (AdminEN admin);
 }
 }

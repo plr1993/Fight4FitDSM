@@ -90,6 +90,9 @@ public void ModifyDefault (PromotorEN promotor)
         {
                 SessionInitializeTransaction ();
                 PromotorEN promotorEN = (PromotorEN)session.Load (typeof(PromotorEN), promotor.Email);
+
+                promotorEN.CIF = promotor.CIF;
+
                 session.Update (promotorEN);
                 SessionCommit ();
         }
@@ -114,13 +117,6 @@ public string CrearUsuarioProm (PromotorEN promotor)
         try
         {
                 SessionInitializeTransaction ();
-                if (promotor.Comentario != null) {
-                        // Argumento OID y no colección.
-                        promotor.Comentario = (Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN), promotor.Comentario.Id);
-
-                        promotor.Comentario.Usuario
-                        .Add (promotor);
-                }
 
                 session.Save (promotor);
                 SessionCommit ();

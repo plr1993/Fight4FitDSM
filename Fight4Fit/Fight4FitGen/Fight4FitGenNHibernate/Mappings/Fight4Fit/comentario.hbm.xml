@@ -12,19 +12,43 @@
 						</id>
 			
 					
+					<property name="Titulo" type="string"> 
+						<column name="Titulo"  not-null="true"/>
+					</property>
+					<property name="Texto" type="string"> 
+						<column name="Texto"  not-null="true"/>
+					</property>
 			
 			
 		  			
-						<bag name="Usuario" >
+						<bag name="Reporte" >
 							<key>
 							
 								
 								<column name="FK_idComentario_idComentario"/>
 					      	</key>
-							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN"/>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN"/>
 					    </bag>
 					
 			
+		  			
+						<many-to-one name="Foto" class="Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN" >	
+								<column name="FK_idFoto_idFoto"/> 
+						</many-to-one>
+											 					
+			
+			
+		  			
+						<many-to-one name="Evento" class="Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN" >	
+								<column name="FK_ID_idEvento"/> 
+						</many-to-one>
+											 					
+			
+			
+					
+					
+					
+					
 					
 					
 		

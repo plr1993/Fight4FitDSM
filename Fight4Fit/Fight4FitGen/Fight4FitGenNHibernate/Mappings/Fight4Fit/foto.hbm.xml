@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Fight4FitGenNHibernate"
+		                   namespace="Fight4FitGenNHibernate.EN.Fight4Fit">
+		    
+		    
+			
+				<class name="FotoEN" table="Foto"> 
+				  	
+						<id name="Id" column="idFoto" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Nombre" type="string"> 
+						<column name="Nombre"  not-null="true"/>
+					</property>
+					<property name="Usuario" type="string"> 
+						<column name="Usuario"  not-null="true"/>
+					</property>
+					<property name="Fecha" type="date"> 
+						<column name="Fecha"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="Descripcion"  not-null="true"/>
+					</property>
+					<property name="Imagen" type="string"> 
+						<column name="Imagen"  not-null="true"/>
+					</property>
+			
+			
+		  			
+						<bag name="Comentario" >
+							<key>
+							
+								
+								<column name="FK_idFoto_idFoto"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Reporte" >
+							<key>
+							
+								
+								<column name="FK_idFoto_idFoto"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN"/>
+					    </bag>
+					
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Pertenece_a" class="Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN" >	
+								<column name="FK_idGaleria_idGaleria"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="FotoENReadAllHQL">from FotoEN</query>
+		</hibernate-mapping>
+	

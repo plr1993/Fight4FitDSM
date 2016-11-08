@@ -8,7 +8,7 @@ public partial class SoporteEN
 /**
  *	Atributo usuario
  */
-private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario;
+private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario;
 
 
 
@@ -19,10 +19,38 @@ private int id;
 
 
 
+/**
+ *	Atributo admin
+ */
+private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> admin;
 
 
 
-public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> Usuario {
+/**
+ *	Atributo titulo
+ */
+private string titulo;
+
+
+
+/**
+ *	Atributo texto
+ */
+private string texto;
+
+
+
+/**
+ *	Atributo respuesta
+ */
+private string respuesta;
+
+
+
+
+
+
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Usuario {
         get { return usuario; } set { usuario = value;  }
 }
 
@@ -34,34 +62,66 @@ public virtual int Id {
 
 
 
-
-
-public SoporteEN()
-{
-        usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
+public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> Admin {
+        get { return admin; } set { admin = value;  }
 }
 
 
 
-public SoporteEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario
+public virtual string Titulo {
+        get { return titulo; } set { titulo = value;  }
+}
+
+
+
+public virtual string Texto {
+        get { return texto; } set { texto = value;  }
+}
+
+
+
+public virtual string Respuesta {
+        get { return respuesta; } set { respuesta = value;  }
+}
+
+
+
+
+
+public SoporteEN()
+{
+        admin = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN>();
+}
+
+
+
+public SoporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> admin, string titulo, string texto, string respuesta
                  )
 {
-        this.init (Id, usuario);
+        this.init (Id, usuario, admin, titulo, texto, respuesta);
 }
 
 
 public SoporteEN(SoporteEN soporte)
 {
-        this.init (Id, soporte.Usuario);
+        this.init (Id, soporte.Usuario, soporte.Admin, soporte.Titulo, soporte.Texto, soporte.Respuesta);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario)
+                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> admin, string titulo, string texto, string respuesta)
 {
         this.Id = id;
 
 
         this.Usuario = usuario;
+
+        this.Admin = admin;
+
+        this.Titulo = titulo;
+
+        this.Texto = texto;
+
+        this.Respuesta = respuesta;
 }
 
 public override bool Equals (object obj)

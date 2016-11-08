@@ -20,16 +20,23 @@ private String password;
 
 
 /**
- *	Atributo comentario
+ *	Atributo soporte
  */
-private Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario;
+private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte;
 
 
 
 /**
- *	Atributo soporte
+ *	Atributo evento
  */
-private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte;
+private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento;
+
+
+
+/**
+ *	Atributo reporte
+ */
+private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte;
 
 
 
@@ -48,14 +55,20 @@ public virtual String Password {
 
 
 
-public virtual Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN Comentario {
-        get { return comentario; } set { comentario = value;  }
+public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> Soporte {
+        get { return soporte; } set { soporte = value;  }
 }
 
 
 
-public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> Soporte {
-        get { return soporte; } set { soporte = value;  }
+public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> Evento {
+        get { return evento; } set { evento = value;  }
+}
+
+
+
+public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> Reporte {
+        get { return reporte; } set { reporte = value;  }
 }
 
 
@@ -65,33 +78,37 @@ public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4
 public UsuarioEN()
 {
         soporte = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN>();
+        evento = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN>();
+        reporte = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN>();
 }
 
 
 
-public UsuarioEN(string email, String password, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte
+public UsuarioEN(string email, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte
                  )
 {
-        this.init (Email, password, comentario, soporte);
+        this.init (Email, password, soporte, evento, reporte);
 }
 
 
 public UsuarioEN(UsuarioEN usuario)
 {
-        this.init (Email, usuario.Password, usuario.Comentario, usuario.Soporte);
+        this.init (Email, usuario.Password, usuario.Soporte, usuario.Evento, usuario.Reporte);
 }
 
 private void init (string Email
-                   , String password, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte)
+                   , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte)
 {
         this.Email = Email;
 
 
         this.Password = password;
 
-        this.Comentario = comentario;
-
         this.Soporte = soporte;
+
+        this.Evento = evento;
+
+        this.Reporte = reporte;
 }
 
 public override bool Equals (object obj)

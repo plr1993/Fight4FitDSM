@@ -7,36 +7,58 @@ public partial class PromotorEN                                                 
 
 
 {
+/**
+ *	Atributo cIF
+ */
+private string cIF;
+
+
+
+
+
+
+public virtual string CIF {
+        get { return cIF; } set { cIF = value;  }
+}
+
+
+
+
+
 public PromotorEN() : base ()
 {
 }
 
 
 
-public PromotorEN(string email,
-                  String password, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte
+public PromotorEN(string email, string cIF
+                  , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte
                   )
 {
-        this.init (Email, password, comentario, soporte);
+        this.init (Email, cIF, password, soporte, evento, reporte);
 }
 
 
 public PromotorEN(PromotorEN promotor)
 {
-        this.init (Email, promotor.Password, promotor.Comentario, promotor.Soporte);
+        this.init (Email, promotor.CIF, promotor.Password, promotor.Soporte, promotor.Evento, promotor.Reporte);
 }
 
 private void init (string Email
-                   , String password, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte)
+                   , string cIF, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte)
 {
         this.Email = Email;
 
 
+        this.CIF = cIF;
+
         this.Password = password;
 
-        this.Comentario = comentario;
-
         this.Soporte = soporte;
+
+        this.Evento = evento;
+
+        this.Reporte = reporte;
 }
 
 public override bool Equals (object obj)

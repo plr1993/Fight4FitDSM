@@ -38,7 +38,7 @@ public IUsuarioCAD get_IUsuarioCAD ()
         return this._IUsuarioCAD;
 }
 
-public string CrearUsuario (string p_Email, String p_Password, int p_comentario)
+public string CrearUsuario (string p_Email, String p_Password)
 {
         UsuarioEN usuarioEN = null;
         string oid;
@@ -49,18 +49,29 @@ public string CrearUsuario (string p_Email, String p_Password, int p_comentario)
 
         usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
 
-
-        if (p_comentario != -1) {
-                // El argumento p_comentario -> Property comentario es oid = false
-                // Lista de oids Email
-                usuarioEN.Comentario = new Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN ();
-                usuarioEN.Comentario.Id = p_comentario;
-        }
-
         //Call to UsuarioCAD
 
         oid = _IUsuarioCAD.CrearUsuario (usuarioEN);
         return oid;
+}
+
+public void DarDeBaja (string Email
+                       )
+{
+        _IUsuarioCAD.DarDeBaja (Email);
+}
+
+public void ModificarPerfil (string p_Usuario_OID, String p_Password)
+{
+        UsuarioEN usuarioEN = null;
+
+        //Initialized UsuarioEN
+        usuarioEN = new UsuarioEN ();
+        usuarioEN.Email = p_Usuario_OID;
+        usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
+        //Call to UsuarioCAD
+
+        _IUsuarioCAD.ModificarPerfil (usuarioEN);
 }
 }
 }

@@ -109,6 +109,12 @@
 	<Compile Include="CAD\Fight4Fit\EventoCAD.cs" />
 	<Compile Include="CP\Fight4Fit\EventoCP.cs" />
 			
+			
+			
+			<Compile Include="CEN\Fight4Fit\EventoCEN_CompartirEvento.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\EventoCEN_ReportarEvento.cs" />
+			
 	<Compile Include="EN\Fight4Fit\UsuarioEN.cs" />
 	<Compile Include="CEN\Fight4Fit\UsuarioCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IUsuarioCAD.cs" />
@@ -116,11 +122,13 @@
 	<Compile Include="CP\Fight4Fit\UsuarioCP.cs" />
 			
 			
-	<Compile Include="EN\Fight4Fit\AdminEN.cs" />
-	<Compile Include="CEN\Fight4Fit\AdminCEN.cs" />
-	<Compile Include="CAD\Fight4Fit\IAdminCAD.cs" />
-	<Compile Include="CAD\Fight4Fit\AdminCAD.cs" />
-	<Compile Include="CP\Fight4Fit\AdminCP.cs" />
+			
+			
+			<Compile Include="CEN\Fight4Fit\UsuarioCEN_Búsqueda.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\UsuarioCEN_ApuntarseAEvento.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\UsuarioCEN_DesapuntarseAEvento.cs" />
 			
 	<Compile Include="EN\Fight4Fit\PromotorEN.cs" />
 	<Compile Include="CEN\Fight4Fit\PromotorCEN.cs" />
@@ -128,11 +136,32 @@
 	<Compile Include="CAD\Fight4Fit\PromotorCAD.cs" />
 	<Compile Include="CP\Fight4Fit\PromotorCP.cs" />
 			
+			<Compile Include="CEN\Fight4Fit\PromotorCEN_CrearTorneo.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\PromotorCEN_EliminarTorneo.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\PromotorCEN_ModificarTorneo.cs" />
+			
 	<Compile Include="EN\Fight4Fit\SoporteEN.cs" />
 	<Compile Include="CEN\Fight4Fit\SoporteCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\ISoporteCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\SoporteCAD.cs" />
 	<Compile Include="CP\Fight4Fit\SoporteCP.cs" />
+			
+			
+			<Compile Include="CEN\Fight4Fit\SoporteCEN_ResponderConsulta.cs" />
+			
+	<Compile Include="EN\Fight4Fit\CategoriaEN.cs" />
+	<Compile Include="CEN\Fight4Fit\CategoriaCEN.cs" />
+	<Compile Include="CAD\Fight4Fit\ICategoriaCAD.cs" />
+	<Compile Include="CAD\Fight4Fit\CategoriaCAD.cs" />
+	<Compile Include="CP\Fight4Fit\CategoriaCP.cs" />
+			
+	<Compile Include="EN\Fight4Fit\ReporteEN.cs" />
+	<Compile Include="CEN\Fight4Fit\ReporteCEN.cs" />
+	<Compile Include="CAD\Fight4Fit\IReporteCAD.cs" />
+	<Compile Include="CAD\Fight4Fit\ReporteCAD.cs" />
+	<Compile Include="CP\Fight4Fit\ReporteCP.cs" />
 			
 			
 	<Compile Include="EN\Fight4Fit\ComentarioEN.cs" />
@@ -142,6 +171,45 @@
 	<Compile Include="CP\Fight4Fit\ComentarioCP.cs" />
 			
 			
+			
+			<Compile Include="CEN\Fight4Fit\ComentarioCEN_ReportarComentario.cs" />
+			
+	<Compile Include="EN\Fight4Fit\FotoEN.cs" />
+	<Compile Include="CEN\Fight4Fit\FotoCEN.cs" />
+	<Compile Include="CAD\Fight4Fit\IFotoCAD.cs" />
+	<Compile Include="CAD\Fight4Fit\FotoCAD.cs" />
+	<Compile Include="CP\Fight4Fit\FotoCP.cs" />
+			
+			
+			
+			<Compile Include="CEN\Fight4Fit\FotoCEN_ReportarFoto.cs" />
+			
+	<Compile Include="EN\Fight4Fit\GaleriaEN.cs" />
+	<Compile Include="CEN\Fight4Fit\GaleriaCEN.cs" />
+	<Compile Include="CAD\Fight4Fit\IGaleriaCAD.cs" />
+	<Compile Include="CAD\Fight4Fit\GaleriaCAD.cs" />
+	<Compile Include="CP\Fight4Fit\GaleriaCP.cs" />
+			
+			
+			
+	<Compile Include="EN\Fight4Fit\AdminEN.cs" />
+	<Compile Include="CEN\Fight4Fit\AdminCEN.cs" />
+	<Compile Include="CAD\Fight4Fit\IAdminCAD.cs" />
+	<Compile Include="CAD\Fight4Fit\AdminCAD.cs" />
+	<Compile Include="CP\Fight4Fit\AdminCP.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\AdminCEN_ModificarEvento.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\AdminCEN_EliminarFoto.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\AdminCEN_BloquearUsuario.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\AdminCEN_EliminarComentario.cs" />
+			
+			<Compile Include="CEN\Fight4Fit\AdminCEN_ResponderConsulta.cs" />
+			
+	<Compile Include="Enumerated\Fight4Fit\MotivoEnum.cs" />
+	<Compile Include="Enumerated\Fight4Fit\TipoEventoEnum.cs" />
 	
 	
 
@@ -159,10 +227,14 @@
 		  
 	<EmbeddedResource Include="Mappings\Fight4Fit\evento.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\usuario.hbm.xml" />
-	<EmbeddedResource Include="Mappings\Fight4Fit\admin.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\promotor.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\soporte.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Fight4Fit\categoria.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Fight4Fit\reporte.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\comentario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Fight4Fit\foto.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Fight4Fit\galeria.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Fight4Fit\admin.hbm.xml" />
 	
 	
 

@@ -29,7 +29,7 @@ public EventoCAD(ISession sessionAux) : base (sessionAux)
 
 
 
-public EventoEN ReadOIDDefault (string Nombre
+public EventoEN ReadOIDDefault (int id
                                 )
 {
         EventoEN eventoEN = null;
@@ -37,7 +37,7 @@ public EventoEN ReadOIDDefault (string Nombre
         try
         {
                 SessionInitializeTransaction ();
-                eventoEN = (EventoEN)session.Get (typeof(EventoEN), Nombre);
+                eventoEN = (EventoEN)session.Get (typeof(EventoEN), id);
                 SessionCommit ();
         }
 
@@ -89,7 +89,21 @@ public void ModifyDefault (EventoEN evento)
         try
         {
                 SessionInitializeTransaction ();
-                EventoEN eventoEN = (EventoEN)session.Load (typeof(EventoEN), evento.Nombre);
+                EventoEN eventoEN = (EventoEN)session.Load (typeof(EventoEN), evento.Id);
+
+                eventoEN.Nombre = evento.Nombre;
+
+
+
+
+
+
+                eventoEN.Descripcion = evento.Descripcion;
+
+
+
+                eventoEN.Tipo = evento.Tipo;
+
                 session.Update (eventoEN);
                 SessionCommit ();
         }
@@ -109,11 +123,18 @@ public void ModifyDefault (EventoEN evento)
 }
 
 
-public string CrearEvento (EventoEN evento)
+public int CrearEvento (EventoEN evento)
 {
         try
         {
                 SessionInitializeTransaction ();
+                if (evento.Categoria != null) {
+                        // Argumento OID y no colección.
+                        evento.Categoria = (Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN), evento.Categoria.Nombre);
+
+                        evento.Categoria.Evento
+                        .Add (evento);
+                }
 
                 session.Save (evento);
                 SessionCommit ();
@@ -132,7 +153,64 @@ public string CrearEvento (EventoEN evento)
                 SessionClose ();
         }
 
-        return evento.Nombre;
+        return evento.Id;
+}
+
+public void ModificarEvento (EventoEN evento)
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                EventoEN eventoEN = (EventoEN)session.Load (typeof(EventoEN), evento.Id);
+
+                eventoEN.Nombre = evento.Nombre;
+
+
+                eventoEN.Descripcion = evento.Descripcion;
+
+
+                eventoEN.Tipo = evento.Tipo;
+
+                session.Update (eventoEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+public void BorrarEvento (int id
+                          )
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                EventoEN eventoEN = (EventoEN)session.Load (typeof(EventoEN), id);
+                session.Delete (eventoEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
 }
 }
 }

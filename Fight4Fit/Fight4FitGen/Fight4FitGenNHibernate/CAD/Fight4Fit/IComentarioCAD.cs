@@ -13,9 +13,12 @@ void ModifyDefault (ComentarioEN comentario);
 
 
 
-int New_ (ComentarioEN comentario);
+int PublicarComentario (ComentarioEN comentario);
 
-void Destroy (int id
-              );
+void BorrarComentario (int id
+                       );
+
+
+void EditarComentario (ComentarioEN comentario);
 }
 }

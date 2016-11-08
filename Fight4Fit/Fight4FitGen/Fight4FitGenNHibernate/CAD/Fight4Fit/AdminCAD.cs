@@ -90,6 +90,7 @@ public void ModifyDefault (AdminEN admin)
         {
                 SessionInitializeTransaction ();
                 AdminEN adminEN = (AdminEN)session.Load (typeof(AdminEN), admin.Email);
+
                 session.Update (adminEN);
                 SessionCommit ();
         }
@@ -109,18 +110,11 @@ public void ModifyDefault (AdminEN admin)
 }
 
 
-public string CrearAdmin (AdminEN admin)
+public string CrearUsuarioAdmin (AdminEN admin)
 {
         try
         {
                 SessionInitializeTransaction ();
-                if (admin.Comentario != null) {
-                        // Argumento OID y no colección.
-                        admin.Comentario = (Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN), admin.Comentario.Id);
-
-                        admin.Comentario.Usuario
-                        .Add (admin);
-                }
 
                 session.Save (admin);
                 SessionCommit ();

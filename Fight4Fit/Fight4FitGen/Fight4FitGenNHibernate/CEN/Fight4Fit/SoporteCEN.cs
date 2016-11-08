@@ -38,23 +38,37 @@ public ISoporteCAD get_ISoporteCAD ()
         return this._ISoporteCAD;
 }
 
-public int New_ ()
+public int NuevaConsulta (string p_usuario, string p_Titulo, string p_Texto, string p_Respuesta)
 {
         SoporteEN soporteEN = null;
         int oid;
 
         //Initialized SoporteEN
         soporteEN = new SoporteEN ();
+
+        if (p_usuario != null) {
+                // El argumento p_usuario -> Property usuario es oid = false
+                // Lista de oids id
+                soporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
+                soporteEN.Usuario.Email = p_usuario;
+        }
+
+        soporteEN.Titulo = p_Titulo;
+
+        soporteEN.Texto = p_Texto;
+
+        soporteEN.Respuesta = p_Respuesta;
+
         //Call to SoporteCAD
 
-        oid = _ISoporteCAD.New_ (soporteEN);
+        oid = _ISoporteCAD.NuevaConsulta (soporteEN);
         return oid;
 }
 
-public void Destroy (int id
-                     )
+public void EliminarConsulta (int id
+                              )
 {
-        _ISoporteCAD.Destroy (id);
+        _ISoporteCAD.EliminarConsulta (id);
 }
 }
 }

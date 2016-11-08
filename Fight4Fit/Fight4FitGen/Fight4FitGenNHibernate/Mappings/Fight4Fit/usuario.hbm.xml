@@ -17,21 +17,38 @@
 			
 			
 		  			
-						<many-to-one name="Comentario" class="Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN" >	
-								<column name="FK_idComentario_idComentario"/> 
-						</many-to-one>
-											 					
+						<bag name="Soporte" >
+							<key>
+							
+								
+								<column name="FK_Email_idUsuario"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN"/>
+					    </bag>
+					
 			
 		  			
-						<bag name="Soporte" table="[soporte_usuario]" inverse="true" >
+						<bag name="Evento" table="[evento_usuario]" inverse="true" >
 							<key>
 								
 									<column name="FK_Email_idUsuario"/> 
 							</key>
-      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN">
-									<column name="FK_idSoporte_idSoporte"/> 
+      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN">
+									<column name="FK_ID_idEvento"/> 
       						</many-to-many>
     					</bag>
+			
+		  			
+						<bag name="Reporte" table="[usuario_reporte]"  >
+							<key>
+								
+									<column name="FK_Email_idUsuario"/> 
+							</key>
+      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN">
+									<column name="FK_idReporte_idReporte"/> 
+      						</many-to-many>
+    					</bag>
+					
 					
 					
 					

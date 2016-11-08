@@ -38,7 +38,7 @@ public IPromotorCAD get_IPromotorCAD ()
         return this._IPromotorCAD;
 }
 
-public string CrearUsuarioProm (string p_Email, String p_Password, int p_comentario)
+public string CrearUsuarioProm (string p_Email, String p_Password, string p_CIF)
 {
         PromotorEN promotorEN = null;
         string oid;
@@ -49,13 +49,7 @@ public string CrearUsuarioProm (string p_Email, String p_Password, int p_comenta
 
         promotorEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
 
-
-        if (p_comentario != -1) {
-                // El argumento p_comentario -> Property comentario es oid = false
-                // Lista de oids Email
-                promotorEN.Comentario = new Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN ();
-                promotorEN.Comentario.Id = p_comentario;
-        }
+        promotorEN.CIF = p_CIF;
 
         //Call to PromotorCAD
 

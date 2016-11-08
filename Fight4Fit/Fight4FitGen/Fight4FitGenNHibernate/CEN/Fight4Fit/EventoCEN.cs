@@ -38,19 +38,54 @@ public IEventoCAD get_IEventoCAD ()
         return this._IEventoCAD;
 }
 
-public string CrearEvento (string p_Nombre)
+public int CrearEvento (string p_Nombre, string p_categoria, int p_id, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo)
 {
         EventoEN eventoEN = null;
-        string oid;
+        int oid;
 
         //Initialized EventoEN
         eventoEN = new EventoEN ();
         eventoEN.Nombre = p_Nombre;
 
+
+        if (p_categoria != null) {
+                // El argumento p_categoria -> Property categoria es oid = false
+                // Lista de oids id
+                eventoEN.Categoria = new Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN ();
+                eventoEN.Categoria.Nombre = p_categoria;
+        }
+
+        eventoEN.Id = p_id;
+
+        eventoEN.Descripcion = p_Descripcion;
+
+        eventoEN.Tipo = p_Tipo;
+
         //Call to EventoCAD
 
         oid = _IEventoCAD.CrearEvento (eventoEN);
         return oid;
+}
+
+public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo)
+{
+        EventoEN eventoEN = null;
+
+        //Initialized EventoEN
+        eventoEN = new EventoEN ();
+        eventoEN.Id = p_Evento_OID;
+        eventoEN.Nombre = p_Nombre;
+        eventoEN.Descripcion = p_Descripcion;
+        eventoEN.Tipo = p_Tipo;
+        //Call to EventoCAD
+
+        _IEventoCAD.ModificarEvento (eventoEN);
+}
+
+public void BorrarEvento (int id
+                          )
+{
+        _IEventoCAD.BorrarEvento (id);
 }
 }
 }

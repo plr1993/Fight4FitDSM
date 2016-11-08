@@ -16,7 +16,12 @@
 
 			
 					
+					<property name="CIF" type="string"> 
+						<column name="CIF"  not-null="true"/>
+					</property>
 			
+			
+					
 		
  	  
 		 </joined-subclass>

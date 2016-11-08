@@ -13,9 +13,9 @@ void ModifyDefault (SoporteEN soporte);
 
 
 
-int New_ (SoporteEN soporte);
+int NuevaConsulta (SoporteEN soporte);
 
-void Destroy (int id
-              );
+void EliminarConsulta (int id
+                       );
 }
 }

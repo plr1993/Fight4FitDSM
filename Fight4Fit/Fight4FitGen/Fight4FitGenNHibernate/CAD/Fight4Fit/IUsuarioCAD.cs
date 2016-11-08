@@ -14,5 +14,12 @@ void ModifyDefault (UsuarioEN usuario);
 
 
 string CrearUsuario (UsuarioEN usuario);
+
+
+void DarDeBaja (string Email
+                );
+
+
+void ModificarPerfil (UsuarioEN usuario);
 }
 }

@@ -6,13 +6,19 @@ namespace Fight4FitGenNHibernate.CAD.Fight4Fit
 {
 public partial interface IEventoCAD
 {
-EventoEN ReadOIDDefault (string Nombre
+EventoEN ReadOIDDefault (int id
                          );
 
 void ModifyDefault (EventoEN evento);
 
 
 
-string CrearEvento (EventoEN evento);
+int CrearEvento (EventoEN evento);
+
+void ModificarEvento (EventoEN evento);
+
+
+void BorrarEvento (int id
+                   );
 }
 }

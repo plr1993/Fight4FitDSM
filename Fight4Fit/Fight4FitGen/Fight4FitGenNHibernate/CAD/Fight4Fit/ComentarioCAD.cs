@@ -91,6 +91,14 @@ public void ModifyDefault (ComentarioEN comentario)
                 SessionInitializeTransaction ();
                 ComentarioEN comentarioEN = (ComentarioEN)session.Load (typeof(ComentarioEN), comentario.Id);
 
+
+
+
+                comentarioEN.Titulo = comentario.Titulo;
+
+
+                comentarioEN.Texto = comentario.Texto;
+
                 session.Update (comentarioEN);
                 SessionCommit ();
         }
@@ -110,11 +118,25 @@ public void ModifyDefault (ComentarioEN comentario)
 }
 
 
-public int New_ (ComentarioEN comentario)
+public int PublicarComentario (ComentarioEN comentario)
 {
         try
         {
                 SessionInitializeTransaction ();
+                if (comentario.Foto != null) {
+                        // Argumento OID y no colección.
+                        comentario.Foto = (Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN), comentario.Foto.Id);
+
+                        comentario.Foto.Comentario
+                        .Add (comentario);
+                }
+                if (comentario.Evento != null) {
+                        // Argumento OID y no colección.
+                        comentario.Evento = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), comentario.Evento.Id);
+
+                        comentario.Evento.Comentario
+                        .Add (comentario);
+                }
 
                 session.Save (comentario);
                 SessionCommit ();
@@ -136,14 +158,44 @@ public int New_ (ComentarioEN comentario)
         return comentario.Id;
 }
 
-public void Destroy (int id
-                     )
+public void BorrarComentario (int id
+                              )
 {
         try
         {
                 SessionInitializeTransaction ();
                 ComentarioEN comentarioEN = (ComentarioEN)session.Load (typeof(ComentarioEN), id);
                 session.Delete (comentarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ComentarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
+public void EditarComentario (ComentarioEN comentario)
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                ComentarioEN comentarioEN = (ComentarioEN)session.Load (typeof(ComentarioEN), comentario.Id);
+
+                comentarioEN.Titulo = comentario.Titulo;
+
+
+                comentarioEN.Texto = comentario.Texto;
+
+                session.Update (comentarioEN);
                 SessionCommit ();
         }
 

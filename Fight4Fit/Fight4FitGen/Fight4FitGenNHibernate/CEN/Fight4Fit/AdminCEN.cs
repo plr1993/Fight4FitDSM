@@ -38,7 +38,7 @@ public IAdminCAD get_IAdminCAD ()
         return this._IAdminCAD;
 }
 
-public string CrearAdmin (string p_Email, String p_Password, int p_comentario)
+public string CrearUsuarioAdmin (string p_Email, String p_Password)
 {
         AdminEN adminEN = null;
         string oid;
@@ -49,17 +49,9 @@ public string CrearAdmin (string p_Email, String p_Password, int p_comentario)
 
         adminEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
 
-
-        if (p_comentario != -1) {
-                // El argumento p_comentario -> Property comentario es oid = false
-                // Lista de oids Email
-                adminEN.Comentario = new Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN ();
-                adminEN.Comentario.Id = p_comentario;
-        }
-
         //Call to AdminCAD
 
-        oid = _IAdminCAD.CrearAdmin (adminEN);
+        oid = _IAdminCAD.CrearUsuarioAdmin (adminEN);
         return oid;
 }
 }

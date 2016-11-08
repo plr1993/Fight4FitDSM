@@ -17,6 +17,18 @@
 			
 					
 			
+			
+		  			
+						<bag name="Soporte_0" table="[soporte_0_admin]" inverse="true" >
+							<key>
+								
+									<column name="FK_Email_idAdmin"/> 
+							</key>
+      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN">
+									<column name="FK_idSoporte_idSoporte_0"/> 
+      						</many-to-many>
+    					</bag>
+					
 		
  	  
 		 </joined-subclass>
