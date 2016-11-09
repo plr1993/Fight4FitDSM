@@ -77,6 +77,53 @@ public static void InitializeData ()
         /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
         try
         {
+                //usuario 1
+                IUsuarioCAD _IusuarioCAD1 = new UsuarioCAD ();
+                UsuarioEN usuarioEN1 = new UsuarioEN ();
+                UsuarioCEN usuarioCEN1 = new UsuarioCEN (_IusuarioCAD1);
+
+                usuarioEN1.Email = "pepe";
+                usuarioEN1.Password = "123";
+                usuarioCEN1.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password);
+
+                //usuario 2
+                IUsuarioCAD _IusuarioCAD2 = new UsuarioCAD ();
+                UsuarioEN usuarioEN2 = new UsuarioEN ();
+                UsuarioCEN usuarioCEN2 = new UsuarioCEN (_IusuarioCAD2);
+
+                usuarioEN2.Email = "antonio";
+                usuarioEN2.Password = "123";
+                usuarioCEN2.CrearUsuario (usuarioEN2.Email, usuarioEN2.Password);
+
+                //usuario 3
+                IUsuarioCAD _IusuarioCAD3 = new UsuarioCAD ();
+                UsuarioEN usuarioEN3 = new UsuarioEN ();
+                UsuarioCEN usuarioCEN3 = new UsuarioCEN (_IusuarioCAD3);
+
+                usuarioEN3.Email = "joselito";
+                usuarioEN3.Password = "123";
+                usuarioCEN3.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password);
+
+                //Promotor
+                IPromotorCAD _IPromotorCAD1 = new PromotorCAD ();
+                PromotorEN promotorEN1 = new PromotorEN ();
+                PromotorCEN promotorCEN1 = new PromotorCEN (_IPromotorCAD1);
+
+                promotorEN1.Email = "joselito";
+                promotorEN1.Password = "123";
+                promotorCEN1.CrearUsuarioProm (promotorEN1.Email, promotorEN1.Password, promotorEN1.CIF);
+
+                //admin
+                IAdminCAD _IAdminCAD1 = new AdminCAD ();
+                AdminEN adminEN1 = new AdminEN ();
+                AdminCEN adminCEN1 = new AdminCEN (_IAdminCAD1);
+
+                adminEN1.Email = "joselito";
+                adminEN1.Password = "123";
+                adminCEN1.CrearUsuarioAdmin (promotorEN1.Email, promotorEN1.Password);
+
+
+
                 // Insert the initilizations of entities using the CEN classes
 
 

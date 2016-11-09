@@ -21,5 +21,15 @@ void DarDeBaja (string Email
 
 
 void ModificarPerfil (UsuarioEN usuario);
+
+
+
+
+
+UsuarioEN ReadOID (string Email
+                   );
+
+
+System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size);
 }
 }

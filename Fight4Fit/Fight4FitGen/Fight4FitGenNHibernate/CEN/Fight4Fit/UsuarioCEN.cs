@@ -73,5 +73,22 @@ public void ModificarPerfil (string p_Usuario_OID, String p_Password)
 
         _IUsuarioCAD.ModificarPerfil (usuarioEN);
 }
+
+public UsuarioEN ReadOID (string Email
+                          )
+{
+        UsuarioEN usuarioEN = null;
+
+        usuarioEN = _IUsuarioCAD.ReadOID (Email);
+        return usuarioEN;
+}
+
+public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<UsuarioEN> list = null;
+
+        list = _IUsuarioCAD.ReadAll (first, size);
+        return list;
+}
 }
 }
