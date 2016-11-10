@@ -135,5 +135,65 @@ public string CrearUsuarioAdmin (AdminEN admin)
 
         return admin.Email;
 }
+
+//Sin e: ReadOID
+//Con e: AdminEN
+public AdminEN ReadOID (string Email
+                        )
+{
+        AdminEN adminEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                adminEN = (AdminEN)session.Get (typeof(AdminEN), Email);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in AdminCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return adminEN;
+}
+
+public System.Collections.Generic.IList<AdminEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<AdminEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(AdminEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<AdminEN>();
+                else
+                        result = session.CreateCriteria (typeof(AdminEN)).List<AdminEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in AdminCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

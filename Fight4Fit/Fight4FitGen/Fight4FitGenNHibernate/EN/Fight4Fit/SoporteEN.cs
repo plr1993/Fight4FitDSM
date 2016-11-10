@@ -22,7 +22,7 @@ private int id;
 /**
  *	Atributo admin
  */
-private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> admin;
+private Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin;
 
 
 
@@ -62,7 +62,7 @@ public virtual int Id {
 
 
 
-public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> Admin {
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN Admin {
         get { return admin; } set { admin = value;  }
 }
 
@@ -90,12 +90,11 @@ public virtual string Respuesta {
 
 public SoporteEN()
 {
-        admin = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN>();
 }
 
 
 
-public SoporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> admin, string titulo, string texto, string respuesta
+public SoporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta
                  )
 {
         this.init (Id, usuario, admin, titulo, texto, respuesta);
@@ -108,7 +107,7 @@ public SoporteEN(SoporteEN soporte)
 }
 
 private void init (int id
-                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN> admin, string titulo, string texto, string respuesta)
+                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta)
 {
         this.Id = id;
 

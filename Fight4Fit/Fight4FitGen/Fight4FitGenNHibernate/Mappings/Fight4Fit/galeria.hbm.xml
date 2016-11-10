@@ -25,7 +25,7 @@
 			
 			
 		  			
-						<bag name="Compuesta_por" cascade="delete">
+						<bag name="Compuesta_por" >
 							<key>
 							
 								

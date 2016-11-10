@@ -14,5 +14,14 @@ void ModifyDefault (PromotorEN promotor);
 
 
 string CrearUsuarioProm (PromotorEN promotor);
+
+
+
+
+PromotorEN ReadOID (string Email
+                    );
+
+
+System.Collections.Generic.IList<PromotorEN> ReadAll (int first, int size);
 }
 }

@@ -21,7 +21,7 @@ public static void Create (string databaseArg, string userArg, string passArg)
         String pass = passArg;
 
         // Conex DB
-        SqlConnection cnn = new SqlConnection (@"Server=(local); database=master; integrated security=yes");
+        SqlConnection cnn = new SqlConnection (@"Server=(local)\SQLEXPRESS; database=master; integrated security=yes");
 
         // Order T-SQL create user
         String createUser = @"IF NOT EXISTS(SELECT name FROM master.dbo.syslogins WHERE name = '" + user + @"')
@@ -120,7 +120,7 @@ public static void InitializeData ()
 
                 adminEN1.Email = "joselito";
                 adminEN1.Password = "123";
-                adminCEN1.CrearUsuarioAdmin (promotorEN1.Email, promotorEN1.Password);
+                adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password);
 
 
 

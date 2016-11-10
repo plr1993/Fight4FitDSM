@@ -56,5 +56,22 @@ public string CrearUsuarioProm (string p_Email, String p_Password, string p_CIF)
         oid = _IPromotorCAD.CrearUsuarioProm (promotorEN);
         return oid;
 }
+
+public PromotorEN ReadOID (string Email
+                           )
+{
+        PromotorEN promotorEN = null;
+
+        promotorEN = _IPromotorCAD.ReadOID (Email);
+        return promotorEN;
+}
+
+public System.Collections.Generic.IList<PromotorEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<PromotorEN> list = null;
+
+        list = _IPromotorCAD.ReadAll (first, size);
+        return list;
+}
 }
 }

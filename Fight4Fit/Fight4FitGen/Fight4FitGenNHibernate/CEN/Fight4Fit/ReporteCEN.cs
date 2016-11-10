@@ -98,5 +98,22 @@ public void EliminarReporte (int id
 {
         _IReporteCAD.EliminarReporte (id);
 }
+
+public ReporteEN ReadOID (int id
+                          )
+{
+        ReporteEN reporteEN = null;
+
+        reporteEN = _IReporteCAD.ReadOID (id);
+        return reporteEN;
+}
+
+public System.Collections.Generic.IList<ReporteEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<ReporteEN> list = null;
+
+        list = _IReporteCAD.ReadAll (first, size);
+        return list;
+}
 }
 }

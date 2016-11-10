@@ -81,5 +81,22 @@ public void EliminarGaleria (int id
 {
         _IGaleriaCAD.EliminarGaleria (id);
 }
+
+public GaleriaEN ReadOID (int id
+                          )
+{
+        GaleriaEN galeriaEN = null;
+
+        galeriaEN = _IGaleriaCAD.ReadOID (id);
+        return galeriaEN;
+}
+
+public System.Collections.Generic.IList<GaleriaEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<GaleriaEN> list = null;
+
+        list = _IGaleriaCAD.ReadAll (first, size);
+        return list;
+}
 }
 }

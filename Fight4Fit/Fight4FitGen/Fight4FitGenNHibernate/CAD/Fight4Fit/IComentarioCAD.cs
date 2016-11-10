@@ -20,5 +20,13 @@ void BorrarComentario (int id
 
 
 void EditarComentario (ComentarioEN comentario);
+
+
+
+ComentarioEN ReadOID (int id
+                      );
+
+
+System.Collections.Generic.IList<ComentarioEN> ReadAll (int first, int size);
 }
 }

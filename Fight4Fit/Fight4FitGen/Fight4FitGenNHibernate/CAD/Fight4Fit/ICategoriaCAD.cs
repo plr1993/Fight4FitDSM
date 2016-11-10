@@ -14,5 +14,11 @@ void ModifyDefault (CategoriaEN categoria);
 
 
 string CrearCategoria (CategoriaEN categoria);
+
+CategoriaEN ReadOID (string Nombre
+                     );
+
+
+System.Collections.Generic.IList<CategoriaEN> ReadAll (int first, int size);
 }
 }

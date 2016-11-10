@@ -70,5 +70,22 @@ public void EliminarConsulta (int id
 {
         _ISoporteCAD.EliminarConsulta (id);
 }
+
+public SoporteEN ReadOID (int id
+                          )
+{
+        SoporteEN soporteEN = null;
+
+        soporteEN = _ISoporteCAD.ReadOID (id);
+        return soporteEN;
+}
+
+public System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<SoporteEN> list = null;
+
+        list = _ISoporteCAD.ReadAll (first, size);
+        return list;
+}
 }
 }

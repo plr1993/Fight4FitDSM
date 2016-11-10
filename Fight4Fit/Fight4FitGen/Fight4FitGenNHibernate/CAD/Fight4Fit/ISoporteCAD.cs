@@ -17,5 +17,12 @@ int NuevaConsulta (SoporteEN soporte);
 
 void EliminarConsulta (int id
                        );
+
+
+SoporteEN ReadOID (int id
+                   );
+
+
+System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size);
 }
 }

@@ -14,5 +14,15 @@ void ModifyDefault (AdminEN admin);
 
 
 string CrearUsuarioAdmin (AdminEN admin);
+
+
+
+
+
+AdminEN ReadOID (string Email
+                 );
+
+
+System.Collections.Generic.IList<AdminEN> ReadAll (int first, int size);
 }
 }

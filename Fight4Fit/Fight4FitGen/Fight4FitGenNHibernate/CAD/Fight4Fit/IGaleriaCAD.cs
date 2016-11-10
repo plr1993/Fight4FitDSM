@@ -20,5 +20,12 @@ void ModificarGaleria (GaleriaEN galeria);
 
 void EliminarGaleria (int id
                       );
+
+
+GaleriaEN ReadOID (int id
+                   );
+
+
+System.Collections.Generic.IList<GaleriaEN> ReadAll (int first, int size);
 }
 }

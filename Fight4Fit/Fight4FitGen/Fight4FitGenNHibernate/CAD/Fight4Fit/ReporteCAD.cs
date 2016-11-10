@@ -196,5 +196,65 @@ public void EliminarReporte (int id
                 SessionClose ();
         }
 }
+
+//Sin e: ReadOID
+//Con e: ReporteEN
+public ReporteEN ReadOID (int id
+                          )
+{
+        ReporteEN reporteEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                reporteEN = (ReporteEN)session.Get (typeof(ReporteEN), id);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ReporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return reporteEN;
+}
+
+public System.Collections.Generic.IList<ReporteEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<ReporteEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(ReporteEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<ReporteEN>();
+                else
+                        result = session.CreateCriteria (typeof(ReporteEN)).List<ReporteEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ReporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

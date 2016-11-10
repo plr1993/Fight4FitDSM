@@ -74,6 +74,12 @@ public void ModificarPerfil (string p_Usuario_OID, String p_Password)
         _IUsuarioCAD.ModificarPerfil (usuarioEN);
 }
 
+public void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs)
+{
+        //Call to UsuarioCAD
+
+        _IUsuarioCAD.DesapuntarseAEvento (p_Usuario_OID, p_evento_OIDs);
+}
 public UsuarioEN ReadOID (string Email
                           )
 {

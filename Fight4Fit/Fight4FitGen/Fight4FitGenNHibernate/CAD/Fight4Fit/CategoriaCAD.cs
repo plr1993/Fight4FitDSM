@@ -135,5 +135,65 @@ public string CrearCategoria (CategoriaEN categoria)
 
         return categoria.Nombre;
 }
+
+//Sin e: ReadOID
+//Con e: CategoriaEN
+public CategoriaEN ReadOID (string Nombre
+                            )
+{
+        CategoriaEN categoriaEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                categoriaEN = (CategoriaEN)session.Get (typeof(CategoriaEN), Nombre);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in CategoriaCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return categoriaEN;
+}
+
+public System.Collections.Generic.IList<CategoriaEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<CategoriaEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(CategoriaEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<CategoriaEN>();
+                else
+                        result = session.CreateCriteria (typeof(CategoriaEN)).List<CategoriaEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in CategoriaCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

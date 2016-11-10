@@ -104,6 +104,12 @@ public void ModifyDefault (EventoEN evento)
 
                 eventoEN.Tipo = evento.Tipo;
 
+
+                eventoEN.NumeroParticipantes = evento.NumeroParticipantes;
+
+
+                eventoEN.MaxParticipantes = evento.MaxParticipantes;
+
                 session.Update (eventoEN);
                 SessionCommit ();
         }
@@ -171,6 +177,12 @@ public void ModificarEvento (EventoEN evento)
 
                 eventoEN.Tipo = evento.Tipo;
 
+
+                eventoEN.NumeroParticipantes = evento.NumeroParticipantes;
+
+
+                eventoEN.MaxParticipantes = evento.MaxParticipantes;
+
                 session.Update (eventoEN);
                 SessionCommit ();
         }
@@ -211,6 +223,66 @@ public void BorrarEvento (int id
         {
                 SessionClose ();
         }
+}
+
+//Sin e: ReadOID
+//Con e: EventoEN
+public EventoEN ReadOID (int id
+                         )
+{
+        EventoEN eventoEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                eventoEN = (EventoEN)session.Get (typeof(EventoEN), id);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return eventoEN;
+}
+
+public System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<EventoEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(EventoEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<EventoEN>();
+                else
+                        result = session.CreateCriteria (typeof(EventoEN)).List<EventoEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
 }
 }
 }

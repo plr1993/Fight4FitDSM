@@ -137,5 +137,65 @@ public string CrearUsuarioProm (PromotorEN promotor)
 
         return promotor.Email;
 }
+
+//Sin e: ReadOID
+//Con e: PromotorEN
+public PromotorEN ReadOID (string Email
+                           )
+{
+        PromotorEN promotorEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                promotorEN = (PromotorEN)session.Get (typeof(PromotorEN), Email);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in PromotorCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return promotorEN;
+}
+
+public System.Collections.Generic.IList<PromotorEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<PromotorEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(PromotorEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<PromotorEN>();
+                else
+                        result = session.CreateCriteria (typeof(PromotorEN)).List<PromotorEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in PromotorCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

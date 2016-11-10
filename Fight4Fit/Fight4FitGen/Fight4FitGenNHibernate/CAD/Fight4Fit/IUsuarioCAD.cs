@@ -25,6 +25,7 @@ void ModificarPerfil (UsuarioEN usuario);
 
 
 
+void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs);
 
 UsuarioEN ReadOID (string Email
                    );

@@ -91,5 +91,22 @@ public void BorrarFoto (int id
 {
         _IFotoCAD.BorrarFoto (id);
 }
+
+public FotoEN ReadOID (int id
+                       )
+{
+        FotoEN fotoEN = null;
+
+        fotoEN = _IFotoCAD.ReadOID (id);
+        return fotoEN;
+}
+
+public System.Collections.Generic.IList<FotoEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<FotoEN> list = null;
+
+        list = _IFotoCAD.ReadAll (first, size);
+        return list;
+}
 }
 }

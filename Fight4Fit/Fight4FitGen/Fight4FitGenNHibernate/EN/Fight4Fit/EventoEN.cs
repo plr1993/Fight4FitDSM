@@ -68,6 +68,20 @@ private Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo;
 
 
 
+/**
+ *	Atributo numeroParticipantes
+ */
+private int numeroParticipantes;
+
+
+
+/**
+ *	Atributo maxParticipantes
+ */
+private int maxParticipantes;
+
+
+
 
 
 
@@ -125,6 +139,18 @@ public virtual Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum Tipo {
 
 
 
+public virtual int NumeroParticipantes {
+        get { return numeroParticipantes; } set { numeroParticipantes = value;  }
+}
+
+
+
+public virtual int MaxParticipantes {
+        get { return maxParticipantes; } set { maxParticipantes = value;  }
+}
+
+
+
 
 
 public EventoEN()
@@ -136,20 +162,20 @@ public EventoEN()
 
 
 
-public EventoEN(int id, string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo
+public EventoEN(int id, string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes
                 )
 {
-        this.init (Id, nombre, usuario, categoria, reporte, galeria, descripcion, comentario, tipo);
+        this.init (Id, nombre, usuario, categoria, reporte, galeria, descripcion, comentario, tipo, numeroParticipantes, maxParticipantes);
 }
 
 
 public EventoEN(EventoEN evento)
 {
-        this.init (Id, evento.Nombre, evento.Usuario, evento.Categoria, evento.Reporte, evento.Galeria, evento.Descripcion, evento.Comentario, evento.Tipo);
+        this.init (Id, evento.Nombre, evento.Usuario, evento.Categoria, evento.Reporte, evento.Galeria, evento.Descripcion, evento.Comentario, evento.Tipo, evento.NumeroParticipantes, evento.MaxParticipantes);
 }
 
 private void init (int id
-                   , string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo)
+                   , string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes)
 {
         this.Id = id;
 
@@ -169,6 +195,10 @@ private void init (int id
         this.Comentario = comentario;
 
         this.Tipo = tipo;
+
+        this.NumeroParticipantes = numeroParticipantes;
+
+        this.MaxParticipantes = maxParticipantes;
 }
 
 public override bool Equals (object obj)

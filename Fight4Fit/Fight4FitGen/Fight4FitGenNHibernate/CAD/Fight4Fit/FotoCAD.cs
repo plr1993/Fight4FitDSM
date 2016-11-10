@@ -222,5 +222,65 @@ public void BorrarFoto (int id
                 SessionClose ();
         }
 }
+
+//Sin e: ReadOID
+//Con e: FotoEN
+public FotoEN ReadOID (int id
+                       )
+{
+        FotoEN fotoEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                fotoEN = (FotoEN)session.Get (typeof(FotoEN), id);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in FotoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return fotoEN;
+}
+
+public System.Collections.Generic.IList<FotoEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<FotoEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(FotoEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<FotoEN>();
+                else
+                        result = session.CreateCriteria (typeof(FotoEN)).List<FotoEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in FotoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

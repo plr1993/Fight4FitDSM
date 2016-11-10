@@ -18,6 +18,12 @@
 					<property name="Tipo" > 
 						<column name="Tipo"  not-null="true"/>
 					</property>
+					<property name="NumeroParticipantes" type="integer"> 
+						<column name="numeroParticipantes"  not-null="true"/>
+					</property>
+					<property name="MaxParticipantes" type="integer"> 
+						<column name="maxParticipantes"  not-null="true"/>
+					</property>
 			
 			
 			
@@ -68,6 +74,10 @@
 					    </bag>
 					
 			
+			
+			
+					
+					
 					
 					
 					

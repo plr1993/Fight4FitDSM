@@ -115,20 +115,22 @@
 			
 			<Compile Include="CEN\Fight4Fit\EventoCEN_ReportarEvento.cs" />
 			
+			
+			
 	<Compile Include="EN\Fight4Fit\UsuarioEN.cs" />
 	<Compile Include="CEN\Fight4Fit\UsuarioCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IUsuarioCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\UsuarioCAD.cs" />
 	<Compile Include="CP\Fight4Fit\UsuarioCP.cs" />
 			
+			<Compile Include="CEN\Fight4Fit\UsuarioCEN_IniciarSesion.cs" />
 			
 			
 			
 			<Compile Include="CEN\Fight4Fit\UsuarioCEN_Búsqueda.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\UsuarioCEN_ApuntarseAEvento.cs" />
+			<Compile Include="CP\Fight4Fit\UsuarioCP_ApuntarseAEvento.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\UsuarioCEN_DesapuntarseAEvento.cs" />
 			
 			
 			
@@ -144,6 +146,8 @@
 			
 			<Compile Include="CEN\Fight4Fit\PromotorCEN_ModificarTorneo.cs" />
 			
+			
+			
 	<Compile Include="EN\Fight4Fit\SoporteEN.cs" />
 	<Compile Include="CEN\Fight4Fit\SoporteCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\ISoporteCAD.cs" />
@@ -151,7 +155,7 @@
 	<Compile Include="CP\Fight4Fit\SoporteCP.cs" />
 			
 			
-			<Compile Include="CEN\Fight4Fit\SoporteCEN_ResponderConsulta.cs" />
+			
 			
 	<Compile Include="EN\Fight4Fit\CategoriaEN.cs" />
 	<Compile Include="CEN\Fight4Fit\CategoriaCEN.cs" />
@@ -159,11 +163,15 @@
 	<Compile Include="CAD\Fight4Fit\CategoriaCAD.cs" />
 	<Compile Include="CP\Fight4Fit\CategoriaCP.cs" />
 			
+			
+			
 	<Compile Include="EN\Fight4Fit\ReporteEN.cs" />
 	<Compile Include="CEN\Fight4Fit\ReporteCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IReporteCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\ReporteCAD.cs" />
 	<Compile Include="CP\Fight4Fit\ReporteCP.cs" />
+			
+			
 			
 			
 	<Compile Include="EN\Fight4Fit\ComentarioEN.cs" />
@@ -176,6 +184,8 @@
 			
 			<Compile Include="CEN\Fight4Fit\ComentarioCEN_ReportarComentario.cs" />
 			
+			
+			
 	<Compile Include="EN\Fight4Fit\FotoEN.cs" />
 	<Compile Include="CEN\Fight4Fit\FotoCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IFotoCAD.cs" />
@@ -186,11 +196,15 @@
 			
 			<Compile Include="CEN\Fight4Fit\FotoCEN_ReportarFoto.cs" />
 			
+			
+			
 	<Compile Include="EN\Fight4Fit\GaleriaEN.cs" />
 	<Compile Include="CEN\Fight4Fit\GaleriaCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IGaleriaCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\GaleriaCAD.cs" />
 	<Compile Include="CP\Fight4Fit\GaleriaCP.cs" />
+			
+			
 			
 			
 			
@@ -208,7 +222,9 @@
 			
 			<Compile Include="CEN\Fight4Fit\AdminCEN_EliminarComentario.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\AdminCEN_ResponderConsulta.cs" />
+			
+			
+			<Compile Include="CP\Fight4Fit\AdminCP_ResponderConsulta.cs" />
 			
 	<Compile Include="Enumerated\Fight4Fit\MotivoEnum.cs" />
 	<Compile Include="Enumerated\Fight4Fit\TipoEventoEnum.cs" />

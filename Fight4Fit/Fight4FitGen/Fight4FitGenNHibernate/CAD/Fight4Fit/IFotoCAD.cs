@@ -20,5 +20,13 @@ void EditarFoto (FotoEN foto);
 
 void BorrarFoto (int id
                  );
+
+
+
+FotoEN ReadOID (int id
+                );
+
+
+System.Collections.Generic.IList<FotoEN> ReadAll (int first, int size);
 }
 }

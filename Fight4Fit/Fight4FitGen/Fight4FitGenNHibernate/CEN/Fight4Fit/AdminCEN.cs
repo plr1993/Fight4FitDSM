@@ -54,5 +54,22 @@ public string CrearUsuarioAdmin (string p_Email, String p_Password)
         oid = _IAdminCAD.CrearUsuarioAdmin (adminEN);
         return oid;
 }
+
+public AdminEN ReadOID (string Email
+                        )
+{
+        AdminEN adminEN = null;
+
+        adminEN = _IAdminCAD.ReadOID (Email);
+        return adminEN;
+}
+
+public System.Collections.Generic.IList<AdminEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<AdminEN> list = null;
+
+        list = _IAdminCAD.ReadAll (first, size);
+        return list;
+}
 }
 }

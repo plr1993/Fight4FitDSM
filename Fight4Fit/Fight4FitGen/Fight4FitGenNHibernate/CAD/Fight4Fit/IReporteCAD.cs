@@ -17,5 +17,12 @@ int NuevoReporte (ReporteEN reporte);
 
 void EliminarReporte (int id
                       );
+
+
+ReporteEN ReadOID (int id
+                   );
+
+
+System.Collections.Generic.IList<ReporteEN> ReadAll (int first, int size);
 }
 }

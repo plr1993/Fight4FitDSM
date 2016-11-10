@@ -38,7 +38,7 @@ public IEventoCAD get_IEventoCAD ()
         return this._IEventoCAD;
 }
 
-public int CrearEvento (string p_Nombre, string p_categoria, int p_id, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo)
+public int CrearEvento (string p_Nombre, string p_categoria, int p_id, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes)
 {
         EventoEN eventoEN = null;
         int oid;
@@ -61,13 +61,17 @@ public int CrearEvento (string p_Nombre, string p_categoria, int p_id, string p_
 
         eventoEN.Tipo = p_Tipo;
 
+        eventoEN.NumeroParticipantes = p_numeroParticipantes;
+
+        eventoEN.MaxParticipantes = p_maxParticipantes;
+
         //Call to EventoCAD
 
         oid = _IEventoCAD.CrearEvento (eventoEN);
         return oid;
 }
 
-public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo)
+public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes)
 {
         EventoEN eventoEN = null;
 
@@ -77,6 +81,8 @@ public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descrip
         eventoEN.Nombre = p_Nombre;
         eventoEN.Descripcion = p_Descripcion;
         eventoEN.Tipo = p_Tipo;
+        eventoEN.NumeroParticipantes = p_numeroParticipantes;
+        eventoEN.MaxParticipantes = p_maxParticipantes;
         //Call to EventoCAD
 
         _IEventoCAD.ModificarEvento (eventoEN);
@@ -86,6 +92,23 @@ public void BorrarEvento (int id
                           )
 {
         _IEventoCAD.BorrarEvento (id);
+}
+
+public EventoEN ReadOID (int id
+                         )
+{
+        EventoEN eventoEN = null;
+
+        eventoEN = _IEventoCAD.ReadOID (id);
+        return eventoEN;
+}
+
+public System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<EventoEN> list = null;
+
+        list = _IEventoCAD.ReadAll (first, size);
+        return list;
 }
 }
 }

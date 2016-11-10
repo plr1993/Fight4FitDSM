@@ -31,15 +31,10 @@
 			
 			
 		  			
-						<bag name="Admin" table="[soporte_0_admin]"  >
-							<key>
-								
-									<column name="FK_idSoporte_idSoporte_0"/> 
-							</key>
-      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN">
-									<column name="FK_Email_idAdmin"/> 
-      						</many-to-many>
-    					</bag>
+						<many-to-one name="Admin" class="Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN" >	
+								<column name="FK_Email_idAdmin"/> 
+						</many-to-one>
+											 					
 			
 			
 			

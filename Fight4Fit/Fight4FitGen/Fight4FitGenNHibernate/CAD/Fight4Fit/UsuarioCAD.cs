@@ -192,6 +192,44 @@ public void ModificarPerfil (UsuarioEN usuario)
                 SessionClose ();
         }
 }
+public void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs)
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuarioEN = null;
+                usuarioEN = (UsuarioEN)session.Load (typeof(UsuarioEN), p_Usuario_OID);
+
+                Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN eventoENAux = null;
+                if (usuarioEN.Evento != null) {
+                        foreach (int item in p_evento_OIDs) {
+                                eventoENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), item);
+                                if (usuarioEN.Evento.Contains (eventoENAux) == true) {
+                                        usuarioEN.Evento.Remove (eventoENAux);
+                                        eventoENAux.Usuario.Remove (usuarioEN);
+                                }
+                                else
+                                        throw new ModelException ("The identifier " + item + " in p_evento_OIDs you are trying to unrelationer, doesn't exist in UsuarioEN");
+                        }
+                }
+
+                session.Update (usuarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in UsuarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
 //Sin e: ReadOID
 //Con e: UsuarioEN
 public UsuarioEN ReadOID (string Email

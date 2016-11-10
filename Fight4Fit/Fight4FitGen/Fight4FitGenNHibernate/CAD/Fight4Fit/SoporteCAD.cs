@@ -177,5 +177,65 @@ public void EliminarConsulta (int id
                 SessionClose ();
         }
 }
+
+//Sin e: ReadOID
+//Con e: SoporteEN
+public SoporteEN ReadOID (int id
+                          )
+{
+        SoporteEN soporteEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                soporteEN = (SoporteEN)session.Get (typeof(SoporteEN), id);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in SoporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return soporteEN;
+}
+
+public System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<SoporteEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(SoporteEN)).
+                                 SetFirstResult (first).SetMaxResults (size).List<SoporteEN>();
+                else
+                        result = session.CreateCriteria (typeof(SoporteEN)).List<SoporteEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in SoporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

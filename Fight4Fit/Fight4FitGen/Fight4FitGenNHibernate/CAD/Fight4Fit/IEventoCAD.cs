@@ -20,5 +20,14 @@ void ModificarEvento (EventoEN evento);
 
 void BorrarEvento (int id
                    );
+
+
+
+
+EventoEN ReadOID (int id
+                  );
+
+
+System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size);
 }
 }
