@@ -8,6 +8,7 @@ using System.Data;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
 using Fight4FitGenNHibernate.CAD.Fight4Fit;
+using Fight4FitGenNHibernate.CP.Fight4Fit;
 
 /*PROTECTED REGION END*/
 namespace InitializeDB
@@ -105,25 +106,37 @@ public static void InitializeData ()
                 usuarioCEN3.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password);
 
                 //Promotor
-                IPromotorCAD _IPromotorCAD1 = new PromotorCAD ();
-                PromotorEN promotorEN1 = new PromotorEN ();
-                PromotorCEN promotorCEN1 = new PromotorCEN (_IPromotorCAD1);
 
-                promotorEN1.Email = "joselito";
-                promotorEN1.Password = "123";
-                promotorCEN1.CrearUsuarioProm (promotorEN1.Email, promotorEN1.Password, promotorEN1.CIF);
+
+
+
+                //soporte
+                ISoporteCAD _ISoporteCAD1 = new SoporteCAD ();
+                SoporteEN soporteEN1 = new SoporteEN ();
+                SoporteCEN soporteCEN1 = new SoporteCEN (_ISoporteCAD1);
+                SoporteEN soporteEN2 = null;
+                soporteEN1.Titulo = "joselito";
+                soporteEN1.Texto = "123";
+                soporteCEN1.NuevaConsulta (usuarioEN1.Email, soporteEN1.Titulo, soporteEN1.Texto, "");
+
+                Console.WriteLine (soporteEN1.Respuesta);
+                Console.WriteLine ("--------------------1-----------------------------");
 
                 //admin
                 IAdminCAD _IAdminCAD1 = new AdminCAD ();
                 AdminEN adminEN1 = new AdminEN ();
+                AdminCP adminCP1 = new AdminCP ();
                 AdminCEN adminCEN1 = new AdminCEN (_IAdminCAD1);
-
-                adminEN1.Email = "joselito";
+                adminEN1.Email = "josss";
                 adminEN1.Password = "123";
-                adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password);
+                soporteEN2 = soporteCEN1.ReadOID (soporteEN1.IdSoporte);
+                adminEN1.Email = adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password);
 
 
+                adminCP1.ResponderConsulta (adminEN1.Email, soporteEN1.IdSoporte, "Sergio Luj�n Mora");
 
+                Console.WriteLine (soporteEN1.Respuesta);
+                Console.WriteLine ("--------------------2------------------------------");
                 // Insert the initilizations of entities using the CEN classes
 
 

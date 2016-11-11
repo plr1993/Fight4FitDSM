@@ -50,7 +50,7 @@ private Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo;
 /**
  *	Atributo usuario
  */
-private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario;
+private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario;
 
 
 
@@ -93,7 +93,7 @@ public virtual Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum Motivo {
 
 
 
-public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> Usuario {
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Usuario {
         get { return usuario; } set { usuario = value;  }
 }
 
@@ -103,12 +103,11 @@ public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4
 
 public ReporteEN()
 {
-        usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
 }
 
 
 
-public ReporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario
+public ReporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario
                  )
 {
         this.init (Id, evento, comentario, foto, texto, motivo, usuario);
@@ -121,7 +120,7 @@ public ReporteEN(ReporteEN reporte)
 }
 
 private void init (int id
-                   , Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario)
+                   , Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario)
 {
         this.Id = id;
 

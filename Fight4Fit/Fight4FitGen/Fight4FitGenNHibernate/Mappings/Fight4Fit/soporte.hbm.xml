@@ -7,7 +7,7 @@
 			
 				<class name="SoporteEN" table="Soporte"> 
 				  	
-						<id name="Id" column="idSoporte" type="integer"> 
+						<id name="IdSoporte" column="idSoporteSoporte" type="integer"> 
 							<generator class="hilo"/>
 						</id>
 			

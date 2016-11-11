@@ -284,5 +284,83 @@ public System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size)
 
         return result;
 }
+
+public void AnyadirParticipante (int p_Evento_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN eventoEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                eventoEN = (EventoEN)session.Load (typeof(EventoEN), p_Evento_OID);
+                Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuarioENAux = null;
+                if (eventoEN.Usuario == null) {
+                        eventoEN.Usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
+                }
+
+                foreach (string item in p_usuario_OIDs) {
+                        usuarioENAux = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
+                        usuarioENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), item);
+                        usuarioENAux.Evento.Add (eventoEN);
+
+                        eventoEN.Usuario.Add (usuarioENAux);
+                }
+
+
+                session.Update (eventoEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
+public void EliminarParticipante (int p_Evento_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN eventoEN = null;
+                eventoEN = (EventoEN)session.Load (typeof(EventoEN), p_Evento_OID);
+
+                Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuarioENAux = null;
+                if (eventoEN.Usuario != null) {
+                        foreach (string item in p_usuario_OIDs) {
+                                usuarioENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), item);
+                                if (eventoEN.Usuario.Contains (usuarioENAux) == true) {
+                                        eventoEN.Usuario.Remove (usuarioENAux);
+                                        usuarioENAux.Evento.Remove (eventoEN);
+                                }
+                                else
+                                        throw new ModelException ("The identifier " + item + " in p_usuario_OIDs you are trying to unrelationer, doesn't exist in EventoEN");
+                        }
+                }
+
+                session.Update (eventoEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
 }
 }

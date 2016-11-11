@@ -38,7 +38,7 @@ public IPromotorCAD get_IPromotorCAD ()
         return this._IPromotorCAD;
 }
 
-public string CrearUsuarioProm (string p_Email, String p_Password, string p_CIF)
+public string CrearUsuarioProm (string p_Email, String p_Password, bool p_Bloqueado, string p_CIF)
 {
         PromotorEN promotorEN = null;
         string oid;
@@ -48,6 +48,8 @@ public string CrearUsuarioProm (string p_Email, String p_Password, string p_CIF)
         promotorEN.Email = p_Email;
 
         promotorEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
+
+        promotorEN.Bloqueado = p_Bloqueado;
 
         promotorEN.CIF = p_CIF;
 

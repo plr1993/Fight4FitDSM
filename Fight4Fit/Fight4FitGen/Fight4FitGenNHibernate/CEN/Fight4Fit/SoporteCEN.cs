@@ -48,7 +48,7 @@ public int NuevaConsulta (string p_usuario, string p_Titulo, string p_Texto, str
 
         if (p_usuario != null) {
                 // El argumento p_usuario -> Property usuario es oid = false
-                // Lista de oids id
+                // Lista de oids idSoporte
                 soporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
                 soporteEN.Usuario.Email = p_usuario;
         }
@@ -65,18 +65,18 @@ public int NuevaConsulta (string p_usuario, string p_Titulo, string p_Texto, str
         return oid;
 }
 
-public void EliminarConsulta (int id
+public void EliminarConsulta (int idSoporte
                               )
 {
-        _ISoporteCAD.EliminarConsulta (id);
+        _ISoporteCAD.EliminarConsulta (idSoporte);
 }
 
-public SoporteEN ReadOID (int id
+public SoporteEN ReadOID (int idSoporte
                           )
 {
         SoporteEN soporteEN = null;
 
-        soporteEN = _ISoporteCAD.ReadOID (id);
+        soporteEN = _ISoporteCAD.ReadOID (idSoporte);
         return soporteEN;
 }
 
@@ -86,6 +86,20 @@ public System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size)
 
         list = _ISoporteCAD.ReadAll (first, size);
         return list;
+}
+public void Responder (int p_Soporte_OID, string p_Titulo, string p_Texto, string p_Respuesta)
+{
+        SoporteEN soporteEN = null;
+
+        //Initialized SoporteEN
+        soporteEN = new SoporteEN ();
+        soporteEN.IdSoporte = p_Soporte_OID;
+        soporteEN.Titulo = p_Titulo;
+        soporteEN.Texto = p_Texto;
+        soporteEN.Respuesta = p_Respuesta;
+        //Call to SoporteCAD
+
+        _ISoporteCAD.Responder (soporteEN);
 }
 }
 }

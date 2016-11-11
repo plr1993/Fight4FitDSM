@@ -38,7 +38,7 @@ public IFotoCAD get_IFotoCAD ()
         return this._IFotoCAD;
 }
 
-public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, string p_Imagen, int p_pertenece_a)
+public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, string p_Imagen, int p_pertenece_a, int p_likes)
 {
         FotoEN fotoEN = null;
         int oid;
@@ -63,13 +63,15 @@ public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fe
                 fotoEN.Pertenece_a.Id = p_pertenece_a;
         }
 
+        fotoEN.Likes = p_likes;
+
         //Call to FotoCAD
 
         oid = _IFotoCAD.SubirFoto (fotoEN);
         return oid;
 }
 
-public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, string p_Imagen)
+public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, string p_Imagen, int p_likes)
 {
         FotoEN fotoEN = null;
 
@@ -81,6 +83,7 @@ public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nulla
         fotoEN.Fecha = p_Fecha;
         fotoEN.Descripcion = p_Descripcion;
         fotoEN.Imagen = p_Imagen;
+        fotoEN.Likes = p_likes;
         //Call to FotoCAD
 
         _IFotoCAD.EditarFoto (fotoEN);

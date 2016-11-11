@@ -29,7 +29,7 @@ public SoporteCAD(ISession sessionAux) : base (sessionAux)
 
 
 
-public SoporteEN ReadOIDDefault (int id
+public SoporteEN ReadOIDDefault (int idSoporte
                                  )
 {
         SoporteEN soporteEN = null;
@@ -37,7 +37,7 @@ public SoporteEN ReadOIDDefault (int id
         try
         {
                 SessionInitializeTransaction ();
-                soporteEN = (SoporteEN)session.Get (typeof(SoporteEN), id);
+                soporteEN = (SoporteEN)session.Get (typeof(SoporteEN), idSoporte);
                 SessionCommit ();
         }
 
@@ -89,7 +89,7 @@ public void ModifyDefault (SoporteEN soporte)
         try
         {
                 SessionInitializeTransaction ();
-                SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), soporte.Id);
+                SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), soporte.IdSoporte);
 
 
 
@@ -150,16 +150,16 @@ public int NuevaConsulta (SoporteEN soporte)
                 SessionClose ();
         }
 
-        return soporte.Id;
+        return soporte.IdSoporte;
 }
 
-public void EliminarConsulta (int id
+public void EliminarConsulta (int idSoporte
                               )
 {
         try
         {
                 SessionInitializeTransaction ();
-                SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), id);
+                SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), idSoporte);
                 session.Delete (soporteEN);
                 SessionCommit ();
         }
@@ -180,7 +180,7 @@ public void EliminarConsulta (int id
 
 //Sin e: ReadOID
 //Con e: SoporteEN
-public SoporteEN ReadOID (int id
+public SoporteEN ReadOID (int idSoporte
                           )
 {
         SoporteEN soporteEN = null;
@@ -188,7 +188,7 @@ public SoporteEN ReadOID (int id
         try
         {
                 SessionInitializeTransaction ();
-                soporteEN = (SoporteEN)session.Get (typeof(SoporteEN), id);
+                soporteEN = (SoporteEN)session.Get (typeof(SoporteEN), idSoporte);
                 SessionCommit ();
         }
 
@@ -236,6 +236,39 @@ public System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size)
         }
 
         return result;
+}
+
+public void Responder (SoporteEN soporte)
+{
+        try
+        {
+                SessionInitializeTransaction ();
+                SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), soporte.IdSoporte);
+
+                soporteEN.Titulo = soporte.Titulo;
+
+
+                soporteEN.Texto = soporte.Texto;
+
+
+                soporteEN.Respuesta = soporte.Respuesta;
+
+                session.Update (soporteEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in SoporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
 }
 }
 }

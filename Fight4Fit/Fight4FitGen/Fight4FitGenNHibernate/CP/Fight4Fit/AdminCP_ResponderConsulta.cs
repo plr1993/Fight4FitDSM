@@ -20,12 +20,12 @@ namespace Fight4FitGenNHibernate.CP.Fight4Fit
 {
 public partial class AdminCP : BasicCP
 {
-public void ResponderConsulta (string p_oid)
+public void ResponderConsulta (string p_oid, int arg1, string respuestaSoporte)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Admin_ResponderConsulta) ENABLED START*/
 
         IAdminCAD adminCAD = null;
-        AdminCEN adminCEN = null;
+        ISoporteCAD soporteCAD = null;
 
 
 
@@ -33,16 +33,11 @@ public void ResponderConsulta (string p_oid)
         {
                 SessionInitializeTransaction ();
                 adminCAD = new AdminCAD (session);
-                adminCEN = new  AdminCEN (adminCAD);
+                soporteCAD = new SoporteCAD (session);
+                SoporteCEN soporteCEN = new SoporteCEN (soporteCAD);
+                SoporteEN soporteEN = soporteCEN.ReadOID (arg1);
 
-
-
-                // Write here your custom transaction ...
-
-                throw new NotImplementedException ("Method ResponderConsulta() not yet implemented.");
-
-
-
+               
                 SessionCommit ();
         }
         catch (Exception ex)

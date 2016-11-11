@@ -23,7 +23,7 @@ void DarDeBaja (string Email
 void ModificarPerfil (UsuarioEN usuario);
 
 
-
+void ApuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs);
 
 void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs);
 

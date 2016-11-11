@@ -108,6 +108,9 @@ public void ModifyDefault (FotoEN foto)
                 fotoEN.Imagen = foto.Imagen;
 
 
+
+                fotoEN.Likes = foto.Likes;
+
                 session.Update (fotoEN);
                 SessionCommit ();
         }
@@ -180,6 +183,9 @@ public void EditarFoto (FotoEN foto)
 
 
                 fotoEN.Imagen = foto.Imagen;
+
+
+                fotoEN.Likes = foto.Likes;
 
                 session.Update (fotoEN);
                 SessionCommit ();

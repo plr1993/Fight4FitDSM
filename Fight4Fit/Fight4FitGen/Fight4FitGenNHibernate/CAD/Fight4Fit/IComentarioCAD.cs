@@ -22,7 +22,6 @@ void BorrarComentario (int id
 void EditarComentario (ComentarioEN comentario);
 
 
-
 ComentarioEN ReadOID (int id
                       );
 

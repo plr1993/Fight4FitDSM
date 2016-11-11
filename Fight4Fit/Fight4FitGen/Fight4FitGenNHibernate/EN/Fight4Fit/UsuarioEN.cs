@@ -40,6 +40,13 @@ private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.Rep
 
 
 
+/**
+ *	Atributo bloqueado
+ */
+private bool bloqueado;
+
+
+
 
 
 
@@ -73,6 +80,12 @@ public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4
 
 
 
+public virtual bool Bloqueado {
+        get { return bloqueado; } set { bloqueado = value;  }
+}
+
+
+
 
 
 public UsuarioEN()
@@ -84,20 +97,20 @@ public UsuarioEN()
 
 
 
-public UsuarioEN(string email, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte
+public UsuarioEN(string email, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, bool bloqueado
                  )
 {
-        this.init (Email, password, soporte, evento, reporte);
+        this.init (Email, password, soporte, evento, reporte, bloqueado);
 }
 
 
 public UsuarioEN(UsuarioEN usuario)
 {
-        this.init (Email, usuario.Password, usuario.Soporte, usuario.Evento, usuario.Reporte);
+        this.init (Email, usuario.Password, usuario.Soporte, usuario.Evento, usuario.Reporte, usuario.Bloqueado);
 }
 
 private void init (string Email
-                   , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte)
+                   , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, bool bloqueado)
 {
         this.Email = Email;
 
@@ -109,6 +122,8 @@ private void init (string Email
         this.Evento = evento;
 
         this.Reporte = reporte;
+
+        this.Bloqueado = bloqueado;
 }
 
 public override bool Equals (object obj)

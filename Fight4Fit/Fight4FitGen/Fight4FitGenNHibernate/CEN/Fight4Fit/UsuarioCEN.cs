@@ -38,7 +38,7 @@ public IUsuarioCAD get_IUsuarioCAD ()
         return this._IUsuarioCAD;
 }
 
-public string CrearUsuario (string p_Email, String p_Password)
+public string CrearUsuario (string p_Email, String p_Password, bool p_Bloqueado)
 {
         UsuarioEN usuarioEN = null;
         string oid;
@@ -48,6 +48,8 @@ public string CrearUsuario (string p_Email, String p_Password)
         usuarioEN.Email = p_Email;
 
         usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
+
+        usuarioEN.Bloqueado = p_Bloqueado;
 
         //Call to UsuarioCAD
 
@@ -61,7 +63,7 @@ public void DarDeBaja (string Email
         _IUsuarioCAD.DarDeBaja (Email);
 }
 
-public void ModificarPerfil (string p_Usuario_OID, String p_Password)
+public void ModificarPerfil (string p_Usuario_OID, String p_Password, bool p_Bloqueado)
 {
         UsuarioEN usuarioEN = null;
 
@@ -69,11 +71,18 @@ public void ModificarPerfil (string p_Usuario_OID, String p_Password)
         usuarioEN = new UsuarioEN ();
         usuarioEN.Email = p_Usuario_OID;
         usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
+        usuarioEN.Bloqueado = p_Bloqueado;
         //Call to UsuarioCAD
 
         _IUsuarioCAD.ModificarPerfil (usuarioEN);
 }
 
+public void ApuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs)
+{
+        //Call to UsuarioCAD
+
+        _IUsuarioCAD.ApuntarseAEvento (p_Usuario_OID, p_evento_OIDs);
+}
 public void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs)
 {
         //Call to UsuarioCAD

@@ -19,15 +19,5 @@ namespace Fight4FitGenNHibernate.CEN.Fight4Fit
 {
 public partial class UsuarioCEN
 {
-public void IniciarSesion (string p_oid)
-{
-        /*PROTECTED REGION ID(Fight4FitGenNHibernate.CEN.Fight4Fit_Usuario_IniciarSesion) ENABLED START*/
-
-        // Write here your custom code...
-
-        throw new NotImplementedException ("Method IniciarSesion() not yet implemented.");
-
-        /*PROTECTED REGION END*/
-}
 }
 }

@@ -47,6 +47,13 @@ private string texto;
 
 
 
+/**
+ *	Atributo likes
+ */
+private int likes;
+
+
+
 
 
 
@@ -86,6 +93,12 @@ public virtual string Texto {
 
 
 
+public virtual int Likes {
+        get { return likes; } set { likes = value;  }
+}
+
+
+
 
 
 public ComentarioEN()
@@ -95,20 +108,20 @@ public ComentarioEN()
 
 
 
-public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto
+public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes
                     )
 {
-        this.init (Id, reporte, foto, evento, titulo, texto);
+        this.init (Id, reporte, foto, evento, titulo, texto, likes);
 }
 
 
 public ComentarioEN(ComentarioEN comentario)
 {
-        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto);
+        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto, comentario.Likes);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes)
 {
         this.Id = id;
 
@@ -122,6 +135,8 @@ private void init (int id
         this.Titulo = titulo;
 
         this.Texto = texto;
+
+        this.Likes = likes;
 }
 
 public override bool Equals (object obj)

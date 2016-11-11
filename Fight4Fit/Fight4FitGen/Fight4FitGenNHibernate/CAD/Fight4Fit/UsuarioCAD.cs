@@ -96,6 +96,9 @@ public void ModifyDefault (UsuarioEN usuario)
 
 
 
+
+                usuarioEN.Bloqueado = usuario.Bloqueado;
+
                 session.Update (usuarioEN);
                 SessionCommit ();
         }
@@ -175,6 +178,9 @@ public void ModificarPerfil (UsuarioEN usuario)
 
                 usuarioEN.Password = usuario.Password;
 
+
+                usuarioEN.Bloqueado = usuario.Bloqueado;
+
                 session.Update (usuarioEN);
                 SessionCommit ();
         }
@@ -192,6 +198,45 @@ public void ModificarPerfil (UsuarioEN usuario)
                 SessionClose ();
         }
 }
+public void ApuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuarioEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                usuarioEN = (UsuarioEN)session.Load (typeof(UsuarioEN), p_Usuario_OID);
+                Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN eventoENAux = null;
+                if (usuarioEN.Evento == null) {
+                        usuarioEN.Evento = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN>();
+                }
+
+                foreach (int item in p_evento_OIDs) {
+                        eventoENAux = new Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN ();
+                        eventoENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), item);
+                        eventoENAux.Usuario.Add (usuarioEN);
+
+                        usuarioEN.Evento.Add (eventoENAux);
+                }
+
+
+                session.Update (usuarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in UsuarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
 public void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.IList<int> p_evento_OIDs)
 {
         try

@@ -38,7 +38,7 @@ public IAdminCAD get_IAdminCAD ()
         return this._IAdminCAD;
 }
 
-public string CrearUsuarioAdmin (string p_Email, String p_Password)
+public string CrearUsuarioAdmin (string p_Email, String p_Password, bool p_Bloqueado)
 {
         AdminEN adminEN = null;
         string oid;
@@ -48,6 +48,8 @@ public string CrearUsuarioAdmin (string p_Email, String p_Password)
         adminEN.Email = p_Email;
 
         adminEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
+
+        adminEN.Bloqueado = p_Bloqueado;
 
         //Call to AdminCAD
 

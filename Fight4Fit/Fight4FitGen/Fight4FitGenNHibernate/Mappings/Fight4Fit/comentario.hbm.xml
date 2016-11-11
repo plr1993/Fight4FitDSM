@@ -18,6 +18,9 @@
 					<property name="Texto" type="string"> 
 						<column name="Texto"  not-null="true"/>
 					</property>
+					<property name="Likes" type="integer"> 
+						<column name="likes"  not-null="true"/>
+					</property>
 			
 			
 		  			
@@ -45,6 +48,8 @@
 											 					
 			
 			
+			
+					
 					
 					
 					

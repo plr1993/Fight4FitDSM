@@ -146,10 +146,11 @@ public int NuevoReporte (ReporteEN reporte)
                         .Add (reporte);
                 }
                 if (reporte.Usuario != null) {
-                        for (int i = 0; i < reporte.Usuario.Count; i++) {
-                                reporte.Usuario [i] = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), reporte.Usuario [i].Email);
-                                reporte.Usuario [i].Reporte.Add (reporte);
-                        }
+                        // Argumento OID y no colección.
+                        reporte.Usuario = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), reporte.Usuario.Email);
+
+                        reporte.Usuario.Reporte
+                        .Add (reporte);
                 }
 
                 session.Save (reporte);

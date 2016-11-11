@@ -38,7 +38,7 @@ public IReporteCAD get_IReporteCAD ()
         return this._IReporteCAD;
 }
 
-public int NuevoReporte (int p_evento, int p_comentario, int p_foto, string p_Texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum p_Motivo, System.Collections.Generic.IList<string> p_usuario)
+public int NuevoReporte (int p_evento, int p_comentario, int p_foto, string p_Texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum p_Motivo, string p_usuario)
 {
         ReporteEN reporteEN = null;
         int oid;
@@ -74,17 +74,11 @@ public int NuevoReporte (int p_evento, int p_comentario, int p_foto, string p_Te
         reporteEN.Motivo = p_Motivo;
 
 
-        reporteEN.Usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
         if (p_usuario != null) {
-                foreach (string item in p_usuario) {
-                        Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN en = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
-                        en.Email = item;
-                        reporteEN.Usuario.Add (en);
-                }
-        }
-
-        else{
-                reporteEN.Usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
+                // El argumento p_usuario -> Property usuario es oid = false
+                // Lista de oids id
+                reporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
+                reporteEN.Usuario.Email = p_usuario;
         }
 
         //Call to ReporteCAD

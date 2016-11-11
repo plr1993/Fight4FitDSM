@@ -33,20 +33,20 @@ public AdminEN() : base ()
 
 
 public AdminEN(string email, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte_0
-               , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte
+               , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, bool bloqueado
                )
 {
-        this.init (Email, soporte_0, password, soporte, evento, reporte);
+        this.init (Email, soporte_0, password, soporte, evento, reporte, bloqueado);
 }
 
 
 public AdminEN(AdminEN admin)
 {
-        this.init (Email, admin.Soporte_0, admin.Password, admin.Soporte, admin.Evento, admin.Reporte);
+        this.init (Email, admin.Soporte_0, admin.Password, admin.Soporte, admin.Evento, admin.Reporte, admin.Bloqueado);
 }
 
 private void init (string Email
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte_0, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte_0, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, bool bloqueado)
 {
         this.Email = Email;
 
@@ -60,6 +60,8 @@ private void init (string Email
         this.Evento = evento;
 
         this.Reporte = reporte;
+
+        this.Bloqueado = bloqueado;
 }
 
 public override bool Equals (object obj)

@@ -12,6 +12,9 @@
 					<property name="Password" type="string"> 
 						<column name="Password"  not-null="true"/>
 					</property>
+					<property name="Bloqueado" type="boolean"> 
+						<column name="Bloqueado"  not-null="true"/>
+					</property>
 			
 			
 			
@@ -39,15 +42,17 @@
     					</bag>
 			
 		  			
-						<bag name="Reporte" table="[usuario_reporte]"  >
+						<bag name="Reporte" >
 							<key>
+							
 								
-									<column name="FK_Email_idUsuario"/> 
-							</key>
-      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN">
-									<column name="FK_idReporte_idReporte"/> 
-      						</many-to-many>
-    					</bag>
+								<column name="FK_Email_idUsuario"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN"/>
+					    </bag>
+					
+			
+					
 					
 					
 					

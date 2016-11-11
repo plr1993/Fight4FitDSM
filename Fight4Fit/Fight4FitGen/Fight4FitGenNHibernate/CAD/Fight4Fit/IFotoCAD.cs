@@ -22,7 +22,6 @@ void BorrarFoto (int id
                  );
 
 
-
 FotoEN ReadOID (int id
                 );
 

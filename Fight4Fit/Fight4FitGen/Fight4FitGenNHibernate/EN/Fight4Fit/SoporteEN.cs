@@ -13,9 +13,9 @@ private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario;
 
 
 /**
- *	Atributo id
+ *	Atributo idSoporte
  */
-private int id;
+private int idSoporte;
 
 
 
@@ -56,8 +56,8 @@ public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Usuario {
 
 
 
-public virtual int Id {
-        get { return id; } set { id = value;  }
+public virtual int IdSoporte {
+        get { return idSoporte; } set { idSoporte = value;  }
 }
 
 
@@ -94,22 +94,22 @@ public SoporteEN()
 
 
 
-public SoporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta
+public SoporteEN(int idSoporte, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta
                  )
 {
-        this.init (Id, usuario, admin, titulo, texto, respuesta);
+        this.init (IdSoporte, usuario, admin, titulo, texto, respuesta);
 }
 
 
 public SoporteEN(SoporteEN soporte)
 {
-        this.init (Id, soporte.Usuario, soporte.Admin, soporte.Titulo, soporte.Texto, soporte.Respuesta);
+        this.init (IdSoporte, soporte.Usuario, soporte.Admin, soporte.Titulo, soporte.Texto, soporte.Respuesta);
 }
 
-private void init (int id
+private void init (int idSoporte
                    , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta)
 {
-        this.Id = id;
+        this.IdSoporte = idSoporte;
 
 
         this.Usuario = usuario;
@@ -130,7 +130,7 @@ public override bool Equals (object obj)
         SoporteEN t = obj as SoporteEN;
         if (t == null)
                 return false;
-        if (Id.Equals (t.Id))
+        if (IdSoporte.Equals (t.IdSoporte))
                 return true;
         else
                 return false;
@@ -140,7 +140,7 @@ public override int GetHashCode ()
 {
         int hash = 13;
 
-        hash += this.Id.GetHashCode ();
+        hash += this.IdSoporte.GetHashCode ();
         return hash;
 }
 }

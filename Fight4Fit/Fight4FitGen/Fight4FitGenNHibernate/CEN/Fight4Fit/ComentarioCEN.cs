@@ -38,7 +38,7 @@ public IComentarioCAD get_IComentarioCAD ()
         return this._IComentarioCAD;
 }
 
-public int PublicarComentario (int p_foto, int p_evento, string p_Titulo, string p_Texto)
+public int PublicarComentario (int p_foto, int p_evento, string p_Titulo, string p_Texto, int p_likes)
 {
         ComentarioEN comentarioEN = null;
         int oid;
@@ -65,6 +65,8 @@ public int PublicarComentario (int p_foto, int p_evento, string p_Titulo, string
 
         comentarioEN.Texto = p_Texto;
 
+        comentarioEN.Likes = p_likes;
+
         //Call to ComentarioCAD
 
         oid = _IComentarioCAD.PublicarComentario (comentarioEN);
@@ -77,7 +79,7 @@ public void BorrarComentario (int id
         _IComentarioCAD.BorrarComentario (id);
 }
 
-public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Texto)
+public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Texto, int p_likes)
 {
         ComentarioEN comentarioEN = null;
 
@@ -86,6 +88,7 @@ public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Te
         comentarioEN.Id = p_Comentario_OID;
         comentarioEN.Titulo = p_Titulo;
         comentarioEN.Texto = p_Texto;
+        comentarioEN.Likes = p_likes;
         //Call to ComentarioCAD
 
         _IComentarioCAD.EditarComentario (comentarioEN);

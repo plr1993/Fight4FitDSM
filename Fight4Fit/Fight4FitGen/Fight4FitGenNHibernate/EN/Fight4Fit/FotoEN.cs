@@ -68,6 +68,13 @@ private Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a;
 
 
 
+/**
+ *	Atributo likes
+ */
+private int likes;
+
+
+
 
 
 
@@ -125,6 +132,12 @@ public virtual Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN Pertenece_a {
 
 
 
+public virtual int Likes {
+        get { return likes; } set { likes = value;  }
+}
+
+
+
 
 
 public FotoEN()
@@ -135,20 +148,20 @@ public FotoEN()
 
 
 
-public FotoEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, Nullable<DateTime> fecha, string descripcion, string imagen, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a
+public FotoEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, Nullable<DateTime> fecha, string descripcion, string imagen, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a, int likes
               )
 {
-        this.init (Id, comentario, reporte, nombre, usuario, fecha, descripcion, imagen, pertenece_a);
+        this.init (Id, comentario, reporte, nombre, usuario, fecha, descripcion, imagen, pertenece_a, likes);
 }
 
 
 public FotoEN(FotoEN foto)
 {
-        this.init (Id, foto.Comentario, foto.Reporte, foto.Nombre, foto.Usuario, foto.Fecha, foto.Descripcion, foto.Imagen, foto.Pertenece_a);
+        this.init (Id, foto.Comentario, foto.Reporte, foto.Nombre, foto.Usuario, foto.Fecha, foto.Descripcion, foto.Imagen, foto.Pertenece_a, foto.Likes);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, Nullable<DateTime> fecha, string descripcion, string imagen, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, Nullable<DateTime> fecha, string descripcion, string imagen, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a, int likes)
 {
         this.Id = id;
 
@@ -168,6 +181,8 @@ private void init (int id
         this.Imagen = imagen;
 
         this.Pertenece_a = pertenece_a;
+
+        this.Likes = likes;
 }
 
 public override bool Equals (object obj)

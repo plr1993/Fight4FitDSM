@@ -32,20 +32,20 @@ public PromotorEN() : base ()
 
 
 public PromotorEN(string email, string cIF
-                  , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte
+                  , String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, bool bloqueado
                   )
 {
-        this.init (Email, cIF, password, soporte, evento, reporte);
+        this.init (Email, cIF, password, soporte, evento, reporte, bloqueado);
 }
 
 
 public PromotorEN(PromotorEN promotor)
 {
-        this.init (Email, promotor.CIF, promotor.Password, promotor.Soporte, promotor.Evento, promotor.Reporte);
+        this.init (Email, promotor.CIF, promotor.Password, promotor.Soporte, promotor.Evento, promotor.Reporte, promotor.Bloqueado);
 }
 
 private void init (string Email
-                   , string cIF, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte)
+                   , string cIF, String password, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN> soporte, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN> evento, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, bool bloqueado)
 {
         this.Email = Email;
 
@@ -59,6 +59,8 @@ private void init (string Email
         this.Evento = evento;
 
         this.Reporte = reporte;
+
+        this.Bloqueado = bloqueado;
 }
 
 public override bool Equals (object obj)

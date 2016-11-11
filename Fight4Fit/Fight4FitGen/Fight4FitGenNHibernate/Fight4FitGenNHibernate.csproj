@@ -113,7 +113,7 @@
 			
 			<Compile Include="CEN\Fight4Fit\EventoCEN_CompartirEvento.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\EventoCEN_ReportarEvento.cs" />
+			
 			
 			
 			
@@ -127,12 +127,15 @@
 			
 			
 			
-			<Compile Include="CEN\Fight4Fit\UsuarioCEN_Búsqueda.cs" />
-			
-			<Compile Include="CP\Fight4Fit\UsuarioCP_ApuntarseAEvento.cs" />
 			
 			
 			
+			
+			<Compile Include="CP\Fight4Fit\UsuarioCP_ReportarFoto.cs" />
+			
+			<Compile Include="CP\Fight4Fit\UsuarioCP_ReportarComentario.cs" />
+			
+			<Compile Include="CP\Fight4Fit\UsuarioCP_ReportarEvento.cs" />
 			
 	<Compile Include="EN\Fight4Fit\PromotorEN.cs" />
 	<Compile Include="CEN\Fight4Fit\PromotorCEN.cs" />
@@ -142,9 +145,9 @@
 			
 			<Compile Include="CEN\Fight4Fit\PromotorCEN_CrearTorneo.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\PromotorCEN_EliminarTorneo.cs" />
+			<Compile Include="CP\Fight4Fit\PromotorCP_EliminarTorneo.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\PromotorCEN_ModificarTorneo.cs" />
+			<Compile Include="CP\Fight4Fit\PromotorCP_ModificarTorneo.cs" />
 			
 			
 			
@@ -153,6 +156,7 @@
 	<Compile Include="CAD\Fight4Fit\ISoporteCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\SoporteCAD.cs" />
 	<Compile Include="CP\Fight4Fit\SoporteCP.cs" />
+			
 			
 			
 			
@@ -182,9 +186,9 @@
 			
 			
 			
-			<Compile Include="CEN\Fight4Fit\ComentarioCEN_ReportarComentario.cs" />
 			
 			
+			<Compile Include="CEN\Fight4Fit\ComentarioCEN_Darlike.cs" />
 			
 	<Compile Include="EN\Fight4Fit\FotoEN.cs" />
 	<Compile Include="CEN\Fight4Fit\FotoCEN.cs" />
@@ -194,9 +198,9 @@
 			
 			
 			
-			<Compile Include="CEN\Fight4Fit\FotoCEN_ReportarFoto.cs" />
 			
 			
+			<Compile Include="CEN\Fight4Fit\FotoCEN_Darlike.cs" />
 			
 	<Compile Include="EN\Fight4Fit\GaleriaEN.cs" />
 	<Compile Include="CEN\Fight4Fit\GaleriaCEN.cs" />
@@ -214,13 +218,11 @@
 	<Compile Include="CAD\Fight4Fit\AdminCAD.cs" />
 	<Compile Include="CP\Fight4Fit\AdminCP.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\AdminCEN_ModificarEvento.cs" />
+			<Compile Include="CP\Fight4Fit\AdminCP_ModificarEvento.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\AdminCEN_EliminarFoto.cs" />
+			<Compile Include="CP\Fight4Fit\AdminCP_BloquearUsuario.cs" />
 			
-			<Compile Include="CEN\Fight4Fit\AdminCEN_BloquearUsuario.cs" />
-			
-			<Compile Include="CEN\Fight4Fit\AdminCEN_EliminarComentario.cs" />
+			<Compile Include="CP\Fight4Fit\AdminCP_EliminarComentario.cs" />
 			
 			
 			

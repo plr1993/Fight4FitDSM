@@ -6,7 +6,7 @@ namespace Fight4FitGenNHibernate.CAD.Fight4Fit
 {
 public partial interface ISoporteCAD
 {
-SoporteEN ReadOIDDefault (int id
+SoporteEN ReadOIDDefault (int idSoporte
                           );
 
 void ModifyDefault (SoporteEN soporte);
@@ -15,14 +15,17 @@ void ModifyDefault (SoporteEN soporte);
 
 int NuevaConsulta (SoporteEN soporte);
 
-void EliminarConsulta (int id
+void EliminarConsulta (int idSoporte
                        );
 
 
-SoporteEN ReadOID (int id
+SoporteEN ReadOID (int idSoporte
                    );
 
 
 System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size);
+
+
+void Responder (SoporteEN soporte);
 }
 }

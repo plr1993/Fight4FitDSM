@@ -27,6 +27,9 @@
 					<property name="Imagen" type="string"> 
 						<column name="Imagen"  not-null="true"/>
 					</property>
+					<property name="Likes" type="integer"> 
+						<column name="likes"  not-null="true"/>
+					</property>
 			
 			
 		  			
@@ -62,6 +65,8 @@
 								<column name="FK_idGaleria_idGaleria"/> 
 						</many-to-one>
 											 					
+			
+					
 					
 					
 					
