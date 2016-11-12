@@ -302,7 +302,7 @@
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_hDXFYKWXEeaAmK5uJPZ7EQ" name="BloquearUsuario" operationType="CustomTransaction" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_H7QKwKgDEeaDQqB3uiUxkA" name="p_Admin_OID" type="OID" typeObject="_kaWOYKTeEeaYrOqZB-eJ9g"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_H7QKwagDEeaDQqB3uiUxkA" name="p_usuario_OIDs" type="OID" collectionType="List" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_H7QKwagDEeaDQqB3uiUxkA" name="p_usuario_OIDs" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_t6AnsKWXEeaAmK5uJPZ7EQ" name="EliminarComentario" operationType="CustomTransaction" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_t6B10KWXEeaAmK5uJPZ7EQ" name="p_oid" type="OID" typeObject="_kaWOYKTeEeaYrOqZB-eJ9g"/>

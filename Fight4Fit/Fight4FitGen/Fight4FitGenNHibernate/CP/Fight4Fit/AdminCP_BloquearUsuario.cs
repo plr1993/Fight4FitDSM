@@ -20,28 +20,28 @@ namespace Fight4FitGenNHibernate.CP.Fight4Fit
 {
 public partial class AdminCP : BasicCP
 {
-public void BloquearUsuario (string p_Admin_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+public void BloquearUsuario (string p_Admin_OID, string p_usuario_OIDs)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Admin_BloquearUsuario) ENABLED START*/
 
-        IAdminCAD adminCAD = null;
-        AdminCEN adminCEN = null;
+    IAdminCAD adminCAD = null;
 
+    IUsuarioCAD usuarioCAD = null;
 
+    try
+    {
+        SessionInitializeTransaction();
+        adminCAD = new AdminCAD(session);
+        AdminCEN adminCEN = new AdminCEN(adminCAD);
 
-        try
-        {
-                SessionInitializeTransaction ();
-                adminCAD = new AdminCAD (session);
-                adminCEN = new  AdminCEN (adminCAD);
+        usuarioCAD = new UsuarioCAD(session);
 
+        UsuarioEN usuarioEN = usuarioCAD.ReadOIDDefault(p_oid);
 
+        bool bloq = true;
 
-                // Write here your custom transaction ...
-
-                throw new NotImplementedException ("Method BloquearUsuario() not yet implemented.");
-
-
+        UsuarioCEN usuarioCEN = new UsuarioCEN(usuarioCAD);
+        usuarioCEN.ModificarPerfil(usuarioEN.Email, usuarioEN.Password, bloq);
 
                 SessionCommit ();
         }

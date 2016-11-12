@@ -12,7 +12,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
-		<item value="C:\Users\OIDEWin7\Desktop\Fight4FitDSM" key="OUTSIDE_LOCATION"/>
+		<item value="C:\Users\OIDEWin7\Desktop\MODELODOMINIO\Fight4Fit" key="OUTSIDE_LOCATION"/>
 	</section>
 	<section name="NewWizardAction">
 		<item value="es.ua.dlsi.ooh.core.newprojectwizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>

@@ -24,22 +24,32 @@ public void ReportarEvento (string p_oid, int arg1, string texto, Fight4FitGenNH
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Usuario_ReportarEvento) ENABLED START*/
 
-        IUsuarioCAD usuarioCAD = null;
-        UsuarioCEN usuarioCEN = null;
+
+    IUsuarioCAD usuarioCAD = null;
+    UsuarioCEN usuarioCEN = null;
 
 
 
-        try
-        {
-                SessionInitializeTransaction ();
-                usuarioCAD = new UsuarioCAD (session);
-                usuarioCEN = new  UsuarioCEN (usuarioCAD);
+    try
+    {
+        SessionInitializeTransaction();
+        usuarioCAD = new UsuarioCAD(session);
+        usuarioCEN = new UsuarioCEN(usuarioCAD);
 
 
+        reporteCAD = new ReporteCAD(session);
+        ReporteCEN reporteCEN = new ReporteCEN(reporteCAD);
+        reporteCEN.NuevoReporte(null, //foto
+        null, //oid comentario
+        arg1, // oid evento
+        texto,
+        motivo,
+        usuarioCAD.ReadOID(p_oid)); //usuario 
+
+        reporteCAD.NuevoReporte(reporteEN);
 
                 // Write here your custom transaction ...
 
-                throw new NotImplementedException ("Method ReportarEvento() not yet implemented.");
 
 
 
