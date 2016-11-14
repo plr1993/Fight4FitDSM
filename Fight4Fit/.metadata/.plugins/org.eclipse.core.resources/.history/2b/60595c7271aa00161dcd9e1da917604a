@@ -82,7 +82,6 @@
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_0exGcKgOEeaDQqB3uiUxkA" name="p_oid" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_gzR90KgPEeaDQqB3uiUxkA" name="arg1" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_IWH18KgQEeaDQqB3uiUxkA" name="texto"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_XFzJsKpxEead7r_w532kBA" name="motivo" type="Enum" typeEnum="_7eXE4KWUEeaAmK5uJPZ7EQ"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_-NRMEKgOEeaDQqB3uiUxkA" name="ReportarComentario" operationType="CustomTransaction" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_-NToUKgOEeaDQqB3uiUxkA" name="p_oid" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>

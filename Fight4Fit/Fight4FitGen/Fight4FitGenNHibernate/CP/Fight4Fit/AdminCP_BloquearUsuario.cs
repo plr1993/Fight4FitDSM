@@ -24,24 +24,24 @@ public void BloquearUsuario (string p_Admin_OID, string p_usuario_OIDs)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Admin_BloquearUsuario) ENABLED START*/
 
-    IAdminCAD adminCAD = null;
+        IAdminCAD adminCAD = null;
 
-    IUsuarioCAD usuarioCAD = null;
+        IUsuarioCAD usuarioCAD = null;
 
-    try
-    {
-        SessionInitializeTransaction();
-        adminCAD = new AdminCAD(session);
-        AdminCEN adminCEN = new AdminCEN(adminCAD);
+        try
+        {
+                SessionInitializeTransaction ();
+                adminCAD = new AdminCAD (session);
+                AdminCEN adminCEN = new AdminCEN (adminCAD);
 
-        usuarioCAD = new UsuarioCAD(session);
+                usuarioCAD = new UsuarioCAD (session);
 
-        UsuarioEN usuarioEN = usuarioCAD.ReadOIDDefault(p_oid);
+                UsuarioEN usuarioEN = usuarioCAD.ReadOIDDefault (p_oid);
 
-        bool bloq = true;
+                bool bloq = true;
 
-        UsuarioCEN usuarioCEN = new UsuarioCEN(usuarioCAD);
-        usuarioCEN.ModificarPerfil(usuarioEN.Email, usuarioEN.Password, bloq);
+                UsuarioCEN usuarioCEN = new UsuarioCEN (usuarioCAD);
+                usuarioCEN.ModificarPerfil (usuarioEN.Email, usuarioEN.Password, bloq);
 
                 SessionCommit ();
         }

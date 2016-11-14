@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
 	<bundle bundleID="631" localization="OSGI-INF/l10n/bundle" name="Fight4Fit" project="Fight4Fit"/>
-	<bundle bundleID="632" localization="OSGI-INF/l10n/bundle" name="AllSports" project="AllSports"/>
 </map>
