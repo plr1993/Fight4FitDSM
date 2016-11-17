@@ -131,23 +131,11 @@
 			
 			
 			
-			<Compile Include="CP\Fight4Fit\UsuarioCP_ReportarFoto.cs" />
-			
-			<Compile Include="CP\Fight4Fit\UsuarioCP_ReportarComentario.cs" />
-			
-			<Compile Include="CP\Fight4Fit\UsuarioCP_ReportarEvento.cs" />
-			
 	<Compile Include="EN\Fight4Fit\PromotorEN.cs" />
 	<Compile Include="CEN\Fight4Fit\PromotorCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IPromotorCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\PromotorCAD.cs" />
 	<Compile Include="CP\Fight4Fit\PromotorCP.cs" />
-			
-			<Compile Include="CEN\Fight4Fit\PromotorCEN_CrearTorneo.cs" />
-			
-			<Compile Include="CP\Fight4Fit\PromotorCP_EliminarTorneo.cs" />
-			
-			<Compile Include="CP\Fight4Fit\PromotorCP_ModificarTorneo.cs" />
 			
 			
 			
@@ -160,6 +148,7 @@
 			
 			
 			
+			<Compile Include="CEN\Fight4Fit\SoporteCEN_Responder.cs" />
 			
 	<Compile Include="EN\Fight4Fit\CategoriaEN.cs" />
 	<Compile Include="CEN\Fight4Fit\CategoriaCEN.cs" />
@@ -174,6 +163,10 @@
 	<Compile Include="CAD\Fight4Fit\IReporteCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\ReporteCAD.cs" />
 	<Compile Include="CP\Fight4Fit\ReporteCP.cs" />
+			<Compile Include="CP\Fight4Fit\ReporteCP_NuevoReporte.cs" />
+			
+			
+			
 			
 			
 			
@@ -218,18 +211,13 @@
 	<Compile Include="CAD\Fight4Fit\AdminCAD.cs" />
 	<Compile Include="CP\Fight4Fit\AdminCP.cs" />
 			
-			<Compile Include="CP\Fight4Fit\AdminCP_ModificarEvento.cs" />
-			
 			<Compile Include="CP\Fight4Fit\AdminCP_BloquearUsuario.cs" />
 			
-			<Compile Include="CP\Fight4Fit\AdminCP_EliminarComentario.cs" />
 			
-			
-			
-			<Compile Include="CP\Fight4Fit\AdminCP_ResponderConsulta.cs" />
 			
 	<Compile Include="Enumerated\Fight4Fit\MotivoEnum.cs" />
 	<Compile Include="Enumerated\Fight4Fit\TipoEventoEnum.cs" />
+	<Compile Include="Enumerated\Fight4Fit\TipoReporteEnum.cs" />
 	
 	
 

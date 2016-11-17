@@ -38,7 +38,7 @@ public ISoporteCAD get_ISoporteCAD ()
         return this._ISoporteCAD;
 }
 
-public int NuevaConsulta (string p_usuario, string p_Titulo, string p_Texto, string p_Respuesta)
+public int NuevaConsulta (string p_usuario, string p_Titulo, string p_Texto)
 {
         SoporteEN soporteEN = null;
         int oid;
@@ -56,8 +56,6 @@ public int NuevaConsulta (string p_usuario, string p_Titulo, string p_Texto, str
         soporteEN.Titulo = p_Titulo;
 
         soporteEN.Texto = p_Texto;
-
-        soporteEN.Respuesta = p_Respuesta;
 
         //Call to SoporteCAD
 
@@ -86,20 +84,6 @@ public System.Collections.Generic.IList<SoporteEN> ReadAll (int first, int size)
 
         list = _ISoporteCAD.ReadAll (first, size);
         return list;
-}
-public void Responder (int p_Soporte_OID, string p_Titulo, string p_Texto, string p_Respuesta)
-{
-        SoporteEN soporteEN = null;
-
-        //Initialized SoporteEN
-        soporteEN = new SoporteEN ();
-        soporteEN.IdSoporte = p_Soporte_OID;
-        soporteEN.Titulo = p_Titulo;
-        soporteEN.Texto = p_Texto;
-        soporteEN.Respuesta = p_Respuesta;
-        //Call to SoporteCAD
-
-        _ISoporteCAD.Responder (soporteEN);
 }
 }
 }

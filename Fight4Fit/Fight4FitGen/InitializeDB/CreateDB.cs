@@ -85,7 +85,7 @@ public static void InitializeData ()
 
                 usuarioEN1.Email = "pepe";
                 usuarioEN1.Password = "123";
-                usuarioCEN1.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password);
+                usuarioCEN1.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password, false);
 
                 //usuario 2
                 IUsuarioCAD _IusuarioCAD2 = new UsuarioCAD ();
@@ -94,7 +94,7 @@ public static void InitializeData ()
 
                 usuarioEN2.Email = "antonio";
                 usuarioEN2.Password = "123";
-                usuarioCEN2.CrearUsuario (usuarioEN2.Email, usuarioEN2.Password);
+                usuarioCEN2.CrearUsuario (usuarioEN2.Email, usuarioEN2.Password, false);
 
                 //usuario 3
                 IUsuarioCAD _IusuarioCAD3 = new UsuarioCAD ();
@@ -103,24 +103,9 @@ public static void InitializeData ()
 
                 usuarioEN3.Email = "joselito";
                 usuarioEN3.Password = "123";
-                usuarioCEN3.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password);
-
-                //Promotor
+                usuarioCEN3.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password, false);
 
 
-
-
-                //soporte
-                ISoporteCAD _ISoporteCAD1 = new SoporteCAD ();
-                SoporteEN soporteEN1 = new SoporteEN ();
-                SoporteCEN soporteCEN1 = new SoporteCEN (_ISoporteCAD1);
-                SoporteEN soporteEN2 = null;
-                soporteEN1.Titulo = "joselito";
-                soporteEN1.Texto = "123";
-                soporteCEN1.NuevaConsulta (usuarioEN1.Email, soporteEN1.Titulo, soporteEN1.Texto, "");
-
-                Console.WriteLine (soporteEN1.Respuesta);
-                Console.WriteLine ("--------------------1-----------------------------");
 
                 //admin
                 IAdminCAD _IAdminCAD1 = new AdminCAD ();
@@ -129,14 +114,10 @@ public static void InitializeData ()
                 AdminCEN adminCEN1 = new AdminCEN (_IAdminCAD1);
                 adminEN1.Email = "josss";
                 adminEN1.Password = "123";
-                soporteEN2 = soporteCEN1.ReadOID (soporteEN1.IdSoporte);
-                adminEN1.Email = adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password);
+                adminCEN1.CrearUsuarioAdmin(adminEN1.Email, adminEN1.Password, false);
 
 
-                adminCP1.ResponderConsulta (adminEN1.Email, soporteEN1.IdSoporte, "Sergio Luj�n Mora");
 
-                Console.WriteLine (soporteEN1.Respuesta);
-                Console.WriteLine ("--------------------2------------------------------");
                 // Insert the initilizations of entities using the CEN classes
 
 

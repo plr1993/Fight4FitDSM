@@ -24,5 +24,12 @@ ReporteEN ReadOID (int id
 
 
 System.Collections.Generic.IList<ReporteEN> ReadAll (int first, int size);
+
+
+void VincularFoto (int p_Reporte_OID, int p_foto_OID);
+
+void VincularComentario (int p_Reporte_OID, int p_comentario_OID);
+
+void VincularEvento (int p_Reporte_OID, int p_evento_OID);
 }
 }

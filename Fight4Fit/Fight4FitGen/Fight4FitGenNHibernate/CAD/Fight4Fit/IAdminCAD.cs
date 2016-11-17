@@ -16,8 +16,6 @@ void ModifyDefault (AdminEN admin);
 string CrearUsuarioAdmin (AdminEN admin);
 
 
-
-
 AdminEN ReadOID (string Email
                  );
 

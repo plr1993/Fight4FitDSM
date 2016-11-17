@@ -19,7 +19,7 @@
 						<column name="Texto"  not-null="true"/>
 					</property>
 					<property name="Respuesta" type="string"> 
-						<column name="Respuesta"  not-null="true"/>
+						<column name="Respuesta" />
 					</property>
 			
 			

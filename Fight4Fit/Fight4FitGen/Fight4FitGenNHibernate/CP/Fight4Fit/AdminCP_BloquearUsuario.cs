@@ -36,7 +36,7 @@ public void BloquearUsuario (string p_Admin_OID, string p_usuario_OIDs)
 
                 usuarioCAD = new UsuarioCAD (session);
 
-                UsuarioEN usuarioEN = usuarioCAD.ReadOIDDefault (p_oid);
+                UsuarioEN usuarioEN = usuarioCAD.ReadOIDDefault (p_Admin_OID);
 
                 bool bloq = true;
 

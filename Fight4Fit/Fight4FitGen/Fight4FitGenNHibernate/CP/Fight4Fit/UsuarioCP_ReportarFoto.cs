@@ -44,7 +44,7 @@ public void ReportarFoto (string p_oid, int arg1, string texto, Fight4FitGenNHib
                         motivo,
                         usuarioCAD.ReadOID (p_oid).Email); //usuario
 
-                reporteCAD.NuevoReporte (reporteEN);
+                //    reporteCAD.NuevoReporte (reporteEN);
 
 
                 // Write here your custom transaction ...

@@ -15,9 +15,6 @@ void ModifyDefault (PromotorEN promotor);
 
 string CrearUsuarioProm (PromotorEN promotor);
 
-
-
-
 PromotorEN ReadOID (string Email
                     );
 

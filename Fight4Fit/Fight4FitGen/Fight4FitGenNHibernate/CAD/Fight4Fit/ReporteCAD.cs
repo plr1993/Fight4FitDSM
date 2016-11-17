@@ -100,6 +100,9 @@ public void ModifyDefault (ReporteEN reporte)
                 reporteEN.Motivo = reporte.Motivo;
 
 
+
+                reporteEN.Tipo = reporte.Tipo;
+
                 session.Update (reporteEN);
                 SessionCommit ();
         }
@@ -124,27 +127,6 @@ public int NuevoReporte (ReporteEN reporte)
         try
         {
                 SessionInitializeTransaction ();
-                if (reporte.Evento != null) {
-                        // Argumento OID y no colección.
-                        reporte.Evento = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), reporte.Evento.Id);
-
-                        reporte.Evento.Reporte
-                        .Add (reporte);
-                }
-                if (reporte.Comentario != null) {
-                        // Argumento OID y no colección.
-                        reporte.Comentario = (Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN), reporte.Comentario.Id);
-
-                        reporte.Comentario.Reporte
-                        .Add (reporte);
-                }
-                if (reporte.Foto != null) {
-                        // Argumento OID y no colección.
-                        reporte.Foto = (Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN), reporte.Foto.Id);
-
-                        reporte.Foto.Reporte
-                        .Add (reporte);
-                }
                 if (reporte.Usuario != null) {
                         // Argumento OID y no colección.
                         reporte.Usuario = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), reporte.Usuario.Email);
@@ -256,6 +238,99 @@ public System.Collections.Generic.IList<ReporteEN> ReadAll (int first, int size)
         }
 
         return result;
+}
+
+public void VincularFoto (int p_Reporte_OID, int p_foto_OID)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN reporteEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                reporteEN = (ReporteEN)session.Load (typeof(ReporteEN), p_Reporte_OID);
+                reporteEN.Foto = (Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN), p_foto_OID);
+
+                reporteEN.Foto.Reporte.Add (reporteEN);
+
+
+
+                session.Update (reporteEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ReporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
+public void VincularComentario (int p_Reporte_OID, int p_comentario_OID)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN reporteEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                reporteEN = (ReporteEN)session.Load (typeof(ReporteEN), p_Reporte_OID);
+                reporteEN.Comentario = (Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN), p_comentario_OID);
+
+                reporteEN.Comentario.Reporte.Add (reporteEN);
+
+
+
+                session.Update (reporteEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ReporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
+public void VincularEvento (int p_Reporte_OID, int p_evento_OID)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN reporteEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                reporteEN = (ReporteEN)session.Load (typeof(ReporteEN), p_Reporte_OID);
+                reporteEN.Evento = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), p_evento_OID);
+
+                reporteEN.Evento.Reporte.Add (reporteEN);
+
+
+
+                session.Update (reporteEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ReporteCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
 }
 }
 }

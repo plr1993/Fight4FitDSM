@@ -27,27 +27,25 @@ public void ResponderConsulta (string p_oid, int arg1, string respuestaSoporte)
         IAdminCAD adminCAD = null;
         ISoporteCAD soporteCAD = null;
 
+        IUsuarioCAD usuarioCAD = null;
+        UsuarioCEN usuarioCEN = null;
 
+        SoporteCEN soporteCEN = null;
 
         try
         {
                 SessionInitializeTransaction ();
                 adminCAD = new AdminCAD (session);
                 soporteCAD = new SoporteCAD (session);
-                SoporteCEN soporteCEN = new SoporteCEN (soporteCAD);
+                soporteCEN = new SoporteCEN (soporteCAD);
                 SoporteEN soporteEN = soporteCEN.ReadOID (arg1);
 
                 usuarioCAD = new UsuarioCAD (session);
                 usuarioCEN = new UsuarioCEN (usuarioCAD);
 
-                reporteCAD = new ReporteCAD (session);
-                ReporteCEN reporteCEN = new ReporteCEN (reporteCAD);
-                reporteCEN.NuevoReporte (null, //foto
-                        arg1, //oid comentario
-                        null, // oid evento
-                        texto,
-                        motivo,
-                        usuarioCAD.ReadOID (p_oid)); //usuario
+                soporteCEN.NuevaConsulta (arg1, //oid comentario
+                       null, // oid evento
+                       usuarioCAD.ReadOID (p_oid)); //usuario
 
 
 

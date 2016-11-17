@@ -140,12 +140,11 @@
     </elements>
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="__zLnUKB2Eeaf6MDpIatGpA" name="evento_categoria" alias="evento_categoria" rolOrigin="__zLnUaB2Eeaf6MDpIatGpA" rolTarget="__zLnUqB2Eeaf6MDpIatGpA" classTarget="_9p0F8JhFEeamA_JC3ucrJw" classOrigin="_zVVmkKB2Eeaf6MDpIatGpA" rolOriginName="evento" rolTargetName="categoria" rolOriginMultiplicity="0..*" rolTargetMultiplicity="1..1"/>
     <elements xmi:type="es.ua.dlsi.ooh:Class" xmi:id="_hJz00KB3Eeaf6MDpIatGpA" name="Reporte" alias="Reporte" asociationTarget="_j_pZgKB3Eeaf6MDpIatGpA _yR6lQKB3Eeaf6MDpIatGpA" associationOrigin="_xAc9YKB3Eeaf6MDpIatGpA _tBumwKWVEeaAmK5uJPZ7EQ">
-      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_JGqvcaB4Eeaf6MDpIatGpA" name="NuevoReporte" operationType="New" type="Object" typeObject="_hJz00KB3Eeaf6MDpIatGpA" automaticSynchronize="false" customizedTransaction="true">
+      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_JGqvcaB4Eeaf6MDpIatGpA" name="NuevoReporte" operationType="New" type="Object" typeObject="_hJz00KB3Eeaf6MDpIatGpA" customizedTransaction="true">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2s9Z8Ky8EeaSXP44cfn0kg" name="p_Texto"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2tBrYKy8EeaSXP44cfn0kg" name="p_Motivo" type="Enum" typeEnum="_7eXE4KWUEeaAmK5uJPZ7EQ"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2tDgkKy8EeaSXP44cfn0kg" name="p_usuario" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2tF80Ky8EeaSXP44cfn0kg" name="p_tipo" type="Enum" typeEnum="_vQTbIKy8EeaSXP44cfn0kg"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_3kLcMKzEEeaqxLVhMyjF3g" name="p_idRef" type="Integer"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_JGqvcqB4Eeaf6MDpIatGpA" name="EliminarReporte" operationType="Destroy" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_114oAKy8EeaSXP44cfn0kg" name="p_Reporte_OID" type="OID" typeObject="_hJz00KB3Eeaf6MDpIatGpA"/>

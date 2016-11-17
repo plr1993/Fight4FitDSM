@@ -18,6 +18,9 @@
 					<property name="Motivo" > 
 						<column name="Motivo"  not-null="true"/>
 					</property>
+					<property name="Tipo" > 
+						<column name="tipo"  not-null="true"/>
+					</property>
 			
 			
 		  			
@@ -46,6 +49,8 @@
 								<column name="FK_Email_idUsuario"/> 
 						</many-to-one>
 											 					
+			
+					
 					
 					
 					

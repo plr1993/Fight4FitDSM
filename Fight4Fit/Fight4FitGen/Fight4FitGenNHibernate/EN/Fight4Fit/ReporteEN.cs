@@ -54,6 +54,13 @@ private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario;
 
 
 
+/**
+ *	Atributo tipo
+ */
+private Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoReporteEnum tipo;
+
+
+
 
 
 
@@ -99,6 +106,12 @@ public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Usuario {
 
 
 
+public virtual Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoReporteEnum Tipo {
+        get { return tipo; } set { tipo = value;  }
+}
+
+
+
 
 
 public ReporteEN()
@@ -107,20 +120,20 @@ public ReporteEN()
 
 
 
-public ReporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario
+public ReporteEN(int id, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoReporteEnum tipo
                  )
 {
-        this.init (Id, evento, comentario, foto, texto, motivo, usuario);
+        this.init (Id, evento, comentario, foto, texto, motivo, usuario, tipo);
 }
 
 
 public ReporteEN(ReporteEN reporte)
 {
-        this.init (Id, reporte.Evento, reporte.Comentario, reporte.Foto, reporte.Texto, reporte.Motivo, reporte.Usuario);
+        this.init (Id, reporte.Evento, reporte.Comentario, reporte.Foto, reporte.Texto, reporte.Motivo, reporte.Usuario, reporte.Tipo);
 }
 
 private void init (int id
-                   , Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario)
+                   , Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentario, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, string texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum motivo, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoReporteEnum tipo)
 {
         this.Id = id;
 
@@ -136,6 +149,8 @@ private void init (int id
         this.Motivo = motivo;
 
         this.Usuario = usuario;
+
+        this.Tipo = tipo;
 }
 
 public override bool Equals (object obj)

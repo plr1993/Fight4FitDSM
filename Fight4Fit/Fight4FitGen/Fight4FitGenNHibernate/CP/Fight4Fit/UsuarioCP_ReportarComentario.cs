@@ -45,7 +45,7 @@ public void ReportarComentario (string p_oid, int arg1, string texto, Fight4FitG
                         motivo,
                         usuarioCAD.ReadOID (p_oid).Email); //usuario
 
-                reporteCAD.NuevoReporte (reporteEN);
+                //  reporteCAD.NuevoReporte (reporteEN);
 
 
 
