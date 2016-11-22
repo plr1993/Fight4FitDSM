@@ -54,7 +54,7 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN NuevoReporte (string p_Text
                 }
 
                 reporteEN.Tipo = p_tipo;
-           
+
 
                 //Call to ReporteCAD
 

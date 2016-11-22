@@ -17,17 +17,19 @@ using Fight4FitGenNHibernate.CAD.Fight4Fit;
 
 namespace Fight4FitGenNHibernate.CEN.Fight4Fit
 {
-public partial class ComentarioCEN
-{
-public void Darlike (int p_oid)
-{
-        /*PROTECTED REGION ID(Fight4FitGenNHibernate.CEN.Fight4Fit_Comentario_darlike) ENABLED START*/
+    public partial class ComentarioCEN
+    {
+        public void Darlike(int p_oid)
+        {
 
-        // Write here your custom code...
+            ComentarioEN comentarioEN = null;
 
-        throw new NotImplementedException ("Method Darlike() not yet implemented.");
+            if (p_oid != null)
+            {
+                comentarioEN = _IComentarioCAD.ReadOIDDefault(p_oid);
 
-        /*PROTECTED REGION END*/
-}
-}
+                comentarioEN.Likes++;
+            }
+        }
+    }
 }

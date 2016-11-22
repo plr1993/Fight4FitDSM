@@ -114,7 +114,7 @@ public static void InitializeData ()
                 AdminCEN adminCEN1 = new AdminCEN (_IAdminCAD1);
                 adminEN1.Email = "josss";
                 adminEN1.Password = "123";
-                adminCEN1.CrearUsuarioAdmin(adminEN1.Email, adminEN1.Password, false);
+                adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password, false);
 
 
 

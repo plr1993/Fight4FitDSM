@@ -19,5 +19,18 @@ namespace Fight4FitGenNHibernate.CEN.Fight4Fit
 {
 public partial class UsuarioCEN
 {
+public bool IniciarSesion (string p_oid, string password)
+{
+    UsuarioEN usuarioEN = null;
+    bool login = false;
+    if (p_oid != null && password != null){
+        usuarioEN = _IUsuarioCAD.ReadOIDDefault(p_oid);
+
+      
+        if (usuarioEN.Password == password && usuarioEN.Bloqueado==false)
+            login = true;
+    }
+    return login;
+}
 }
 }

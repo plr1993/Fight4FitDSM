@@ -55,8 +55,9 @@
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_TiPcBagDEeaDQqB3uiUxkA" name="p_Password" type="Password"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_TiPcBqgDEeaDQqB3uiUxkA" name="p_Bloqueado" type="Boolean"/>
       </operations>
-      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_PxAScJqDEeaK7bsAqmwBow" name="IniciarSesion" operationType="Login" type="Void" customized="true">
+      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_PxAScJqDEeaK7bsAqmwBow" name="IniciarSesion" type="Boolean" customized="true">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_PxXe0JqDEeaK7bsAqmwBow" name="p_oid" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_9cMDALCWEea7S4RyxPvqnw" name="Password"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_76NKoKB2Eeaf6MDpIatGpA" name="DarDeBaja" operationType="Destroy" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_TiPcB6gDEeaDQqB3uiUxkA" name="p_Usuario_OID" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
