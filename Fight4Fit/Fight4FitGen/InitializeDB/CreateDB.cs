@@ -113,7 +113,7 @@ public static void InitializeData ()
                 AdminCP adminCP1 = new AdminCP ();
                 AdminCEN adminCEN1 = new AdminCEN (_IAdminCAD1);
                 adminEN1.Email = "josss";
-                adminEN1.Password = "123";
+                adminEN1.Password = "183";
                 adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password, false);
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcApplication1.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,7 +7,7 @@ using System.Web.Mvc;
 
 namespace Fight4Fit_FrontEnd.Controllers
 {
-    public class ComentarioController : Controller
+    public class ComentarioController : BasicController
     {
         //
         // GET: /Comentario/
