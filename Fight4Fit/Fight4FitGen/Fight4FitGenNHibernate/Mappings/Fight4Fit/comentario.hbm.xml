@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Fight4FitGenNHibernate"
+		                   namespace="Fight4FitGenNHibernate.EN.Fight4Fit">
+		    
+		    
+			
+				<class name="ComentarioEN" table="Comentario"> 
+				  	
+						<id name="Id" column="idComentario" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Titulo" type="string"> 
+						<column name="Titulo"  not-null="true"/>
+					</property>
+					<property name="Texto" type="string"> 
+						<column name="Texto"  not-null="true"/>
+					</property>
+					<property name="Likes" type="integer"> 
+						<column name="likes"  not-null="true"/>
+					</property>
+			
+			
+		  			
+						<bag name="Reporte" >
+							<key>
+							
+								
+								<column name="FK_idComentario_idComentario"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN"/>
+					    </bag>
+					
+			
+		  			
+						<many-to-one name="Foto" class="Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN" >	
+								<column name="FK_idFoto_idFoto"/> 
+						</many-to-one>
+											 					
+			
+			
+		  			
+						<many-to-one name="Evento" class="Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN" >	
+								<column name="FK_ID_idEvento"/> 
+						</many-to-one>
+											 					
+			
+			
+			
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ComentarioENReadAllHQL">from ComentarioEN</query>
+		</hibernate-mapping>
+	

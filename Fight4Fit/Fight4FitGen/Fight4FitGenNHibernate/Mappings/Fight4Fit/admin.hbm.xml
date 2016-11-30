@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Fight4FitGenNHibernate"
+		                   namespace="Fight4FitGenNHibernate.EN.Fight4Fit">
+		    
+		    
+			
+				
+<joined-subclass name="AdminEN" extends="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN" table="Admin"> 
+	<key>
+    	
+				<column name="Email"/>
+		
+    	
+   	</key>
+
+			
+					
+			
+			
+		  			
+						<bag name="Soporte_0" >
+							<key>
+							
+								
+								<column name="FK_Email_idAdmin"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN"/>
+					    </bag>
+					
+					
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="AdminENReadAllHQL">from AdminEN</query>
+		</hibernate-mapping>
+	
