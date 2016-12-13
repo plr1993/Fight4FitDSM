@@ -1,9 +1,15 @@
-﻿using MvcApplication1.Controllers;
+﻿using Fight4Fit_FrontEnd.Models;
+using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
+using Fight4Fit_FrontEnd.Models;
+using System.IO;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
 
 namespace Fight4Fit_FrontEnd.Controllers
 {
@@ -14,6 +20,8 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
+            SoporteCEN cen = new SoporteCEN();
+            IEnumerable<SoporteEN> list = cen.ReadAll(0, -1).ToList();
             return View();
         }
 
@@ -22,28 +30,50 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            SessionInitialize();
+            Soporte sprt = null;
+
+            SoporteEN sprtEN = new SoporteEN(session).ReadOIDDefault(id);
+            sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
+
+
+            SessionClose();
+            return View(sprt);
         }
 
         //
         // GET: /Soporte/Create
 
-        public ActionResult Create()
+        public ActionResult Create(String ttl, String txt)
         {
-            return View();
+            Soporte sprt = new Soporte();
+            sprt.titulo = ttl;
+            sprt.texto = txt;
+            return View(sprt);
         }
 
         //
         // POST: /Soporte/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Soporte sprt, Usuario usr, HttpPostedFileBase file)
         {
+            string filename = "", pathh = "";
+            if (file != null && file.ContentLength > 0)
+            {
+                filename = Path.GetFileName(file.FileName);
+                pathh = Path.Combine(Server.MapPath("~/Images/Uploads"), filename);
+                file.SaveAs(pathh);
+
+            }
             try
             {
-                // TODO: Add insert logic here
+                filename = "*images/uploads/" + filename;
+                SoporteCEN sprtCEN = new SoporteCEN();
+                sprtCEN.NuevaConsulta(usr.email, sprt.titulo, sprt.texto);
 
-                return RedirectToAction("Index");
+
+                return RedirectToAction("Create", new { id = usr.email });
             }
             catch
             {
@@ -56,6 +86,11 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Edit(int id)
         {
+            Soporte sprt = null;
+            SessionInitialize();
+            SoporteEN sprtEN = new SoporteCAD(session).ReadOIDDefault(id);
+            sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
+            SessionClose();
             return View();
         }
 
@@ -63,13 +98,14 @@ namespace Fight4Fit_FrontEnd.Controllers
         // POST: /Soporte/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Soporte spr, FormCollection collection)
         {
             try
             {
-                // TODO: Add update logic here
+                SoporteCEN sprtCEN = new SoporteCEN();
+                sprtCEN.Responder(id, spr.titulo, spr.texto, spr.respuesta);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Modifica", new { id = spr.id });
             }
             catch
             {
@@ -82,7 +118,20 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            try
+            {
+
+                SessionInitialize();
+                SoporteCAD sprtCAD = new SoporteCAD(session);
+                SoporteCEN sprtCEN = new SoporteCEN(sprtCAD);
+                SoporteEN sprtEN = sprtCEN.ReadOID(id);
+                Soporte sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
+
+                SessionClose();
+                new SoporteCEN().EliminarConsulta(id);
+                return RedirectToAction("Modifica", new { id = sprt.id });
+            }
+            catch { return View(); }
         }
 
         //

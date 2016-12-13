@@ -106,7 +106,7 @@ public UsuarioEN(string email, String password, System.Collections.Generic.IList
 
 public UsuarioEN(UsuarioEN usuario)
 {
-        this.init (Email, usuario.Password, usuario.Soporte, usuario.Evento, usuario.Reporte, usuario.Bloqueado);
+      this.init (Email, usuario.Password, usuario.Soporte, usuario.Evento, usuario.Reporte, usuario.Bloqueado);
 }
 
 private void init (string Email
