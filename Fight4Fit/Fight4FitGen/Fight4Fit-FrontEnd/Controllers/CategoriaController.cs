@@ -56,8 +56,7 @@ namespace Fight4Fit_FrontEnd.Controllers
                 pathh = Path.Combine(Server.MapPath("~/Images/Uploads"), fileName);
                 file.SaveAs(pathh);
             }
-
-
+            
             try
             {
                 // TODO: Add insert logic here

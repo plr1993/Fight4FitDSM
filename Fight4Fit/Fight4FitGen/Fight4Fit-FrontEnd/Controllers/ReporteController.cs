@@ -1,9 +1,14 @@
 ﻿using MvcApplication1.Controllers;
+using Fight4Fit_FrontEnd.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
+using System.IO;
 
 namespace Fight4Fit_FrontEnd.Controllers
 {
@@ -14,23 +19,35 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            ReporteCEN repCEN = new ReporteCEN();
+            IEnumerable<ReporteEN> list = repCEN.ReadAll(0, -1).ToList();
+            return View(list);
         }
 
         //
         // GET: /Reporte/Details/5
 
-        public ActionResult Details(int id)
+        public ActionResult Details(String id)
         {
-            return View();
+            ReporteModelo rep = null;
+            SessionInitialize();
+            //ReporteCAD repCAD = new ReporteCAD(session);
+            ReporteEN repEN = new ReporteCAD(session).ReadOIDDefault(id);
+            rep = new ReporteAssembler().ConvertENToModelUI(repEN);
+            SessionClose();
+            return View(rep);
         }
 
         //
         // GET: /Reporte/Create
 
-        public ActionResult Create()
+        public ActionResult Create(String id, String texto, Motivo motivo)
         {
-            return View();
+            ReporteModelo rep = new ReporteModelo();
+            rep.id = id;
+            rep.Texto = texto;
+            rep.Motivo = motivo;
+            return View(rep);
         }
 
         //
