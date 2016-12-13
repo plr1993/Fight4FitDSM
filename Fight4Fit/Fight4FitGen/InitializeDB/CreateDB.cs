@@ -99,25 +99,25 @@ public static void InitializeData ()
                 usuario1EN.Email = "Pepe";
                 usuario1EN.Password = "123";
                 usuario1CEN.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password, false);
-                usuario2EN= new UsuraioEN ();
+                UsuarioEN usuario2EN= new UsuarioEN ();
                 usuario2EN.Email = "Juan";
                 usuario2EN.Password = "123";
                 usuario2CEN.CrearUsuario (usuarioEN2.Email, usuarioEN2.Password, false);
-                usuario3EN= new UsuraioEN ();
+                UsuarioEN usuario3EN= new UsuarioEN ();
                 usuario3EN.Email = "Luis";
                 usuario3EN.Password = "123";
                 usuario3CEN.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password, false);
-                usuario4EN= new UsuraioEN ();
+                UsuarioEN usuario4EN= new UsuarioEN ();
                 usuario4EN.Email = "Viki";
                 usuario4EN.Password = "123";
                 usuario4CEN.CrearUsuario (usuarioEN4.Email, usuarioEN4.Password, false);
-                usuario5EN= new UsuraioEN ();
+                UsuarioEN usuario5EN= new UsuarioEN ();
                 usuario5EN.Email = "Juan";
                 usuario5EN.Password = "123";
                 usuario5CEN.CrearUsuario (usuarioEN5.Email, usuarioEN5.Password, false);
 
                 //ADMIN
-                adminEN = new adminEN();
+                AdminEN adminEN = new AdminEN();
                 adminEN.Email = "josss";
                 adminEN.Password = "183";
                 adminCEN.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password, false);
