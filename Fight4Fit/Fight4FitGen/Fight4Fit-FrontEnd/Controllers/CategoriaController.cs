@@ -36,10 +36,11 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         }
 
-        public ActionResult Create(String nom)
+        public ActionResult Create()
         {
+            
             CategoriaModelo cat = new CategoriaModelo();
-            cat.nombre = nom;
+        
             return View(cat);
 
         }

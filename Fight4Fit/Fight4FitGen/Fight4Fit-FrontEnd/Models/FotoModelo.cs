@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace Fight4Fit_FrontEnd.Models
 {
-    public class Foto
+    public class FotoModelo
     {
 
         //
