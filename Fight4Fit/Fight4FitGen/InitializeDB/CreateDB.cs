@@ -106,7 +106,7 @@ public static void InitializeData ()
                 UsuarioEN usuario3EN= new UsuarioEN ();
                 usuario3EN.Email = "Luis";
                 usuario3EN.Password = "123";
-                usuario3CEN.CrearUsuario (usuario3EN.Email, usuario3EN.Password, false);
+                usuarioCEN.CrearUsuario (usuario3EN.Email, usuario3EN.Password, false);
                 UsuarioEN usuario4EN= new UsuarioEN ();
                 usuario4EN.Email = "Viki";
                 usuario4EN.Password = "123";
@@ -117,7 +117,7 @@ public static void InitializeData ()
                 usuarioCEN.CrearUsuario (usuario5EN.Email, usuario5EN.Password, false);
 
                 //ADMIN
-                AdminEN adminEN = new AdminEN();
+                adminEN = new AdminEN();
                 adminEN.Email = "josss";
                 adminEN.Password = "183";
                 adminCEN.CrearUsuarioAdmin (adminEN.Email, adminEN.Password, false);
