@@ -20,8 +20,6 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
-            UsuarioCEN cen = new UsuarioCEN();
-            IEnumerable<UsuarioEN> list = cen.ReadAll(0, -1).ToList();
             return View();
         }
 
