@@ -1,0 +1,44 @@
+﻿@model Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SoporteEN</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdSoporte)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdSoporte)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titulo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Texto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Texto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Respuesta)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Respuesta)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

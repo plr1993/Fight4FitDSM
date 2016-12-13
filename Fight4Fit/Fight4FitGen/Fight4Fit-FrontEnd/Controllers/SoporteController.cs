@@ -22,7 +22,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             SoporteCEN cen = new SoporteCEN();
             IEnumerable<SoporteEN> list = cen.ReadAll(0, -1).ToList();
-            return View();
+            return View(list);
         }
 
         //
@@ -33,7 +33,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             SessionInitialize();
             Soporte sprt = null;
 
-            SoporteEN sprtEN = new SoporteEN(session).ReadOIDDefault(id);
+            SoporteEN sprtEN = new SoporteCAD(session).ReadOIDDefault(id);
             sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
 
 

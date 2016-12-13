@@ -42,4 +42,3 @@ C:\Users\OIDEWin7\Documents\GitHub\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4Fit
 C:\Users\OIDEWin7\Documents\GitHub\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\bin\Debug\log4net.dll
 C:\Users\OIDEWin7\Documents\GitHub\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.dll
 C:\Users\OIDEWin7\Documents\GitHub\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.pdb
-C:\Users\OIDEWin7\Documents\GitHub\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.csprojResolveAssemblyReference.cache
