@@ -21,10 +21,10 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             CategoriaCEN catCEN = new CategoriaCEN();
             IEnumerable<CategoriaEN> list = catCEN.ReadAll(0, -1).ToList();
-            return View(list);
+            return View();
         }
 
-        public ActionResult Details (String nom)
+        public ActionResult Details(String nom)
         {
             CategoriaModelo cat = null;
             SessionInitialize();
@@ -49,14 +49,15 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
 
             String fileName = "", pathh = "";
-            
-            if(file!= null && file.ContentLength>0)
+
+            if (file != null && file.ContentLength > 0)
             {
                 fileName = Path.GetFileName(file.FileName);
                 pathh = Path.Combine(Server.MapPath("~/Images/Uploads"), fileName);
                 file.SaveAs(pathh);
             }
-            
+
+
             try
             {
                 // TODO: Add insert logic here
@@ -95,7 +96,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             {
                 // TODO: Add update logic here
                 CategoriaCEN catCEN = new CategoriaCEN();
-               // catCEN.Modify(id);
+                // catCEN.Modify(id);
 
                 return RedirectToAction("Index");
             }
@@ -112,7 +113,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             try
             {
                 // TODO: Add update logic here
-               
+
 
                 return RedirectToAction("Index");
             }
@@ -121,7 +122,7 @@ namespace Fight4Fit_FrontEnd.Controllers
                 return View();
             }
         }
-        
+
 
 
 
