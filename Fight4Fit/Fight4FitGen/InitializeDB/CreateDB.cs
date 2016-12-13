@@ -78,43 +78,49 @@ public static void InitializeData ()
         /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
         try
         {
-                //usuario 1
-                IUsuarioCAD _IusuarioCAD1 = new UsuarioCAD ();
-                UsuarioEN usuarioEN1 = new UsuarioEN ();
-                UsuarioCEN usuarioCEN1 = new UsuarioCEN (_IusuarioCAD1);
+                //CAD
+                IUsuarioCAD _IusuarioCAD = new UsuarioCAD ();
+                IAdminCAD _IAdminCAD = new AdminCAD ();
 
-                usuarioEN1.Email = "pepe";
-                usuarioEN1.Password = "123";
-                usuarioCEN1.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password, false);
+                //EN
+                UsuarioEN usuarioEN = new UsuarioEN ();
+                AdminEN adminEN = new AdminEN ();
 
-                //usuario 2
-                IUsuarioCAD _IusuarioCAD2 = new UsuarioCAD ();
-                UsuarioEN usuarioEN2 = new UsuarioEN ();
-                UsuarioCEN usuarioCEN2 = new UsuarioCEN (_IusuarioCAD2);
+                //CEN
+                UsuarioCEN usuarioCEN = new UsuarioCEN (_IusuarioCAD1);
+                AdminCEN adminCEN = new AdminCEN (_IAdminCAD1);
 
-                usuarioEN2.Email = "antonio";
-                usuarioEN2.Password = "123";
-                usuarioCEN2.CrearUsuario (usuarioEN2.Email, usuarioEN2.Password, false);
-
-                //usuario 3
-                IUsuarioCAD _IusuarioCAD3 = new UsuarioCAD ();
-                UsuarioEN usuarioEN3 = new UsuarioEN ();
-                UsuarioCEN usuarioCEN3 = new UsuarioCEN (_IusuarioCAD3);
-
-                usuarioEN3.Email = "joselito";
-                usuarioEN3.Password = "123";
-                usuarioCEN3.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password, false);
+                //CP
+                AdminCP adminCP = new AdminCP ();
 
 
+                //USUARIOS
+                usuario1EN= new UsuraioEN ();
+                usuario1EN.Email = "Pepe";
+                usuario1EN.Password = "123";
+                usuario1CEN.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password, false);
+                usuario2EN= new UsuraioEN ();
+                usuario2EN.Email = "Juan";
+                usuario2EN.Password = "123";
+                usuario2CEN.CrearUsuario (usuarioEN2.Email, usuarioEN2.Password, false);
+                usuario3EN= new UsuraioEN ();
+                usuario3EN.Email = "Luis";
+                usuario3EN.Password = "123";
+                usuario3CEN.CrearUsuario (usuarioEN3.Email, usuarioEN3.Password, false);
+                usuario4EN= new UsuraioEN ();
+                usuario4EN.Email = "Viki";
+                usuario4EN.Password = "123";
+                usuario4CEN.CrearUsuario (usuarioEN4.Email, usuarioEN4.Password, false);
+                usuario5EN= new UsuraioEN ();
+                usuario5EN.Email = "Juan";
+                usuario5EN.Password = "123";
+                usuario5CEN.CrearUsuario (usuarioEN5.Email, usuarioEN5.Password, false);
 
-                //admin
-                IAdminCAD _IAdminCAD1 = new AdminCAD ();
-                AdminEN adminEN1 = new AdminEN ();
-                AdminCP adminCP1 = new AdminCP ();
-                AdminCEN adminCEN1 = new AdminCEN (_IAdminCAD1);
-                adminEN1.Email = "josss";
-                adminEN1.Password = "183";
-                adminCEN1.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password, false);
+                //ADMIN
+                adminEN = new adminEN();
+                adminEN.Email = "josss";
+                adminEN.Password = "183";
+                adminCEN.CrearUsuarioAdmin (adminEN1.Email, adminEN1.Password, false);
 
 
 
