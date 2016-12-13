@@ -87,15 +87,15 @@ public static void InitializeData ()
                 AdminEN adminEN = new AdminEN ();
 
                 //CEN
-                UsuarioCEN usuarioCEN = new UsuarioCEN (_IusuarioCAD1);
-                AdminCEN adminCEN = new AdminCEN (_IAdminCAD1);
+                UsuarioCEN usuarioCEN = new UsuarioCEN (_IusuarioCAD);
+                AdminCEN adminCEN = new AdminCEN (_IAdminCAD);
 
                 //CP
                 AdminCP adminCP = new AdminCP ();
 
 
                 //USUARIOS
-                usuario1EN= new UsuraioEN ();
+                UsuarioEN usuario1EN = new UsuarioEN();
                 usuario1EN.Email = "Pepe";
                 usuario1EN.Password = "123";
                 usuario1CEN.CrearUsuario (usuarioEN1.Email, usuarioEN1.Password, false);

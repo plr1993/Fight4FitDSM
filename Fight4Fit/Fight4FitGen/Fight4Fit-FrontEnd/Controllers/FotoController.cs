@@ -93,7 +93,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             FotoModelo fotomod = null;
             SessionInitialize();
             FotoEN fotEN = new FotoCAD(session).ReadOIDDefault(id);
-            fotomod = new FotoAssembler().ConvertENToModelUI(fotEN);
+
             SessionClose();
             return View(fotomod);
         }
