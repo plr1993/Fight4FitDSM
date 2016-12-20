@@ -9,6 +9,7 @@ using NHibernate.Exceptions;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 
 
 
@@ -29,46 +30,64 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN NuevoReporte (string p_Text
 
         Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN result = null;
 
-
         try
         {
-                SessionInitializeTransaction ();
-                reporteCAD = new ReporteCAD (session);
-                reporteCEN = new  ReporteCEN (reporteCAD);
+            SessionInitializeTransaction();
+            reporteCAD = new ReporteCAD(session);
+            reporteCEN = new ReporteCEN(reporteCAD);
 
 
 
 
-                int oid;
-                //Initialized ReporteEN
-                ReporteEN reporteEN;
-                reporteEN = new ReporteEN ();
-                reporteEN.Texto = p_Texto;
+            int oid;
+            //Initialized ReporteEN
+            ReporteEN reporteEN;
+            reporteEN = new ReporteEN();
+            reporteEN.Texto = p_Texto;
 
-                reporteEN.Motivo = p_Motivo;
-
-
-                if (p_usuario != null) {
-                        reporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
-                        reporteEN.Usuario.Email = p_usuario;
-                }
-
-                reporteEN.Tipo = p_tipo;
+            reporteEN.Motivo = p_Motivo;
 
 
-                //Call to ReporteCAD
+            if (p_usuario != null)
+            {
+                reporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN();
+                reporteEN.Usuario.Email = p_usuario;
+            }
 
-                oid = reporteCAD.NuevoReporte (reporteEN);
-                result = reporteCAD.ReadOIDDefault (oid);
+            reporteEN.Tipo = p_tipo;
 
 
 
-                SessionCommit ();
+
+            //Call to ReporteCAD
+
+            oid = reporteCAD.NuevoReporte(reporteEN);
+            if (p_tipo == TipoReporteEnum.foto)
+            {
+                reporteCEN.VincularFoto(oid, p_idRef);
+            }
+
+            else if (p_tipo == TipoReporteEnum.comentario)
+            {
+                reporteCEN.VincularComentario(oid, p_idRef);
+            }
+
+            else if (p_tipo == TipoReporteEnum.evento)
+            {
+                reporteCEN.VincularEvento(oid, p_idRef);
+            }
+
+
+            result = reporteCAD.ReadOIDDefault(oid);
+
+
+
+            SessionCommit();
         }
         catch (Exception ex)
         {
-                SessionRollBack ();
-                throw ex;
+            SessionRollBack();
+            throw ex;
         }
         finally
         {
