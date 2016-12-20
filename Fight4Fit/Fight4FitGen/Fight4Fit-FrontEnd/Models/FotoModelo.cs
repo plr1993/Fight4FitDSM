@@ -38,8 +38,8 @@ namespace Fight4Fit_FrontEnd.Models
         [ScaffoldColumn(false)]
         public string imagen { get; set; }
 
-        [ScaffoldColumn(false)]
-        public GaleriaEN usuario { get; set; }
+     //   [ScaffoldColumn(false)]
+     //   public GaleriaEN usuario { get; set; }
 
         [ScaffoldColumn(false)]
         public int likes { get; set; }

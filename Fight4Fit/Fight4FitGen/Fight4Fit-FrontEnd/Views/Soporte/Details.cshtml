@@ -1,4 +1,4 @@
-﻿@model Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN
+﻿@model Fight4Fit_FrontEnd.Models.SoporteModelo
 
 @{
     ViewBag.Title = "Details";
@@ -11,32 +11,40 @@
     <legend>SoporteEN</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.IdSoporte)
+         @Html.DisplayNameFor(model => model.id)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.IdSoporte)
+        @Html.DisplayFor(model => model.id)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Titulo)
+         @Html.DisplayNameFor(model => model.titulo)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Titulo)
+        @Html.DisplayFor(model => model.titulo)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Texto)
+         @Html.DisplayNameFor(model => model.texto)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Texto)
+        @Html.DisplayFor(model => model.texto)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Respuesta)
+         @Html.DisplayNameFor(model => model.respuesta)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Respuesta)
+        @Html.DisplayFor(model => model.respuesta)
     </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.usuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.usuario)
+    </div>
+    
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |

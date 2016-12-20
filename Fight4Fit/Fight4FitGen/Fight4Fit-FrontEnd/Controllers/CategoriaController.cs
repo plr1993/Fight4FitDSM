@@ -21,7 +21,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             CategoriaCEN catCEN = new CategoriaCEN();
             IEnumerable<CategoriaEN> list = catCEN.ReadAll(0, -1).ToList();
-            return View();
+            return View(list);
         }
 
         public ActionResult Details(String nom)

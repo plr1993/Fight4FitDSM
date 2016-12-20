@@ -7,25 +7,25 @@ using Fight4FitGenNHibernate.EN.Fight4Fit;
 
 namespace Fight4Fit_FrontEnd.Models
 {
-    public class AssemblerSoporte : Controller
+    public class AssemblerSoporte 
     {
-        public Soporte ConvertENToModelUI(SoporteEN sopEN)
+        public SoporteModelo ConvertENToModelUI(SoporteEN sopEN)
         {
-            Soporte sop = new Soporte();
-            //sop.id = sopEN.IdSoporte;
+            SoporteModelo sop = new SoporteModelo();
+            sop.id = sopEN.IdSoporte;
             sop.titulo = sopEN.Titulo;
             sop.texto = sopEN.Texto;
             sop.respuesta = sopEN.Respuesta;
           //  sop.admin = sopEN.Admin;
-            //      sop.usuario = sopEN.Usuario;
+                  sop.usuario = sopEN.Usuario;
 
             return sop;
         }
 
 
-        public IList<Soporte> ConvertListENToModelUI(IList<SoporteEN> sopsEN)
+        public IList<SoporteModelo> ConvertListENToModelUI(IList<SoporteEN> sopsEN)
         {
-            IList<Soporte> sops = new List<Soporte>();
+            IList<SoporteModelo> sops = new List<SoporteModelo>();
             foreach (SoporteEN sopEN in sopsEN)
             {
                 sops.Add(ConvertENToModelUI(sopEN));

@@ -20,7 +20,9 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            UsuarioCEN cen = new UsuarioCEN();
+            IEnumerable<UsuarioEN> list = cen.ReadAll(0, -1).ToList();
+            return View(list);
         }
 
         //
@@ -30,10 +32,15 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             SessionInitialize();
             Usuario usr = null;
+
             UsuarioEN usrEN = new UsuarioCAD(session).ReadOIDDefault(id);
             usr = new AssemblerUsuario().ConvertENToModelUI(usrEN);
+
+
             SessionClose();
             return View(usr);
+
+
         }
 
         //
@@ -116,12 +123,16 @@ namespace Fight4Fit_FrontEnd.Controllers
 
             try
             {
-                Usuario usr = null;
+
                 SessionInitialize();
+                UsuarioCAD usrCAD = new UsuarioCAD(session);
+                UsuarioCEN usrCEN = new UsuarioCEN(usrCAD);
                 UsuarioEN usrEN = usrCEN.ReadOID(id);
                 Usuario usr = new AssemblerUsuario().ConvertENToModelUI(usrEN);
+
                 SessionClose();
                 new UsuarioCEN().DarDeBaja(id);
+                return RedirectToAction("Modifica", new { id = usr.email });
             }
             catch { return View(); }
 

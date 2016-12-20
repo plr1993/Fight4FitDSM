@@ -1,0 +1,50 @@
+﻿@model Fight4Fit_FrontEnd.Models.SoporteModelo
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SoporteModelo</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.titulo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.titulo)
+            @Html.ValidationMessageFor(model => model.titulo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.texto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.texto)
+            @Html.ValidationMessageFor(model => model.texto)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.usuario)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayNameFor(model => model.usuario.Email)
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

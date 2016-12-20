@@ -31,7 +31,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Details(int id)
         {
             SessionInitialize();
-            Soporte sprt = null;
+            SoporteModelo sprt = null;
 
             SoporteEN sprtEN = new SoporteCAD(session).ReadOIDDefault(id);
             sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
@@ -46,7 +46,7 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Create(String ttl, String txt)
         {
-            Soporte sprt = new Soporte();
+            SoporteModelo sprt = new SoporteModelo();
             sprt.titulo = ttl;
             sprt.texto = txt;
             return View(sprt);
@@ -56,7 +56,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         // POST: /Soporte/Create
 
         [HttpPost]
-        public ActionResult Create(Soporte sprt, Usuario usr, HttpPostedFileBase file)
+        public ActionResult Create(SoporteModelo sprt, Usuario usr, HttpPostedFileBase file)
         {
             string filename = "", pathh = "";
             if (file != null && file.ContentLength > 0)
@@ -86,19 +86,19 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Edit(int id)
         {
-            Soporte sprt = null;
+            SoporteModelo sprt = null;
             SessionInitialize();
             SoporteEN sprtEN = new SoporteCAD(session).ReadOIDDefault(id);
             sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
             SessionClose();
-            return View();
+            return View(sprt);
         }
 
         //
         // POST: /Soporte/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, Soporte spr, FormCollection collection)
+        public ActionResult Edit(int id, SoporteModelo spr, FormCollection collection)
         {
             try
             {
@@ -125,7 +125,7 @@ namespace Fight4Fit_FrontEnd.Controllers
                 SoporteCAD sprtCAD = new SoporteCAD(session);
                 SoporteCEN sprtCEN = new SoporteCEN(sprtCAD);
                 SoporteEN sprtEN = sprtCEN.ReadOID(id);
-                Soporte sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
+                SoporteModelo sprt = new AssemblerSoporte().ConvertENToModelUI(sprtEN);
 
                 SessionClose();
                 new SoporteCEN().EliminarConsulta(id);

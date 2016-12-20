@@ -9,10 +9,10 @@ using System.Web.Mvc;
 
 namespace Fight4Fit_FrontEnd.Models
 {
-    public class Soporte 
+    public class SoporteModelo
     {
         [ScaffoldColumn(false)]
-        public String id { get; set; }
+        public int id { get; set; }
 
         [ScaffoldColumn(false)]
         public String titulo { get; set; }
