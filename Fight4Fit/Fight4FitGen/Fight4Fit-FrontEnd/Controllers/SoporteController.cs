@@ -105,7 +105,7 @@ namespace Fight4Fit_FrontEnd.Controllers
                 SoporteCEN sprtCEN = new SoporteCEN();
                 sprtCEN.Responder(id, spr.titulo, spr.texto, spr.respuesta);
 
-                return RedirectToAction("Modifica", new { id = spr.id });
+                return RedirectToAction("Index");
             }
             catch
             {
@@ -129,7 +129,7 @@ namespace Fight4Fit_FrontEnd.Controllers
 
                 SessionClose();
                 new SoporteCEN().EliminarConsulta(id);
-                return RedirectToAction("Modifica", new { id = sprt.id });
+                return RedirectToAction("Index");
             }
             catch { return View(); }
         }

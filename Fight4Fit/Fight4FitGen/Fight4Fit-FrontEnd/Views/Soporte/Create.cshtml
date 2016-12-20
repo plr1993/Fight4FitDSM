@@ -30,10 +30,10 @@
             @Html.ValidationMessageFor(model => model.texto)
         </div>
         <div class="editor-label">
-            @Html.LabelFor(model => model.usuario)
+            @Html.DisplayNameFor(model => model.nomUsuario)
         </div>
-        <div class="editor-field">
-            @Html.DisplayNameFor(model => model.usuario.Email)
+        <div class="display-field">
+            @Html.DisplayFor(model => model.nomUsuario)
         </div>
         <p>
             <input type="submit" value="Create" />

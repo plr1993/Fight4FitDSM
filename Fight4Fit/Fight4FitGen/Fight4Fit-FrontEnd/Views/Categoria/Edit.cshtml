@@ -1,4 +1,4 @@
-﻿@model Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN
+﻿@model Fight4Fit_FrontEnd.Models.CategoriaModelo
 
 @{
     ViewBag.Title = "Edit";
@@ -12,15 +12,7 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>CategoriaEN</legend>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Nombre)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Nombre)
-            @Html.ValidationMessageFor(model => model.Nombre)
-        </div>
+        <legend>CategoriaModelo</legend>
 
         <p>
             <input type="submit" value="Save" />

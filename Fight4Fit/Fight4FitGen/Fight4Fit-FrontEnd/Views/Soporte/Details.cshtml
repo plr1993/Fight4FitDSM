@@ -39,14 +39,14 @@
     </div>
 
     <div class="display-label">
-        @Html.DisplayNameFor(model => model.usuario)
+        @Html.DisplayNameFor(model => model.nomUsuario)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.usuario)
+        @Html.DisplayFor(model => model.nomUsuario)
     </div>
     
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id  }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

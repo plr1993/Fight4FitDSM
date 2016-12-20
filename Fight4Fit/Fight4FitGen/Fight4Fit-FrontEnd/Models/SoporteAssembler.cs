@@ -17,7 +17,7 @@ namespace Fight4Fit_FrontEnd.Models
             sop.texto = sopEN.Texto;
             sop.respuesta = sopEN.Respuesta;
           //  sop.admin = sopEN.Admin;
-                  sop.usuario = sopEN.Usuario;
+                  sop.nomUsuario = "pruebaUsuario";
 
             return sop;
         }

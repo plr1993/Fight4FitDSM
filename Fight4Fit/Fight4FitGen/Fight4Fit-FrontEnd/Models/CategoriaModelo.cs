@@ -8,11 +8,9 @@ using System.Web.Mvc;
 namespace Fight4Fit_FrontEnd.Models
 {
     public class CategoriaModelo
-    {
-        //
-        // GET: /CategoriaModelo/
+    {  
 
-        [ScaffoldColumn(false)]
+        
         public String nombre {get; set;}
 
     }

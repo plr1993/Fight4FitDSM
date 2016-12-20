@@ -24,7 +24,7 @@ namespace Fight4Fit_FrontEnd.Models
         public String respuesta { get; set; }
 
         [ScaffoldColumn(false)]
-        public UsuarioEN usuario { get; set; }
+        public String nomUsuario { get; set; }
 
       // [ScaffoldColumn(false)]
        // public AdminEN admin { get; set; }
