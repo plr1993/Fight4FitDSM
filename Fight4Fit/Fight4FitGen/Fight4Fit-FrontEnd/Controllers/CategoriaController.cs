@@ -24,12 +24,12 @@ namespace Fight4Fit_FrontEnd.Controllers
             return View(list);
         }
 
-        public ActionResult Details(String nom)
+        public ActionResult Details(String id)
         {
             CategoriaModelo cat = null;
             SessionInitialize();
             //CategoriaCAD catCAD = new CategoriaCAD(session);
-            CategoriaEN catEN = new CategoriaCAD(session).ReadOIDDefault(nom);
+            CategoriaEN catEN = new CategoriaCAD(session).ReadOIDDefault(id);
             cat = new CategoriaAssembler().ConvertENToModelUI(catEN);
             SessionClose();
             return View(cat);

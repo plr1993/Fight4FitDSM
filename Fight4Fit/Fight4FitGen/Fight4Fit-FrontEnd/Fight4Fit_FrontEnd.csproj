@@ -348,10 +348,10 @@
     <Content Include="Views\Soporte\Index.cshtml" />
     <Content Include="Views\Soporte\Details.cshtml" />
     <Content Include="Views\Categoria\Create.cshtml" />
-    <Content Include="Views\Categoria\Details.cshtml" />
     <Content Include="Views\Soporte\Create.cshtml" />
     <Content Include="Views\Soporte\Edit.cshtml" />
     <Content Include="Views\Categoria\Edit.cshtml" />
+    <Content Include="Views\Categoria\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
