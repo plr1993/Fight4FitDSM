@@ -217,6 +217,7 @@
     <Compile Include="Controllers\GaleriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PromotorController.cs" />
+    <Compile Include="Controllers\ReporteController.cs" />
     <Compile Include="Controllers\SoporteController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -227,6 +228,7 @@
     <Compile Include="Models\CategoriaAssembler.cs" />
     <Compile Include="Models\CategoriaModelo.cs" />
     <Compile Include="Models\FotoModelo.cs" />
+    <Compile Include="Models\ReporteModelo.cs" />
     <Compile Include="Models\SoporteAssembler.cs" />
     <Compile Include="Models\SoporteModelo.cs" />
     <Compile Include="Models\UsuarioAssembler.cs" />
@@ -352,6 +354,8 @@
     <Content Include="Views\Soporte\Edit.cshtml" />
     <Content Include="Views\Categoria\Edit.cshtml" />
     <Content Include="Views\Categoria\Details.cshtml" />
+    <Content Include="Views\Reporte\Create.cshtml" />
+    <Content Include="Views\Reporte\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
