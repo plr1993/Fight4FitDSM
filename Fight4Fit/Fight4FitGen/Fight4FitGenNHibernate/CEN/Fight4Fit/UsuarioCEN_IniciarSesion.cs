@@ -21,16 +21,13 @@ public partial class UsuarioCEN
 {
 public bool IniciarSesion (string p_oid, string password)
 {
-    UsuarioEN usuarioEN = null;
-    bool login = false;
-    if (p_oid != null && password != null){
-        usuarioEN = _IUsuarioCAD.ReadOIDDefault(p_oid);
+        /*PROTECTED REGION ID(Fight4FitGenNHibernate.CEN.Fight4Fit_Usuario_IniciarSesion) ENABLED START*/
 
-      
-        if (usuarioEN.Password == password && usuarioEN.Bloqueado==false)
-            login = true;
-    }
-    return login;
+        // Write here your custom code...
+
+        throw new NotImplementedException ("Method IniciarSesion() not yet implemented.");
+
+        /*PROTECTED REGION END*/
 }
 }
 }

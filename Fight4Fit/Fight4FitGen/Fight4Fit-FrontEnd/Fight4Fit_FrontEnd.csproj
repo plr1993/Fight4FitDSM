@@ -228,6 +228,7 @@
     <Compile Include="Models\CategoriaAssembler.cs" />
     <Compile Include="Models\CategoriaModelo.cs" />
     <Compile Include="Models\FotoModelo.cs" />
+    <Compile Include="Models\ReporteAssembler.cs" />
     <Compile Include="Models\ReporteModelo.cs" />
     <Compile Include="Models\SoporteAssembler.cs" />
     <Compile Include="Models\SoporteModelo.cs" />

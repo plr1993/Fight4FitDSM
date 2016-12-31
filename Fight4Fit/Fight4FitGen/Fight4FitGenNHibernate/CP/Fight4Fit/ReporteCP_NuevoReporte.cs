@@ -32,62 +32,58 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN NuevoReporte (string p_Text
 
         try
         {
-            SessionInitializeTransaction();
-            reporteCAD = new ReporteCAD(session);
-            reporteCEN = new ReporteCEN(reporteCAD);
+                SessionInitializeTransaction ();
+                reporteCAD = new ReporteCAD (session);
+                reporteCEN = new ReporteCEN (reporteCAD);
 
 
 
 
-            int oid;
-            //Initialized ReporteEN
-            ReporteEN reporteEN;
-            reporteEN = new ReporteEN();
-            reporteEN.Texto = p_Texto;
+                int oid;
+                //Initialized ReporteEN
+                ReporteEN reporteEN;
+                reporteEN = new ReporteEN ();
+                reporteEN.Texto = p_Texto;
 
-            reporteEN.Motivo = p_Motivo;
+                reporteEN.Motivo = p_Motivo;
 
 
-            if (p_usuario != null)
-            {
-                reporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN();
-                reporteEN.Usuario.Email = p_usuario;
-            }
+                if (p_usuario != null) {
+                        reporteEN.Usuario = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
+                        reporteEN.Usuario.Email = p_usuario;
+                }
 
-            reporteEN.Tipo = p_tipo;
-
+                reporteEN.Tipo = p_tipo;
 
 
 
-            //Call to ReporteCAD
 
-            oid = reporteCAD.NuevoReporte(reporteEN);
-            if (p_tipo == TipoReporteEnum.foto)
-            {
-                reporteCEN.VincularFoto(oid, p_idRef);
-            }
+                //Call to ReporteCAD
 
-            else if (p_tipo == TipoReporteEnum.comentario)
-            {
-                reporteCEN.VincularComentario(oid, p_idRef);
-            }
+                oid = reporteCAD.NuevoReporte (reporteEN);
+                if (p_tipo == TipoReporteEnum.foto) {
+                        reporteCEN.VincularFoto (oid, p_idRef);
+                }
 
-            else if (p_tipo == TipoReporteEnum.evento)
-            {
-                reporteCEN.VincularEvento(oid, p_idRef);
-            }
+                else if (p_tipo == TipoReporteEnum.comentario) {
+                        reporteCEN.VincularComentario (oid, p_idRef);
+                }
+
+                else if (p_tipo == TipoReporteEnum.evento) {
+                        reporteCEN.VincularEvento (oid, p_idRef);
+                }
 
 
-            result = reporteCAD.ReadOIDDefault(oid);
+                result = reporteCAD.ReadOIDDefault (oid);
 
 
 
-            SessionCommit();
+                SessionCommit ();
         }
         catch (Exception ex)
         {
-            SessionRollBack();
-            throw ex;
+                SessionRollBack ();
+                throw ex;
         }
         finally
         {

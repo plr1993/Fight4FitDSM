@@ -2,6 +2,7 @@
 using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
 using Fight4FitGenNHibernate.CP.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,9 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
-            ReporteModelo rep = new ReporteModelo();
-            return View(rep);
+            ReporteCEN repCEN = new ReporteCEN();
+            IEnumerable<ReporteEN> list = repCEN.ReadAll(0, -1).ToList();
+            return View(list);
         }
 
         //
@@ -42,7 +44,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         // POST: /Reporte/Create
 
         [HttpPost]
-        public ActionResult Create(ReporteModelo repMod, HttpPostedFileBase file)
+        public ActionResult Create(ReporteModelo repMod)
         {
             try
             {

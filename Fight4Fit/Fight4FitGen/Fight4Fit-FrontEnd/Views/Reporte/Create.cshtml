@@ -20,6 +20,15 @@
             @Html.EditorFor(model => model.texto)
             @Html.ValidationMessageFor(model => model.texto)
         </div>	
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.motivo)
+        </div>
+        <div class="editor-field">
+            Contenido ofensivo:   @Html.RadioButton("motivo", 1)
+            Contenido inapropiado: @Html.RadioButton("motivo", 2)
+            Contenido terrorista: @Html.RadioButton("motivo", 3)
+        </div>
         <p>
             <input type="submit" value="Create" />
         </p>

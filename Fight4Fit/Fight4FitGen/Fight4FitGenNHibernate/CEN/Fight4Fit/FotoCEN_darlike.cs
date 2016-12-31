@@ -17,20 +17,17 @@ using Fight4FitGenNHibernate.CAD.Fight4Fit;
 
 namespace Fight4FitGenNHibernate.CEN.Fight4Fit
 {
-    public partial class FotoCEN
-    {
-        public void Darlike(int p_oid)
-        {
-            FotoEN fotoEN = null;
+public partial class FotoCEN
+{
+public void Darlike (int p_oid)
+{
+        /*PROTECTED REGION ID(Fight4FitGenNHibernate.CEN.Fight4Fit_Foto_darlike) ENABLED START*/
 
-            if (p_oid != null)
-            {
-                fotoEN = _IFotoCAD.ReadOIDDefault(p_oid);
+        // Write here your custom code...
 
-                fotoEN.Likes++;
-            }
-        }
-    }
+        throw new NotImplementedException ("Method Darlike() not yet implemented.");
+
+        /*PROTECTED REGION END*/
 }
-
-
+}
+}

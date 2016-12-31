@@ -296,9 +296,9 @@
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_N19jwKWUEeaAmK5uJPZ7EQ" name="soporte_0_admin" alias="soporte_0_admin" rolOrigin="_N2LmMKWUEeaAmK5uJPZ7EQ" rolTarget="_N2OpgKWUEeaAmK5uJPZ7EQ" classTarget="_zUfZEJqDEeaK7bsAqmwBow" classOrigin="_kaWOYKTeEeaYrOqZB-eJ9g" rolOriginName="soporte_0" rolTargetName="admin" rolOriginMultiplicity="0..*" rolTargetMultiplicity="0..1"/>
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_qN1YQKWUEeaAmK5uJPZ7EQ" name="evento_comentario" alias="evento_comentario" rolOrigin="_qN2mYKWUEeaAmK5uJPZ7EQ" rolTarget="_qN2mYaWUEeaAmK5uJPZ7EQ" classTarget="_9p0F8JhFEeamA_JC3ucrJw" classOrigin="_p1dWUKB3Eeaf6MDpIatGpA" rolOriginName="evento" rolTargetName="comentario" rolOriginMultiplicity="1..1" rolTargetMultiplicity="0..*"/>
     <elements xmi:type="es.ua.dlsi.ooh:Enumeration" xmi:id="_7eXE4KWUEeaAmK5uJPZ7EQ" name="Motivo">
-      <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="__mjpUKWUEeaAmK5uJPZ7EQ" name="motivo1" value="1"/>
-      <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="_BIogEKWVEeaAmK5uJPZ7EQ" name="motivo2" value="2"/>
-      <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="_CGE_wKWVEeaAmK5uJPZ7EQ" name="motivo3" value="3"/>
+      <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="__mjpUKWUEeaAmK5uJPZ7EQ" name="ofensivo" value="1"/>
+      <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="_BIogEKWVEeaAmK5uJPZ7EQ" name="inapropiado" value="2"/>
+      <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="_CGE_wKWVEeaAmK5uJPZ7EQ" name="terrorismo" value="3"/>
     </elements>
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_tBumwKWVEeaAmK5uJPZ7EQ" name="usuario_reporte" alias="usuario_reporte" rolOrigin="_tBvN0KWVEeaAmK5uJPZ7EQ" rolTarget="_tBv04KWVEeaAmK5uJPZ7EQ" classTarget="_CGpdoJhGEeamA_JC3ucrJw" classOrigin="_hJz00KB3Eeaf6MDpIatGpA" rolOriginName="usuario" rolTargetName="reporte" rolOriginMultiplicity="1..1" rolTargetMultiplicity="0..*"/>
     <elements xmi:type="es.ua.dlsi.ooh:Enumeration" xmi:id="_DoVnQKWWEeaAmK5uJPZ7EQ" name="TipoEvento">
@@ -1042,7 +1042,7 @@
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_7eb9YKWUEeaAmK5uJPZ7EQ"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_7eb9YaWUEeaAmK5uJPZ7EQ" fontName="Segoe UI"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_7eb9YqWUEeaAmK5uJPZ7EQ" fillColor="11796403"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7eb9Y6WUEeaAmK5uJPZ7EQ" x="-50" y="250"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7eb9Y6WUEeaAmK5uJPZ7EQ" x="-180" y="155"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_DoYDgKWWEeaAmK5uJPZ7EQ" type="2005" element="_DoVnQKWWEeaAmK5uJPZ7EQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_DoYqkKWWEeaAmK5uJPZ7EQ" type="5009"/>
