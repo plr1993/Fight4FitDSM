@@ -145,7 +145,6 @@
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2s9Z8Ky8EeaSXP44cfn0kg" name="p_Texto"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2tBrYKy8EeaSXP44cfn0kg" name="p_Motivo" type="Enum" typeEnum="_7eXE4KWUEeaAmK5uJPZ7EQ"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2tDgkKy8EeaSXP44cfn0kg" name="p_usuario" type="OID" typeObject="_CGpdoJhGEeamA_JC3ucrJw"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2tF80Ky8EeaSXP44cfn0kg" name="p_tipo" type="Enum" typeEnum="_vQTbIKy8EeaSXP44cfn0kg"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_3kLcMKzEEeaqxLVhMyjF3g" name="p_idRef" type="Integer"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_JGqvcqB4Eeaf6MDpIatGpA" name="EliminarReporte" operationType="Destroy" type="Void">

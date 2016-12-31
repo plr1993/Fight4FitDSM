@@ -89,7 +89,8 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            ReporteCEN cen = new ReporteCEN();
+            return View(cen);
         }
 
         //
@@ -100,8 +101,8 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
-
+                ReporteCEN cen = new ReporteCEN();
+                cen.EliminarReporte(id);
                 return RedirectToAction("Index");
             }
             catch

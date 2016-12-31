@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
+<h2>Realizar reporte</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
@@ -14,23 +14,25 @@
     <fieldset>
         <legend>Crear reporte</legend>
         <div class="editor-label">
-            @Html.LabelFor(model => model.texto)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.texto)
-            @Html.ValidationMessageFor(model => model.texto)
-        </div>	
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.motivo)
+            @Html.Label("motivo", "¿Cuál es el motivo del reporte?")
         </div>
         <div class="editor-field">
             Contenido ofensivo:   @Html.RadioButton("motivo", 1)
             Contenido inapropiado: @Html.RadioButton("motivo", 2)
             Contenido terrorista: @Html.RadioButton("motivo", 3)
         </div>
+        <div class="editor-label">
+            @Html.Label("texto", "Observaciones e información adicional:")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.texto)
+            @Html.ValidationMessageFor(model => model.texto)
+        </div>	
+
+       
+
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Reportar" />
         </p>
     </fieldset>
 }
