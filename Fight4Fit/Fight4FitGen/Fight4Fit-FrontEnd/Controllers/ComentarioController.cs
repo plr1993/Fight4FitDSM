@@ -1,4 +1,7 @@
-﻿using MvcApplication1.Controllers;
+﻿using Fight4Fit_FrontEnd.Models;
+using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
+using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +17,9 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            ComentarioCEN cen = new ComentarioCEN();
+            IEnumerable<ComentarioEN> list = cen.ReadAll(0, -1).ToList();
+            return View(list);
         }
 
         //
@@ -30,25 +35,22 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            ComentarioModelo com = new ComentarioModelo();
+            return View(com);
         }
 
         //
         // POST: /Comentario/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(ComentarioModelo com)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            
+                ComentarioCEN cen = new ComentarioCEN();
+                cen.PublicarComentario(0, 0, com.titulo, com.texto, 0);
+                return View("Index");
+            
+            
         }
 
         //

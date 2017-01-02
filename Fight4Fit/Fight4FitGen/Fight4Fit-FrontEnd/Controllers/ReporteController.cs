@@ -3,6 +3,7 @@ using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
 using Fight4FitGenNHibernate.CP.Fight4Fit;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
+using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Web.Mvc;
 
 namespace Fight4Fit_FrontEnd.Controllers
 {
-    public class ReporteController : Controller
+    public class ReporteController : BasicController
     {
         //
         // GET: /Reporte/
@@ -28,7 +29,12 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            ReporteModelo rem = null;
+            SessionInitialize();
+            ReporteEN repEN = new ReporteCAD(session).ReadOIDDefault(id);
+            rem = new ReporteAssembler().ConvertENToModelUI(repEN);
+            SessionClose();
+            return View(rem);
         }
 
         //

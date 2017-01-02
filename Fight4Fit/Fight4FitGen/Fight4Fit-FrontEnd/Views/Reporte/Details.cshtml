@@ -1,0 +1,49 @@
+﻿@model Fight4Fit_FrontEnd.Models.ReporteModelo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ReporteModelo</legend>
+</fieldset>
+<h3>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.email)
+    </div>
+</h3>
+
+<div class="display-field">
+    @Html.DisplayFor(model => model.email)
+</div>
+
+
+<h3>
+<div class="display-label">
+        Comentario del reporte:
+</div>
+</h3>
+
+<div class="display-field">
+    @Html.DisplayFor(model => model.texto)
+</div>
+
+<h3>
+    <div class="display-label">
+    "Motivo: 
+    </div>
+</h3>
+
+<div class="display-field">
+    Contenido 
+    @Html.DisplayFor(model => model.motivo)
+</div>
+
+	
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

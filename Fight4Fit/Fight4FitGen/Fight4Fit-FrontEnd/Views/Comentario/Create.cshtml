@@ -1,39 +1,35 @@
-﻿@model Fight4Fit_FrontEnd.Models.ReporteModelo
+﻿@model Fight4Fit_FrontEnd.Models.ComentarioModelo
 
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Realizar reporte</h2>
+<h2>Create</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Crear reporte</legend>
+        <legend>ComentarioModelo</legend>
+
         <div class="editor-label">
-            @Html.Label("motivo", "¿Cuál es el motivo del reporte?")
+            @Html.Label("titulo", "Título:")
         </div>
         <div class="editor-field">
-            Contenido ofensivo:   @Html.RadioButton("motivo", 1)
-            Contenido inapropiado: @Html.RadioButton("motivo", 2)
-            Contenido terrorista: @Html.RadioButton("motivo", 3)
+            @Html.EditorFor(model => model.titulo)
+            @Html.ValidationMessageFor(model => model.titulo)
         </div>
         <div class="editor-label">
-            @Html.Label("texto", "Observaciones e información adicional:")
+            @Html.Label("texto", "Texto:")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.texto)
             @Html.ValidationMessageFor(model => model.texto)
         </div>	
-
-        
-       
-
         <p>
-            <input type="submit" value="Reportar" />
+            <input type="submit" value="Create" />
         </p>
     </fieldset>
 }

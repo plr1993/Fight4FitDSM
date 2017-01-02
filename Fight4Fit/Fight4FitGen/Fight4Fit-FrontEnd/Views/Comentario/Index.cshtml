@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN>
+﻿@model IEnumerable<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN>
 
 @{
     ViewBag.Title = "Index";
@@ -13,7 +13,13 @@
 <table>
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Texto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Likes)
         </th>
         <th></th>
     </tr>
@@ -21,16 +27,16 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Texto)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Motivo)
+            @Html.DisplayFor(modelItem => item.Likes)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tipo)
-        </td>
-
-        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>

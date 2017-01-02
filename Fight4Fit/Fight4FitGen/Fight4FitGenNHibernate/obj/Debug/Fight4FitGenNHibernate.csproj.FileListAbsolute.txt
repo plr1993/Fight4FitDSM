@@ -12,7 +12,6 @@ C:\Users\OIDEWin7\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHiber
 C:\Users\OIDEWin7\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\bin\Debug\log4net.dll
 C:\Users\OIDEWin7\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.dll
 C:\Users\OIDEWin7\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.pdb
-C:\Users\OIDEWin7\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.csprojResolveAssemblyReference.cache
 C:\Users\OIDEWin7\Desktop\Fight4FitDSM-master\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\bin\Debug\hibernate.cfg.xml
 C:\Users\OIDEWin7\Desktop\Fight4FitDSM-master\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\bin\Debug\Fight4FitGenNHibernate.dll.config
 C:\Users\OIDEWin7\Desktop\Fight4FitDSM-master\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\bin\Debug\Fight4FitGenNHibernate.dll
@@ -58,3 +57,4 @@ C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4Fi
 C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.csprojResolveAssemblyReference.cache
 C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.dll
 C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.pdb
+C:\Users\OIDEWin7\Desktop\Fight4FitDSM\Fight4Fit\Fight4FitGen\Fight4FitGenNHibernate\obj\Debug\Fight4FitGenNHibernate.csprojResolveAssemblyReference.cache

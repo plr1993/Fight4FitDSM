@@ -13,7 +13,7 @@ namespace Fight4Fit_FrontEnd.Models
             ReporteModelo cat = new ReporteModelo();
 
             cat.texto = en.Texto;
-            cat.email = en.Usuario.Email;
+            cat.email = "el puma";
             cat.motivo = en.Motivo;
             cat.tipo = en.Tipo;
 
