@@ -24,9 +24,10 @@ public void Darlike (int p_oid)
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CEN.Fight4Fit_Comentario_darlike) ENABLED START*/
 
         // Write here your custom code...
-        ComentarioCAD comentarioCAD = new ComentarioCAD();
-        ComentarioEN comentarioEN = new ComentarioEN();
-        comentarioEN = comentarioCAD.ReadOIDDefault(p_oid);
+        ComentarioCAD comentarioCAD = new ComentarioCAD ();
+        ComentarioEN comentarioEN = new ComentarioEN ();
+
+        comentarioEN = comentarioCAD.ReadOIDDefault (p_oid);
         comentarioEN.Likes = comentarioEN.Likes + 1;
         /*PROTECTED REGION END*/
 }

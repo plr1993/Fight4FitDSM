@@ -6,7 +6,10 @@
 		    
 			
 				<class name="EventoEN" table="Evento"> 
-						<id name="Id" column="ID"/> 
+				  	
+						<id name="Id" column="ID" type="integer"> 
+							<generator class="hilo"/>
+						</id>
 			
 					
 					<property name="Nombre" type="string"> 

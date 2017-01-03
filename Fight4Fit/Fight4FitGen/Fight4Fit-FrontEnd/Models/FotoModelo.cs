@@ -27,19 +27,19 @@ namespace Fight4Fit_FrontEnd.Models
         public String nombre { get; set; }
 
         [ScaffoldColumn(false)]
-        public FotoEN usuario { get; set; }
+        public String email { get; set; }
 
         [ScaffoldColumn(false)]
         public DateTime fecha { get; set; }
+
+        [ScaffoldColumn(false)]
+        public int idgaleria { get; set; }
 
         [ScaffoldColumn(false)]
         public string descripcion { get; set; }
 
         [ScaffoldColumn(false)]
         public string imagen { get; set; }
-
-     //   [ScaffoldColumn(false)]
-     //   public GaleriaEN usuario { get; set; }
 
         [ScaffoldColumn(false)]
         public int likes { get; set; }

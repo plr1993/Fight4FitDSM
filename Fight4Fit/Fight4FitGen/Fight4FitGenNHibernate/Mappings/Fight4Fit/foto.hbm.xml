@@ -24,11 +24,11 @@
 					<property name="Descripcion" type="string"> 
 						<column name="Descripcion"  not-null="true"/>
 					</property>
-					<property name="Imagen" type="string"> 
-						<column name="Imagen"  not-null="true"/>
-					</property>
 					<property name="Likes" type="integer"> 
 						<column name="likes"  not-null="true"/>
+					</property>
+					<property name="Ruta" type="string"> 
+						<column name="Ruta"  not-null="true"/>
 					</property>
 			
 			
@@ -59,12 +59,12 @@
 			
 			
 			
-			
 		  			
 						<many-to-one name="Pertenece_a" class="Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN" >	
 								<column name="FK_idGaleria_idGaleria"/> 
 						</many-to-one>
 											 					
+			
 			
 					
 					

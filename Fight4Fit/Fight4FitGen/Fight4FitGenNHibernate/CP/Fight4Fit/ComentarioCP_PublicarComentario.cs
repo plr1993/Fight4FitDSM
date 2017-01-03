@@ -54,18 +54,15 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (stri
                 oid = comentarioCAD.PublicarComentario (comentarioEN);
 
 
-              if (idfoto>0)
-                {
-                    comentarioCEN.VincFoto(comentarioEN.Id, idfoto);
-
+                if (idfoto > 0) {
+                        comentarioCEN.VincFoto (comentarioEN.Id, idfoto);
                 }
 
-                else if(ideven>0)
-                {
-                    comentarioCEN.VincEv(comentarioEN.Id, ideven);
+                else if (ideven >= 0) {
+                        comentarioCEN.VincEv (comentarioEN.Id, ideven);
                 }
 
-            
+
 
                 SessionCommit ();
         }

@@ -38,7 +38,7 @@ public IEventoCAD get_IEventoCAD ()
         return this._IEventoCAD;
 }
 
-public int CrearEvento (string p_Nombre, string p_categoria, int p_id, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes)
+public int CrearEvento (string p_Nombre, string p_categoria, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes)
 {
         EventoEN eventoEN = null;
         int oid;
@@ -54,8 +54,6 @@ public int CrearEvento (string p_Nombre, string p_categoria, int p_id, string p_
                 eventoEN.Categoria = new Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN ();
                 eventoEN.Categoria.Nombre = p_categoria;
         }
-
-        eventoEN.Id = p_id;
 
         eventoEN.Descripcion = p_Descripcion;
 

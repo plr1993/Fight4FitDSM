@@ -38,7 +38,7 @@ public IFotoCAD get_IFotoCAD ()
         return this._IFotoCAD;
 }
 
-public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, string p_Imagen, int p_pertenece_a, int p_likes)
+public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, int p_pertenece_a, int p_likes, string p_Ruta)
 {
         FotoEN fotoEN = null;
         int oid;
@@ -53,8 +53,6 @@ public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fe
 
         fotoEN.Descripcion = p_Descripcion;
 
-        fotoEN.Imagen = p_Imagen;
-
 
         if (p_pertenece_a != -1) {
                 // El argumento p_pertenece_a -> Property pertenece_a es oid = false
@@ -65,13 +63,15 @@ public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fe
 
         fotoEN.Likes = p_likes;
 
+        fotoEN.Ruta = p_Ruta;
+
         //Call to FotoCAD
 
         oid = _IFotoCAD.SubirFoto (fotoEN);
         return oid;
 }
 
-public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, string p_Imagen, int p_likes)
+public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, int p_likes, string p_Ruta)
 {
         FotoEN fotoEN = null;
 
@@ -82,8 +82,8 @@ public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nulla
         fotoEN.Usuario = p_Usuario;
         fotoEN.Fecha = p_Fecha;
         fotoEN.Descripcion = p_Descripcion;
-        fotoEN.Imagen = p_Imagen;
         fotoEN.Likes = p_likes;
+        fotoEN.Ruta = p_Ruta;
         //Call to FotoCAD
 
         _IFotoCAD.EditarFoto (fotoEN);
