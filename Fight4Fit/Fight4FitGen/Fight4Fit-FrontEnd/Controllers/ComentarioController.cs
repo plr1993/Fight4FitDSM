@@ -101,8 +101,8 @@ namespace Fight4Fit_FrontEnd.Controllers
             com = new ComentarioAssembler().ConvertENToModelUI(en);
             SessionClose();
             ComentarioCEN cen = new ComentarioCEN();
-            com.likes++;
-            cen.EditarComentario(id, com.titulo, com.texto, com.likes);
+            en.Likes++;
+            cen.EditarComentario(id, com.titulo, com.texto, en.Likes);
             return RedirectToAction("Index");
         }
 
