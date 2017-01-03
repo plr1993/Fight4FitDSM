@@ -24,9 +24,10 @@ public void Darlike (int p_oid)
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CEN.Fight4Fit_Foto_darlike) ENABLED START*/
 
         // Write here your custom code...
-
-        throw new NotImplementedException ("Method Darlike() not yet implemented.");
-
+        FotoCAD fotoCAD = new FotoCAD();
+        FotoEN fotoEN = new FotoEN();
+        fotoEN = fotoCAD.ReadOIDDefault(p_oid);
+        fotoEN.Likes = fotoEN.Likes + 1;
         /*PROTECTED REGION END*/
 }
 }
