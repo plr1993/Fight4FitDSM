@@ -126,20 +126,6 @@ public int PublicarComentario (ComentarioEN comentario)
         try
         {
                 SessionInitializeTransaction ();
-                if (comentario.Foto != null) {
-                        // Argumento OID y no colección.
-                        comentario.Foto = (Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN), comentario.Foto.Id);
-
-                        comentario.Foto.Comentario
-                        .Add (comentario);
-                }
-                if (comentario.Evento != null) {
-                        // Argumento OID y no colección.
-                        comentario.Evento = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), comentario.Evento.Id);
-
-                        comentario.Evento.Comentario
-                        .Add (comentario);
-                }
 
                 session.Save (comentario);
                 SessionCommit ();
@@ -276,6 +262,68 @@ public System.Collections.Generic.IList<ComentarioEN> ReadAll (int first, int si
         }
 
         return result;
+}
+
+public void VincFoto (int p_Comentario_OID, int p_foto_OID)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentarioEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                comentarioEN = (ComentarioEN)session.Load (typeof(ComentarioEN), p_Comentario_OID);
+                comentarioEN.Foto = (Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN), p_foto_OID);
+
+                comentarioEN.Foto.Comentario.Add (comentarioEN);
+
+
+
+                session.Update (comentarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ComentarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
+
+public void VincEv (int p_Comentario_OID, int p_evento_OID)
+{
+        Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN comentarioEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                comentarioEN = (ComentarioEN)session.Load (typeof(ComentarioEN), p_Comentario_OID);
+                comentarioEN.Evento = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), p_evento_OID);
+
+                comentarioEN.Evento.Comentario.Add (comentarioEN);
+
+
+
+                session.Update (comentarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
+                        throw ex;
+                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in ComentarioCAD.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
 }
 }
 }

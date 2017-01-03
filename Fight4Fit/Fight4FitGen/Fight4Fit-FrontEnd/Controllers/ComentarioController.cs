@@ -1,5 +1,7 @@
 ﻿using Fight4Fit_FrontEnd.Models;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.CP.Fight4Fit;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using MvcApplication1.Controllers;
 using System;
@@ -45,11 +47,16 @@ namespace Fight4Fit_FrontEnd.Controllers
         [HttpPost]
         public ActionResult Create(ComentarioModelo com)
         {
-            
-                ComentarioCEN cen = new ComentarioCEN();
-                cen.PublicarComentario(0, 0, com.titulo, com.texto, 0);
-                return View("Index");
-            
+            try
+            {
+                ComentarioCP cp = new ComentarioCP();
+                cp.PublicarComentario(com.titulo, com.texto, com.idfoto, com.idevento);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
             
         }
 
@@ -58,18 +65,24 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Edit(int id)
         {
-            return View();
+            ComentarioModelo com = null;
+            SessionInitialize();
+            ComentarioEN en = new ComentarioCAD(session).ReadOIDDefault(id);
+            com = new ComentarioAssembler().ConvertENToModelUI(en);
+            SessionClose();
+            return View(com);
         }
 
         //
         // POST: /Comentario/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, ComentarioModelo mod)
         {
             try
             {
-                // TODO: Add update logic here
+                ComentarioCEN cen = new ComentarioCEN();
+                cen.EditarComentario(id, mod.titulo, mod.texto, mod.likes);
 
                 return RedirectToAction("Index");
             }
@@ -79,12 +92,28 @@ namespace Fight4Fit_FrontEnd.Controllers
             }
         }
 
+        //MÉTODO DAR LIKE
+        public ActionResult Darlike(int id)
+        {
+            ComentarioModelo com = null;
+            SessionInitialize();
+            ComentarioEN en = new ComentarioCAD(session).ReadOIDDefault(id);
+            com = new ComentarioAssembler().ConvertENToModelUI(en);
+            SessionClose();
+            ComentarioCEN cen = new ComentarioCEN();
+            com.likes++;
+            cen.EditarComentario(id, com.titulo, com.texto, com.likes);
+            return RedirectToAction("Index");
+        }
+
+      
         //
         // GET: /Comentario/Delete/5
 
         public ActionResult Delete(int id)
         {
-            return View();
+            ComentarioCEN cen = new ComentarioCEN();
+            return View(cen);
         }
 
         //
@@ -95,8 +124,8 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
-
+                ComentarioCEN cen = new ComentarioCEN();
+                cen.BorrarComentario(id);
                 return RedirectToAction("Index");
             }
             catch

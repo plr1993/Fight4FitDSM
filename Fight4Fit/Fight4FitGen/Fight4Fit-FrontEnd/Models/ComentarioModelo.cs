@@ -16,6 +16,16 @@ namespace Fight4Fit_FrontEnd.Models
         [ScaffoldColumn(false)]
         public String titulo { get; set; }
 
+        [ScaffoldColumn(false)]
+        public int idfoto { get; set; }
+
+        [ScaffoldColumn(false)]
+        public int idevento { get; set; }
+
+        [ScaffoldColumn(false)]
+        public int likes { get; set; }
+
+
 
     }
 }

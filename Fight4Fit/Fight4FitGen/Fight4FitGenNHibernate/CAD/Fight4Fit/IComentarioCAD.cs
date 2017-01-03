@@ -27,5 +27,11 @@ ComentarioEN ReadOID (int id
 
 
 System.Collections.Generic.IList<ComentarioEN> ReadAll (int first, int size);
+
+
+
+void VincFoto (int p_Comentario_OID, int p_foto_OID);
+
+void VincEv (int p_Comentario_OID, int p_evento_OID);
 }
 }

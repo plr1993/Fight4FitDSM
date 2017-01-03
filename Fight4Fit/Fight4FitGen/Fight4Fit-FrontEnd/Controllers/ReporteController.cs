@@ -55,7 +55,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             try
             {
                 ReporteCP repCP = new ReporteCP();
-                repCP.NuevoReporte(repMod.texto, repMod.motivo, repMod.email, repMod.tipo, repMod.id);
+                repCP.NuevoReporte(repMod.texto, repMod.motivo, repMod.email, repMod.id, repMod.tipo);
                 return RedirectToAction("Index");
             }
             catch

@@ -176,12 +176,15 @@
 	<Compile Include="CAD\Fight4Fit\IComentarioCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\ComentarioCAD.cs" />
 	<Compile Include="CP\Fight4Fit\ComentarioCP.cs" />
+			<Compile Include="CP\Fight4Fit\ComentarioCP_PublicarComentario.cs" />
 			
 			
 			
 			
 			
 			<Compile Include="CEN\Fight4Fit\ComentarioCEN_Darlike.cs" />
+			
+			
 			
 	<Compile Include="EN\Fight4Fit\FotoEN.cs" />
 	<Compile Include="CEN\Fight4Fit\FotoCEN.cs" />

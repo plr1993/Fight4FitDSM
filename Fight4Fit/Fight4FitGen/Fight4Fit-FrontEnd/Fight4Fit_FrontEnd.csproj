@@ -227,6 +227,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\CategoriaAssembler.cs" />
     <Compile Include="Models\CategoriaModelo.cs" />
+    <Compile Include="Models\ComentarioAssembler.cs" />
     <Compile Include="Models\ComentarioModelo.cs" />
     <Compile Include="Models\FotoModelo.cs" />
     <Compile Include="Models\ReporteAssembler.cs" />
@@ -362,6 +363,8 @@
     <Content Include="Views\Reporte\Details.cshtml" />
     <Content Include="Views\Comentario\Create.cshtml" />
     <Content Include="Views\Comentario\Index.cshtml" />
+    <Content Include="Views\Comentario\Delete.cshtml" />
+    <Content Include="Views\Comentario\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

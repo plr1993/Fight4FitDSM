@@ -21,7 +21,7 @@ namespace Fight4FitGenNHibernate.CP.Fight4Fit
 {
 public partial class ReporteCP : BasicCP
 {
-public Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN NuevoReporte (string p_Texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum p_Motivo, string p_usuario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoReporteEnum p_tipo, int p_idRef)
+public Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN NuevoReporte (string p_Texto, Fight4FitGenNHibernate.Enumerated.Fight4Fit.MotivoEnum p_Motivo, string p_usuario, int p_idRef, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoReporteEnum p_tipo)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Reporte_NuevoReporte) ENABLED START*/
 
