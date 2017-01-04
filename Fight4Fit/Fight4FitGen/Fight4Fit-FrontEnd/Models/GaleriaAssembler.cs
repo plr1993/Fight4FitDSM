@@ -21,17 +21,17 @@ namespace Fight4Fit_FrontEnd.Models
             gal.NombreGaleria = en.NombreGaleria;
             gal.Evento = en.Evento.Id;
 
-            return gal; 
+            return gal;
         }
 
 
 
-        public IList<GaleriaModelo>ConvertListENToModel(IList<GaleriaEN> catens)
+        public IList<GaleriaModelo> ConvertListENToModel(IList<GaleriaEN> catens)
         {
             IList<GaleriaModelo> catmod = new List<GaleriaModelo>();
-            foreach(GaleriaEN caten in catens)
+            foreach (GaleriaEN caten in catens)
             {
-                catmod.Add(ConvertENToModelUI(caten)); 
+                catmod.Add(ConvertENToModelUI(caten));
             }
 
             return catmod;

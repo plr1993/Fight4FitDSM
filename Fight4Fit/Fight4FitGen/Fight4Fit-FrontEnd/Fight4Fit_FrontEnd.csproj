@@ -232,6 +232,8 @@
     <Compile Include="Models\ComentarioModelo.cs" />
     <Compile Include="Models\FotoAssembler.cs" />
     <Compile Include="Models\FotoModelo.cs" />
+    <Compile Include="Models\GaleriaAssembler.cs" />
+    <Compile Include="Models\GaleriaModelo.cs" />
     <Compile Include="Models\ReporteAssembler.cs" />
     <Compile Include="Models\ReporteModelo.cs" />
     <Compile Include="Models\SoporteAssembler.cs" />
