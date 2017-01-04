@@ -38,40 +38,7 @@ public IFotoCAD get_IFotoCAD ()
         return this._IFotoCAD;
 }
 
-public int SubirFoto (string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, int p_pertenece_a, int p_likes, string p_Ruta)
-{
-        FotoEN fotoEN = null;
-        int oid;
-
-        //Initialized FotoEN
-        fotoEN = new FotoEN ();
-        fotoEN.Nombre = p_Nombre;
-
-        fotoEN.Usuario = p_Usuario;
-
-        fotoEN.Fecha = p_Fecha;
-
-        fotoEN.Descripcion = p_Descripcion;
-
-
-        if (p_pertenece_a != -1) {
-                // El argumento p_pertenece_a -> Property pertenece_a es oid = false
-                // Lista de oids id
-                fotoEN.Pertenece_a = new Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN ();
-                fotoEN.Pertenece_a.Id = p_pertenece_a;
-        }
-
-        fotoEN.Likes = p_likes;
-
-        fotoEN.Ruta = p_Ruta;
-
-        //Call to FotoCAD
-
-        oid = _IFotoCAD.SubirFoto (fotoEN);
-        return oid;
-}
-
-public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nullable<DateTime> p_Fecha, string p_Descripcion, int p_likes, string p_Ruta)
+public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, string p_Descripcion, int p_likes, string p_Ruta)
 {
         FotoEN fotoEN = null;
 
@@ -80,7 +47,6 @@ public void EditarFoto (int p_Foto_OID, string p_Nombre, string p_Usuario, Nulla
         fotoEN.Id = p_Foto_OID;
         fotoEN.Nombre = p_Nombre;
         fotoEN.Usuario = p_Usuario;
-        fotoEN.Fecha = p_Fecha;
         fotoEN.Descripcion = p_Descripcion;
         fotoEN.Likes = p_likes;
         fotoEN.Ruta = p_Ruta;

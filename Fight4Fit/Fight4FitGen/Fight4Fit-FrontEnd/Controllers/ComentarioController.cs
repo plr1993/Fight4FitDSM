@@ -82,7 +82,8 @@ namespace Fight4Fit_FrontEnd.Controllers
             try
             {
                 ComentarioCEN cen = new ComentarioCEN();
-                cen.EditarComentario(id, mod.titulo, mod.texto, mod.likes);
+                ComentarioEN en = cen.ReadOID(id);
+                cen.EditarComentario(id, mod.titulo, mod.texto, en.Likes);
 
                 return RedirectToAction("Index");
             }

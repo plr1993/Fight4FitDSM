@@ -41,13 +41,6 @@ private string usuario;
 
 
 /**
- *	Atributo fecha
- */
-private Nullable<DateTime> fecha;
-
-
-
-/**
  *	Atributo descripcion
  */
 private string descripcion;
@@ -108,12 +101,6 @@ public virtual string Usuario {
 
 
 
-public virtual Nullable<DateTime> Fecha {
-        get { return fecha; } set { fecha = value;  }
-}
-
-
-
 public virtual string Descripcion {
         get { return descripcion; } set { descripcion = value;  }
 }
@@ -148,20 +135,20 @@ public FotoEN()
 
 
 
-public FotoEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, Nullable<DateTime> fecha, string descripcion, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a, int likes, string ruta
+public FotoEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, string descripcion, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a, int likes, string ruta
               )
 {
-        this.init (Id, comentario, reporte, nombre, usuario, fecha, descripcion, pertenece_a, likes, ruta);
+        this.init (Id, comentario, reporte, nombre, usuario, descripcion, pertenece_a, likes, ruta);
 }
 
 
 public FotoEN(FotoEN foto)
 {
-        this.init (Id, foto.Comentario, foto.Reporte, foto.Nombre, foto.Usuario, foto.Fecha, foto.Descripcion, foto.Pertenece_a, foto.Likes, foto.Ruta);
+        this.init (Id, foto.Comentario, foto.Reporte, foto.Nombre, foto.Usuario, foto.Descripcion, foto.Pertenece_a, foto.Likes, foto.Ruta);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, Nullable<DateTime> fecha, string descripcion, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a, int likes, string ruta)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, string nombre, string usuario, string descripcion, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN pertenece_a, int likes, string ruta)
 {
         this.Id = id;
 
@@ -173,8 +160,6 @@ private void init (int id
         this.Nombre = nombre;
 
         this.Usuario = usuario;
-
-        this.Fecha = fecha;
 
         this.Descripcion = descripcion;
 

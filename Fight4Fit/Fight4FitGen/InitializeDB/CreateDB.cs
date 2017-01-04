@@ -180,16 +180,16 @@ public static void InitializeData ()
                 eventoEN = new EventoEN ();
                 eventoEN.Categoria = categoriaEN;
                 eventoEN.Descripcion = "Que bien vamos a pasarlo";
-                eventoEN.Tipo=TipoEventoEnum.Evento;
-                int ev1=eventoCEN.CrearEvento("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32);
+                eventoEN.Tipo = TipoEventoEnum.Evento;
+                int ev1 = eventoCEN.CrearEvento ("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32);
 
 
-                EventoEN evento1EN = new EventoEN();
-                evento1EN = new EventoEN();
+                EventoEN evento1EN = new EventoEN ();
+                evento1EN = new EventoEN ();
                 evento1EN.Categoria = categoriaEN;
                 evento1EN.Descripcion = "Que bien vamos a jugahlo";
                 evento1EN.Tipo = TipoEventoEnum.Evento;
-               int ev2= eventoCEN.CrearEvento("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32); 
+                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32);
 
                 //COMENTARIO
                 comentarioEN = new ComentarioEN ();
@@ -197,9 +197,9 @@ public static void InitializeData ()
                 comentarioEN.Texto = "El futbol es muy divertido";
                 comentarioCP.PublicarComentario (comentarioEN.Titulo, comentarioEN.Texto, 0, ev1);
 
-                
+
                 ComentarioEN comentario2EN = new ComentarioEN ();
-                comentario2EN = new ComentarioEN();
+                comentario2EN = new ComentarioEN ();
                 comentario2EN.Titulo = "Golf";
                 comentario2EN.Texto = "El golf es muy divertido";
                 comentarioCP.PublicarComentario (comentario2EN.Titulo, comentario2EN.Texto, 0, ev2);
@@ -214,27 +214,27 @@ public static void InitializeData ()
 
                 //REPORTE
 
-            /*
-                reporteEN = new ReporteEN ();
-                reporteEN.Texto = "Este tio es muy muy feo";
-                reporteEN.Motivo = MotivoEnum.ofensivo;
-                reporteEN.Usuario = usuario1EN;
-                reporteEN.Tipo = TipoReporteEnum.comentario;
-                reporteCP.NuevoReporte (reporteEN.Texto, reporteEN.Motivo, reporteEN.Usuario.Email, comentarioEN.Id, reporteEN.Tipo);
-
-                ReporteEN reporte1EN = new ReporteEN ();
-                reporte1EN.Texto = "Este tio es muy muy feo";
-                reporte1EN.Motivo = MotivoEnum.terrorismo;
-                reporte1EN.Usuario = usuario2EN;
-                reporte1EN.Tipo = TipoReporteEnum.comentario;
-                reporteCP.NuevoReporte (reporte1EN.Texto, reporte1EN.Motivo, reporte1EN.Usuario.Email, 0, reporte1EN.Tipo);
-
-                ReporteEN reporte2EN = new ReporteEN ();
-                reporte2EN.Texto = "Este tio es muy muy feo";
-                reporte2EN.Motivo = MotivoEnum.inapropiado;
-                reporte1EN.Usuario = usuario1EN;
-                reporte2EN.Tipo = TipoReporteEnum.comentario;
-                reporteCP.NuevoReporte (reporte2EN.Texto, reporte2EN.Motivo, reporte2EN.Usuario.Email, 1, reporte2EN.Tipo);*/
+                /*
+                 *  reporteEN = new ReporteEN ();
+                 *  reporteEN.Texto = "Este tio es muy muy feo";
+                 *  reporteEN.Motivo = MotivoEnum.ofensivo;
+                 *  reporteEN.Usuario = usuario1EN;
+                 *  reporteEN.Tipo = TipoReporteEnum.comentario;
+                 *  reporteCP.NuevoReporte (reporteEN.Texto, reporteEN.Motivo, reporteEN.Usuario.Email, comentarioEN.Id, reporteEN.Tipo);
+                 *
+                 *  ReporteEN reporte1EN = new ReporteEN ();
+                 *  reporte1EN.Texto = "Este tio es muy muy feo";
+                 *  reporte1EN.Motivo = MotivoEnum.terrorismo;
+                 *  reporte1EN.Usuario = usuario2EN;
+                 *  reporte1EN.Tipo = TipoReporteEnum.comentario;
+                 *  reporteCP.NuevoReporte (reporte1EN.Texto, reporte1EN.Motivo, reporte1EN.Usuario.Email, 0, reporte1EN.Tipo);
+                 *
+                 *  ReporteEN reporte2EN = new ReporteEN ();
+                 *  reporte2EN.Texto = "Este tio es muy muy feo";
+                 *  reporte2EN.Motivo = MotivoEnum.inapropiado;
+                 *  reporte1EN.Usuario = usuario1EN;
+                 *  reporte2EN.Tipo = TipoReporteEnum.comentario;
+                 *  reporteCP.NuevoReporte (reporte2EN.Texto, reporte2EN.Motivo, reporte2EN.Usuario.Email, 1, reporte2EN.Tipo);*/
 
 
 

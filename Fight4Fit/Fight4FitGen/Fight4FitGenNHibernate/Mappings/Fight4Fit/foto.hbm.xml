@@ -18,9 +18,6 @@
 					<property name="Usuario" type="string"> 
 						<column name="Usuario"  not-null="true"/>
 					</property>
-					<property name="Fecha" type="date"> 
-						<column name="Fecha"  not-null="true"/>
-					</property>
 					<property name="Descripcion" type="string"> 
 						<column name="Descripcion"  not-null="true"/>
 					</property>
@@ -58,7 +55,6 @@
 			
 			
 			
-			
 		  			
 						<many-to-one name="Pertenece_a" class="Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN" >	
 								<column name="FK_idGaleria_idGaleria"/> 
@@ -66,7 +62,6 @@
 											 					
 			
 			
-					
 					
 					
 					

@@ -14,14 +14,6 @@ namespace Fight4Fit_FrontEnd.Models
 
         //
         // GET: /FotoModelo/
-        [ScaffoldColumn(false)]
-        public String id { get; set; }
-
-        [ScaffoldColumn(false)]
-        public String comentario { get; set; }
-
-        [ScaffoldColumn(false)]
-        public String reporte { get; set; }
 
         [ScaffoldColumn(false)]
         public String nombre { get; set; }
@@ -30,16 +22,10 @@ namespace Fight4Fit_FrontEnd.Models
         public String email { get; set; }
 
         [ScaffoldColumn(false)]
-        public DateTime fecha { get; set; }
+        public String descripcion { get; set; }
 
         [ScaffoldColumn(false)]
-        public int idgaleria { get; set; }
-
-        [ScaffoldColumn(false)]
-        public string descripcion { get; set; }
-
-        [ScaffoldColumn(false)]
-        public string imagen { get; set; }
+        public String ruta { get; set; }
 
         [ScaffoldColumn(false)]
         public int likes { get; set; }

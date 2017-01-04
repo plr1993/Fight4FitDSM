@@ -186,11 +186,14 @@
 			
 			
 			
+			<Compile Include="CEN\Fight4Fit\ComentarioCEN_Operation.cs" />
+			
 	<Compile Include="EN\Fight4Fit\FotoEN.cs" />
 	<Compile Include="CEN\Fight4Fit\FotoCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\IFotoCAD.cs" />
 	<Compile Include="CAD\Fight4Fit\FotoCAD.cs" />
 	<Compile Include="CP\Fight4Fit\FotoCP.cs" />
+			<Compile Include="CP\Fight4Fit\FotoCP_SubirFoto.cs" />
 			
 			
 			

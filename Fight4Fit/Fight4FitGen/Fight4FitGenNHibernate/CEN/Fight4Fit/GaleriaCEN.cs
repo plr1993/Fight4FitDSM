@@ -38,7 +38,7 @@ public IGaleriaCAD get_IGaleriaCAD ()
         return this._IGaleriaCAD;
 }
 
-public int CrearGaleria (int p_evento, int p_id, string p_NombreGaleria)
+public int CrearGaleria (int p_evento, string p_NombreGaleria)
 {
         GaleriaEN galeriaEN = null;
         int oid;
@@ -52,8 +52,6 @@ public int CrearGaleria (int p_evento, int p_id, string p_NombreGaleria)
                 galeriaEN.Evento = new Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN ();
                 galeriaEN.Evento.Id = p_evento;
         }
-
-        galeriaEN.Id = p_id;
 
         galeriaEN.NombreGaleria = p_NombreGaleria;
 

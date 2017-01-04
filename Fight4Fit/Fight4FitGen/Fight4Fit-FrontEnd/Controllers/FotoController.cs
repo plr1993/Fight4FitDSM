@@ -1,5 +1,7 @@
 ﻿using Fight4Fit_FrontEnd.Models;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.CP.Fight4Fit;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using MvcApplication1.Controllers;
 using System;
@@ -29,7 +31,12 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            FotoModelo fom = null;
+            SessionInitialize();
+            FotoEN repEN = new FotoCAD(session).ReadOIDDefault(id);
+            fom = new FotoAssembler().ConvertENToModelUI(repEN);
+            SessionClose();
+            return View(fom);
         }
 
         //
@@ -48,7 +55,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         [HttpPost]
         public ActionResult Create(FotoModelo fot, HttpPostedFileBase file)
         {
-            string fileName = "", path = "";
+            string fileName ="", path = "";
             // Verify that the user selected a file
             if (file != null && file.ContentLength > 0)
             {
@@ -57,13 +64,14 @@ namespace Fight4Fit_FrontEnd.Controllers
                 // store the file inside ~/App_Data/uploads folder
                 path = Path.Combine(Server.MapPath("~/Images/Uploads"), fileName);
                 //string pathDef = path.Replace(@"\\", @"\");
+
                 file.SaveAs(path);
             }
 
            
                 fileName = "/Images/Uploads/" + fileName;
-                FotoCEN cen = new FotoCEN();
-                cen.SubirFoto(fot.nombre, fot.email, fot.fecha, fot.descripcion, 0, 0, fileName);
+                FotoCP cp = new FotoCP();
+                cp.SubirFoto(fot.nombre, "perico el de los palotes", fot.descripcion, 0, fileName);
                 return RedirectToAction("Index");
             
            
@@ -74,19 +82,25 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Edit(int id)
         {
-            return View();
+            FotoModelo com = null;
+            SessionInitialize();
+            FotoEN en = new FotoCAD(session).ReadOIDDefault(id);
+            com = new FotoAssembler().ConvertENToModelUI(en);
+            SessionClose();
+            return View(com);
         }
 
         //
         // POST: /Foto/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, FotoModelo fot)
         {
             try
             {
-                // TODO: Add update logic here
-
+                FotoCEN cen = new FotoCEN();
+                FotoEN en = cen.ReadOID(id);
+                cen.EditarFoto(id, fot.nombre,en.Usuario, fot.descripcion,en.Likes, en.Ruta);
                 return RedirectToAction("Index");
             }
             catch
@@ -95,12 +109,26 @@ namespace Fight4Fit_FrontEnd.Controllers
             }
         }
 
+        //MÉTODO DAR LIKE
+        public ActionResult Darlike(int id)
+        {
+            FotoModelo com = null;
+            SessionInitialize();
+            FotoEN en = new FotoCAD(session).ReadOIDDefault(id);
+            com = new FotoAssembler().ConvertENToModelUI(en);
+            SessionClose();
+            FotoCEN cen = new FotoCEN();
+            en.Likes++;
+            cen.EditarFoto(id, en.Nombre, en.Usuario, en.Descripcion, en.Likes, en.Ruta);
+            return RedirectToAction("Index");
+        }
         //
         // GET: /Foto/Delete/5
 
         public ActionResult Delete(int id)
         {
-            return View();
+            FotoCEN cen = new FotoCEN();
+            return View(cen);
         }
 
         //
@@ -111,8 +139,8 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
-
+                FotoCEN cen = new FotoCEN();
+                cen.BorrarFoto(id);
                 return RedirectToAction("Index");
             }
             catch
