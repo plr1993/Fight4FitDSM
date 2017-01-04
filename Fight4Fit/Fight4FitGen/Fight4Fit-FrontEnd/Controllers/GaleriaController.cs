@@ -1,9 +1,15 @@
-﻿using MvcApplication1.Controllers;
+﻿using Fight4Fit_FrontEnd.Models;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
+using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.CP.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
+using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace Fight4Fit_FrontEnd.Controllers
 {
@@ -14,7 +20,9 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            GaleriaCEN galCEN = new GaleriaCEN();
+            IEnumerable<GaleriaEN> list = galCEN.ReadAll(0, -1).ToList();
+            return View(list);
         }
 
         //
@@ -22,7 +30,12 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            GaleriaModelo gal = null;
+            SessionInitialize();
+            GaleriaEN galEN = new GaleriaCAD(session).ReadOIDDefault(id);
+            gal = new GaleriaAssembler().ConvertENToModelUI(galEN);
+            SessionClose();
+            return View(gal);
         }
 
         //
@@ -30,25 +43,21 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            GaleriaModelo gal = new GaleriaModelo();
+            return View(gal);
         }
 
         //
         // POST: /Galeria/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(GaleriaModelo galMod)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
+          
+                GaleriaCEN galCEN = new GaleriaCEN();
+                galCEN.CrearGaleria(galMod.Evento, galMod.NombreGaleria);
+                Console.Write("Error al crear");
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         //
@@ -82,7 +91,8 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            GaleriaCEN cen = new GaleriaCEN();
+            return View(cen);
         }
 
         //
@@ -93,8 +103,8 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
-
+                GaleriaCEN cen = new GaleriaCEN();
+                cen.EliminarGaleria(id);
                 return RedirectToAction("Index");
             }
             catch
