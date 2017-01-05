@@ -380,6 +380,7 @@
     <Content Include="Views\Evento\Create.cshtml" />
     <Content Include="Views\Evento\Details.cshtml" />
     <Content Include="Views\Evento\Edit.cshtml" />
+    <Content Include="Views\Comentario\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

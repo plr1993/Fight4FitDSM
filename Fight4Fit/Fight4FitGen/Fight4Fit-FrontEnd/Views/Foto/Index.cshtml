@@ -48,6 +48,7 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Añadir comentario", "../Comentario/Create", new { id = item.Id, var = 2 }) |
             @Html.ActionLink("Me gusta", "Darlike", new { id = item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })

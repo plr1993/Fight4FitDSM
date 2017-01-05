@@ -54,7 +54,7 @@
             @Html.Label("Fecha", "¿Cuando se realizara el evento?")
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Fecha)
+            @Html.TextBoxFor(model => model.Fecha, new { type = "date" })
             @Html.ValidationMessageFor(model => model.Fecha)
         </div>
         <div class="editor-label">

@@ -54,6 +54,13 @@ private int likes;
 
 
 
+/**
+ *	Atributo tipocom
+ */
+private Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom;
+
+
+
 
 
 
@@ -99,6 +106,12 @@ public virtual int Likes {
 
 
 
+public virtual Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum Tipocom {
+        get { return tipocom; } set { tipocom = value;  }
+}
+
+
+
 
 
 public ComentarioEN()
@@ -108,20 +121,20 @@ public ComentarioEN()
 
 
 
-public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes
+public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom
                     )
 {
-        this.init (Id, reporte, foto, evento, titulo, texto, likes);
+        this.init (Id, reporte, foto, evento, titulo, texto, likes, tipocom);
 }
 
 
 public ComentarioEN(ComentarioEN comentario)
 {
-        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto, comentario.Likes);
+        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto, comentario.Likes, comentario.Tipocom);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom)
 {
         this.Id = id;
 
@@ -137,6 +150,8 @@ private void init (int id
         this.Texto = texto;
 
         this.Likes = likes;
+
+        this.Tipocom = tipocom;
 }
 
 public override bool Equals (object obj)

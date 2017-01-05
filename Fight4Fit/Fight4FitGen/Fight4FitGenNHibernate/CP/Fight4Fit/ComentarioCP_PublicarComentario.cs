@@ -9,6 +9,7 @@ using NHibernate.Exceptions;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 
 
 
@@ -20,7 +21,7 @@ namespace Fight4FitGenNHibernate.CP.Fight4Fit
 {
 public partial class ComentarioCP : BasicCP
 {
-public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (string p_Titulo, string p_Texto, int idfoto, int ideven)
+public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (string p_Titulo, string p_Texto, int idref, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipo)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Comentario_PublicarComentario) ENABLED START*/
 
@@ -46,7 +47,7 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (stri
                 comentarioEN.Titulo = p_Titulo;
 
                 comentarioEN.Texto = p_Texto;
-
+                comentarioEN.Tipocom = tipo;
                 comentarioEN.Likes = 0;
 
                 //Call to ComentarioCAD
@@ -54,12 +55,12 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (stri
                 oid = comentarioCAD.PublicarComentario (comentarioEN);
 
 
-                if (idfoto > 0) {
-                        comentarioCEN.VincFoto (comentarioEN.Id, idfoto);
+                if (comentarioEN.Tipocom == TipoComentarioEnum.Foto) {
+                        comentarioCEN.VincFoto (comentarioEN.Id, idref);
                 }
 
-                else if (ideven >= 0) {
-                        comentarioCEN.VincEv (comentarioEN.Id, ideven);
+                else if (comentarioEN.Tipocom == TipoComentarioEnum.Evento) {
+                        comentarioCEN.VincEv (comentarioEN.Id, idref);
                 }
 
 

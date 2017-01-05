@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
 
 <h2>Realizar reporte</h2>
@@ -28,8 +29,16 @@
             @Html.EditorFor(model => model.texto)
             @Html.ValidationMessageFor(model => model.texto)
         </div>	
-
         
+   
+        @Html.HiddenFor(model=>model.id)
+        @Html.HiddenFor(model => model.tipo)
+
+
+       
+       
+
+    
        
 
         <p>
@@ -44,4 +53,7 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+ 
+
 }

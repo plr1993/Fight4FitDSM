@@ -102,6 +102,9 @@ public void ModifyDefault (ComentarioEN comentario)
 
                 comentarioEN.Likes = comentario.Likes;
 
+
+                comentarioEN.Tipocom = comentario.Tipocom;
+
                 session.Update (comentarioEN);
                 SessionCommit ();
         }
@@ -186,6 +189,9 @@ public void EditarComentario (ComentarioEN comentario)
 
 
                 comentarioEN.Likes = comentario.Likes;
+
+
+                comentarioEN.Tipocom = comentario.Tipocom;
 
                 session.Update (comentarioEN);
                 SessionCommit ();

@@ -11,7 +11,7 @@ namespace Fight4Fit_FrontEnd.Models
         public FotoModelo ConvertENToModelUI(FotoEN en)
         {
             FotoModelo cat = new FotoModelo();
-
+            cat.id = en.Id;
             cat.nombre = en.Nombre;
 
             cat.descripcion = en.Descripcion;

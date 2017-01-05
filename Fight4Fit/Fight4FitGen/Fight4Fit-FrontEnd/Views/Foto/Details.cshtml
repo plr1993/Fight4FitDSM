@@ -28,8 +28,17 @@
 
     @Html.DisplayFor(model => model.descripcion)
 </div>
+<h2>Comentarios: </h2>
+@foreach (var item in (List<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN>)@ViewData["lista"])
+{
+    <h3>@item.Titulo</h3>
+    <p>@item.Texto</p>
+}
 
 <p>
+    @Html.ActionLink("Me gusta", "Darlike", new { id = Model.id }) |
+    @Html.ActionLink("Reportar foto", "../Reporte/Create", new { id = Model.id, var = 1 }) |
+    @Html.ActionLink("Añadir comentario", "../Comentario/Create", new { id = Model.id, var = 2 }) |
     @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

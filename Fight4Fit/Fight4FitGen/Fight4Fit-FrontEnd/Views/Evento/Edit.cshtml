@@ -12,15 +12,6 @@
 
     <fieldset>
         <legend>EventoModelo</legend>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.numPart)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.numPart)
-            @Html.ValidationMessageFor(model => model.numPart)
-        </div>
-
         <div class="editor-label">
             @Html.LabelFor(model => model.numPartMax)
         </div>
@@ -46,12 +37,11 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Categoria)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Categoria)
-            @Html.ValidationMessageFor(model => model.Categoria)
-        </div>
+    @Html.Label("Categoria", "¿De que categoria es el evento?")
+</div>
+<div class="display-input">
+    @Html.DropDownListFor(model => model.Categoria, new SelectList(@ViewBag.Categorias))
+</div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Localizacion)
@@ -81,7 +71,7 @@
             @Html.LabelFor(model => model.Fecha)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Fecha)
+            @Html.TextBoxFor(model => model.Fecha, new { type = "date" })
             @Html.ValidationMessageFor(model => model.Fecha)
         </div>
 

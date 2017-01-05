@@ -28,6 +28,8 @@
             @Html.EditorFor(model => model.texto)
             @Html.ValidationMessageFor(model => model.texto)
         </div>	
+        @Html.HiddenFor(model => model.idre)
+        @Html.HiddenFor(model => model.tipo)
         <p>
             <input type="submit" value="Create" />
         </p>

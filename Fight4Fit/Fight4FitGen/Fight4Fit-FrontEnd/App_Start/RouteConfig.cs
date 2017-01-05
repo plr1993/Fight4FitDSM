@@ -15,8 +15,8 @@ namespace Fight4Fit_FrontEnd
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional}
+                url: "{controller}/{action}/{id}/{var}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, var=UrlParameter.Optional}
             );
         }
     }

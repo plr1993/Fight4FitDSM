@@ -11,7 +11,7 @@ namespace Fight4Fit_FrontEnd.Models
         public ComentarioModelo ConvertENToModelUI(ComentarioEN en)
         {
             ComentarioModelo cat = new ComentarioModelo();
-
+            cat.id = en.Id;
             cat.titulo = en.Titulo;
             cat.texto = en.Texto;/*
             try

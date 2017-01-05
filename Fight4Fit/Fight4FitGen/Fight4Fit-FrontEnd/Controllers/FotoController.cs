@@ -31,10 +31,25 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(int id)
         {
+            IList<ComentarioEN> lista = new List<ComentarioEN>();
+            IList<ComentarioEN> listaevento = new List<ComentarioEN>();
             FotoModelo fom = null;
             SessionInitialize();
             FotoEN repEN = new FotoCAD(session).ReadOIDDefault(id);
             fom = new FotoAssembler().ConvertENToModelUI(repEN);
+            ComentarioCEN comentarios = new ComentarioCEN();
+            lista = comentarios.ReadAll(0, -1);
+            foreach (ComentarioEN item in lista)
+            {
+                if (item.Foto != null)
+                {
+                    if (item.Foto.Id == id)
+                    {
+                        listaevento.Add(item);
+                    }
+                }
+            }
+            ViewData["lista"] = listaevento;
             SessionClose();
             return View(fom);
         }

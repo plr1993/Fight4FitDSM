@@ -21,6 +21,9 @@
 					<property name="Likes" type="integer"> 
 						<column name="likes"  not-null="true"/>
 					</property>
+					<property name="Tipocom" > 
+						<column name="tipocom"  not-null="true"/>
+					</property>
 			
 			
 		  			
@@ -49,6 +52,8 @@
 			
 			
 			
+			
+					
 					
 					
 					

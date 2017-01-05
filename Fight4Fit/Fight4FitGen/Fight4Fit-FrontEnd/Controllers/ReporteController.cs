@@ -3,6 +3,7 @@ using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
 using Fight4FitGenNHibernate.CP.Fight4Fit;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,18 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Create()
         {
             ReporteModelo rep = new ReporteModelo();
+            String idr = RouteData.Values["id"].ToString();
+            String tip = RouteData.Values["var"].ToString();
+            int idref = Int32.Parse(idr);
+            int tipo = Int32.Parse(tip);
+            rep.id = idref;
+            if (tipo == 1)
+                rep.tipo = TipoReporteEnum.foto;
+            else if (tipo == 2)
+                rep.tipo = TipoReporteEnum.comentario;
+            else if (tipo == 3)
+                rep.tipo = TipoReporteEnum.evento;
+           
             return View(rep);
         }
 

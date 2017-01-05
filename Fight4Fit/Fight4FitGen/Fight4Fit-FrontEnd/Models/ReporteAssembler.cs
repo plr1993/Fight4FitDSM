@@ -1,4 +1,5 @@
 ﻿using Fight4FitGenNHibernate.EN.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace Fight4Fit_FrontEnd.Models
             cat.email = "el puma";
             cat.motivo = en.Motivo;
             cat.tipo = en.Tipo;
+       
 
 
             return cat;

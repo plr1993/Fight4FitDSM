@@ -16,6 +16,9 @@ namespace Fight4Fit_FrontEnd.Models
         // GET: /FotoModelo/
 
         [ScaffoldColumn(false)]
+        public int id { get; set; }
+
+        [ScaffoldColumn(false)]
         public String nombre { get; set; }
 
         [ScaffoldColumn(false)]

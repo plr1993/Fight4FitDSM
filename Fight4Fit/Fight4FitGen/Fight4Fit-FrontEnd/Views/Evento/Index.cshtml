@@ -47,6 +47,8 @@
             @Html.DisplayFor(modelItem => item.Tipo)
         </td>
         <td>
+            @Html.ActionLink("Reportar evento", "../Reporte/Create", new { id =item.Id, var = 3 }) |
+            @Html.ActionLink("Añadir comentario", "../Comentario/Create", new { id = item.Id, var = 1 }) |
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })

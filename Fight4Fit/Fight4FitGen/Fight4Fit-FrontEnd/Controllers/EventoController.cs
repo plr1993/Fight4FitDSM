@@ -38,9 +38,12 @@ namespace Fight4Fit_FrontEnd.Controllers
             lista = comentarios.ReadAll(0, -1);
             foreach (ComentarioEN item in lista)
             {
-                if (item.Evento.Id == id)
+                if (item.Evento!=null)
                 {
-                    listaevento.Add(item);
+                    if (item.Evento.Id == id)
+                    {
+                        listaevento.Add(item);
+                    }
                 }
             }
             ViewData["lista"] = listaevento;
@@ -55,6 +58,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             EventoModelo art = new EventoModelo();
             CategoriaCEN cen = new CategoriaCEN();
+            
             IEnumerable<CategoriaEN> list = cen.ReadAll(0, -1).ToList();
             List<string> lista = new List<string>();
             foreach(CategoriaEN aux in list){
@@ -85,6 +89,14 @@ namespace Fight4Fit_FrontEnd.Controllers
             EventoEN artEN = new EventoCAD(session).ReadOIDDefault(id);
             art = new EventoAssembler().ConvertENToModelUI(artEN);
             SessionClose();
+            CategoriaCEN cen = new CategoriaCEN();
+            IEnumerable<CategoriaEN> list = cen.ReadAll(0, -1).ToList();
+            List<string> lista = new List<string>();
+            foreach (CategoriaEN aux in list)
+            {
+                lista.Add(aux.Nombre);
+            }
+            ViewBag.Categorias = lista;
             return View(art);
         }
 

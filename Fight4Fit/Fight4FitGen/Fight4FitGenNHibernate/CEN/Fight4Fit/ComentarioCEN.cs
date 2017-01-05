@@ -44,7 +44,7 @@ public void BorrarComentario (int id
         _IComentarioCAD.BorrarComentario (id);
 }
 
-public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Texto, int p_likes)
+public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Texto, int p_likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum p_tipocom)
 {
         ComentarioEN comentarioEN = null;
 
@@ -54,6 +54,7 @@ public void EditarComentario (int p_Comentario_OID, string p_Titulo, string p_Te
         comentarioEN.Titulo = p_Titulo;
         comentarioEN.Texto = p_Texto;
         comentarioEN.Likes = p_likes;
+        comentarioEN.Tipocom = p_tipocom;
         //Call to ComentarioCAD
 
         _IComentarioCAD.EditarComentario (comentarioEN);

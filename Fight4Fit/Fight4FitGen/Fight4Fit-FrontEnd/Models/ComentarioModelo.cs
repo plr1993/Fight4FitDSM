@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,16 +12,19 @@ namespace Fight4Fit_FrontEnd.Models
 
 
         [ScaffoldColumn(false)]
+        public int id { get; set; }
+
+        [ScaffoldColumn(false)]
         public String texto { get; set; }
 
         [ScaffoldColumn(false)]
         public String titulo { get; set; }
 
         [ScaffoldColumn(false)]
-        public int idfoto { get; set; }
+        public int idre { get; set; }
 
         [ScaffoldColumn(false)]
-        public int idevento { get; set; }
+        public TipoComentarioEnum tipo { get; set; }
 
         [ScaffoldColumn(false)]
         public int likes { get; set; }

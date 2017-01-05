@@ -179,7 +179,7 @@ public static void InitializeData ()
 
                 //EVENTO
                 DateTime date1 = DateTime.Now;
-                DateTime date12 = new DateTime(2008, 5, 1, 8, 30, 52);
+                DateTime date12 = new DateTime (2008, 5, 1, 8, 30, 52);
                 eventoEN = new EventoEN ();
                 eventoEN.Categoria = categoriaEN;
                 eventoEN.Descripcion = "Que bien vamos a pasarlo";
@@ -187,7 +187,7 @@ public static void InitializeData ()
                 eventoEN.Localizacion = "China";
                 eventoEN.Latitud = 1234123;
                 eventoEN.Longitud = 123123;
-                int ev1 = eventoCEN.CrearEvento("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date1, eventoEN.Localizacion, eventoEN.Latitud, eventoEN.Longitud);
+                int ev1 = eventoCEN.CrearEvento ("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date1, eventoEN.Localizacion, eventoEN.Latitud, eventoEN.Longitud);
 
                 EventoEN evento1EN = new EventoEN ();
                 evento1EN = new EventoEN ();
@@ -197,25 +197,25 @@ public static void InitializeData ()
                 evento1EN.Latitud = 1234123;
                 evento1EN.Longitud = 123123;
                 evento1EN.Tipo = TipoEventoEnum.Evento;
-                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32,date12,evento1EN.Localizacion, evento1EN.Latitud, evento1EN.Longitud);
+                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date12, evento1EN.Localizacion, evento1EN.Latitud, evento1EN.Longitud);
 
                 //COMENTARIO
                 comentarioEN = new ComentarioEN ();
                 comentarioEN.Titulo = "Futbol";
                 comentarioEN.Texto = "El futbol es muy divertido";
-                comentarioCP.PublicarComentario (comentarioEN.Titulo, comentarioEN.Texto, 0, ev1);
+                comentarioCP.PublicarComentario (comentarioEN.Titulo, comentarioEN.Texto, ev1, TipoComentarioEnum.Evento);
 
 
                 ComentarioEN comentario2EN = new ComentarioEN ();
                 comentario2EN = new ComentarioEN ();
                 comentario2EN.Titulo = "Golf";
                 comentario2EN.Texto = "El golf es muy divertido";
-                comentarioCP.PublicarComentario (comentario2EN.Titulo, comentario2EN.Texto, 0, ev2);
+                comentarioCP.PublicarComentario (comentario2EN.Titulo, comentario2EN.Texto, ev2, TipoComentarioEnum.Evento);
 
                 ComentarioEN comentario3EN = new ComentarioEN ();
                 comentario3EN.Titulo = "Tenis";
                 comentario3EN.Texto = "El tenis es muy divertido";
-                comentarioCP.PublicarComentario (comentario3EN.Titulo, comentario3EN.Texto, 0, ev1);
+                comentarioCP.PublicarComentario (comentario3EN.Titulo, comentario3EN.Texto, ev1, TipoComentarioEnum.Evento);
 
 
 

@@ -3,6 +3,7 @@ using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
 using Fight4FitGenNHibernate.CP.Fight4Fit;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,12 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            ComentarioModelo rem = null;
+            SessionInitialize();
+            ComentarioEN comEN = new ComentarioCAD(session).ReadOIDDefault(id);
+            rem = new ComentarioAssembler().ConvertENToModelUI(comEN);
+            SessionClose();
+            return View(rem);
         }
 
         //
@@ -38,6 +44,16 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Create()
         {
             ComentarioModelo com = new ComentarioModelo();
+            String idr = RouteData.Values["id"].ToString();
+            String tip = RouteData.Values["var"].ToString();
+            int idref = Int32.Parse(idr);
+            int tipo = Int32.Parse(tip);
+            com.idre = idref;
+            if (tipo == 1)
+                com.tipo = TipoComentarioEnum.Evento;
+            else if (tipo == 2)
+                com.tipo = TipoComentarioEnum.Foto;
+
             return View(com);
         }
 
@@ -50,7 +66,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             try
             {
                 ComentarioCP cp = new ComentarioCP();
-                cp.PublicarComentario(com.titulo, com.texto, com.idfoto, com.idevento);
+                cp.PublicarComentario(com.titulo, com.texto, com.idre, com.tipo);
                 return RedirectToAction("Index");
             }
             catch
@@ -83,7 +99,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             {
                 ComentarioCEN cen = new ComentarioCEN();
                 ComentarioEN en = cen.ReadOID(id);
-                cen.EditarComentario(id, mod.titulo, mod.texto, en.Likes);
+                cen.EditarComentario(id, mod.titulo, mod.texto, en.Likes, mod.tipo);
 
                 return RedirectToAction("Index");
             }
@@ -103,7 +119,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             SessionClose();
             ComentarioCEN cen = new ComentarioCEN();
             en.Likes++;
-            cen.EditarComentario(id, com.titulo, com.texto, en.Likes);
+            cen.EditarComentario(id, com.titulo, com.texto, en.Likes, com.tipo);
             return RedirectToAction("Index");
         }
 
