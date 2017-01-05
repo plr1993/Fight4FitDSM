@@ -27,6 +27,18 @@
 					<property name="MaxParticipantes" type="integer"> 
 						<column name="maxParticipantes"  not-null="true"/>
 					</property>
+					<property name="Fecha" type="date"> 
+						<column name="Fecha"  not-null="true"/>
+					</property>
+					<property name="Localizacion" type="string"> 
+						<column name="Localizacion"  not-null="true"/>
+					</property>
+					<property name="Latitud" type="double"> 
+						<column name="Latitud"  not-null="true"/>
+					</property>
+					<property name="Longitud" type="double"> 
+						<column name="Longitud"  not-null="true"/>
+					</property>
 			
 			
 			
@@ -79,6 +91,14 @@
 			
 			
 			
+			
+			
+			
+			
+					
+					
+					
+					
 					
 					
 					

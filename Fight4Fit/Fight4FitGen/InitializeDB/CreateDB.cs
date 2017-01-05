@@ -177,19 +177,27 @@ public static void InitializeData ()
                 categoria2EN.Nombre = "Atletismo";
                 categoriaCEN.CrearCategoria (categoria2EN.Nombre);
 
+                //EVENTO
+                DateTime date1 = DateTime.Now;
+                DateTime date12 = new DateTime(2008, 5, 1, 8, 30, 52);
                 eventoEN = new EventoEN ();
                 eventoEN.Categoria = categoriaEN;
                 eventoEN.Descripcion = "Que bien vamos a pasarlo";
                 eventoEN.Tipo = TipoEventoEnum.Evento;
-                int ev1 = eventoCEN.CrearEvento ("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32);
-
+                eventoEN.Localizacion = "China";
+                eventoEN.Latitud = 1234123;
+                eventoEN.Longitud = 123123;
+                int ev1 = eventoCEN.CrearEvento("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date1, eventoEN.Localizacion, eventoEN.Latitud, eventoEN.Longitud);
 
                 EventoEN evento1EN = new EventoEN ();
                 evento1EN = new EventoEN ();
                 evento1EN.Categoria = categoriaEN;
                 evento1EN.Descripcion = "Que bien vamos a jugahlo";
+                evento1EN.Localizacion = "Aspe";
+                evento1EN.Latitud = 1234123;
+                evento1EN.Longitud = 123123;
                 evento1EN.Tipo = TipoEventoEnum.Evento;
-                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32);
+                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32,date12,evento1EN.Localizacion, evento1EN.Latitud, evento1EN.Longitud);
 
                 //COMENTARIO
                 comentarioEN = new ComentarioEN ();

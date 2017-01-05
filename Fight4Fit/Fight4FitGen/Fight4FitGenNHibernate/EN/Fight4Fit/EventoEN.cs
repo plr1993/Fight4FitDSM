@@ -82,6 +82,34 @@ private int maxParticipantes;
 
 
 
+/**
+ *	Atributo fecha
+ */
+private Nullable<DateTime> fecha;
+
+
+
+/**
+ *	Atributo localizacion
+ */
+private string localizacion;
+
+
+
+/**
+ *	Atributo latitud
+ */
+private double latitud;
+
+
+
+/**
+ *	Atributo longitud
+ */
+private double longitud;
+
+
+
 
 
 
@@ -151,6 +179,30 @@ public virtual int MaxParticipantes {
 
 
 
+public virtual Nullable<DateTime> Fecha {
+        get { return fecha; } set { fecha = value;  }
+}
+
+
+
+public virtual string Localizacion {
+        get { return localizacion; } set { localizacion = value;  }
+}
+
+
+
+public virtual double Latitud {
+        get { return latitud; } set { latitud = value;  }
+}
+
+
+
+public virtual double Longitud {
+        get { return longitud; } set { longitud = value;  }
+}
+
+
+
 
 
 public EventoEN()
@@ -162,20 +214,20 @@ public EventoEN()
 
 
 
-public EventoEN(int id, string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes
+public EventoEN(int id, string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes, Nullable<DateTime> fecha, string localizacion, double latitud, double longitud
                 )
 {
-        this.init (Id, nombre, usuario, categoria, reporte, galeria, descripcion, comentario, tipo, numeroParticipantes, maxParticipantes);
+        this.init (Id, nombre, usuario, categoria, reporte, galeria, descripcion, comentario, tipo, numeroParticipantes, maxParticipantes, fecha, localizacion, latitud, longitud);
 }
 
 
 public EventoEN(EventoEN evento)
 {
-        this.init (Id, evento.Nombre, evento.Usuario, evento.Categoria, evento.Reporte, evento.Galeria, evento.Descripcion, evento.Comentario, evento.Tipo, evento.NumeroParticipantes, evento.MaxParticipantes);
+        this.init (Id, evento.Nombre, evento.Usuario, evento.Categoria, evento.Reporte, evento.Galeria, evento.Descripcion, evento.Comentario, evento.Tipo, evento.NumeroParticipantes, evento.MaxParticipantes, evento.Fecha, evento.Localizacion, evento.Latitud, evento.Longitud);
 }
 
 private void init (int id
-                   , string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes)
+                   , string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes, Nullable<DateTime> fecha, string localizacion, double latitud, double longitud)
 {
         this.Id = id;
 
@@ -199,6 +251,14 @@ private void init (int id
         this.NumeroParticipantes = numeroParticipantes;
 
         this.MaxParticipantes = maxParticipantes;
+
+        this.Fecha = fecha;
+
+        this.Localizacion = localizacion;
+
+        this.Latitud = latitud;
+
+        this.Longitud = longitud;
 }
 
 public override bool Equals (object obj)

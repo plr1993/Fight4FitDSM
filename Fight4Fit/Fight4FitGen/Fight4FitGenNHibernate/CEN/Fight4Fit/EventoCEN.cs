@@ -38,7 +38,7 @@ public IEventoCAD get_IEventoCAD ()
         return this._IEventoCAD;
 }
 
-public int CrearEvento (string p_Nombre, string p_categoria, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes)
+public int CrearEvento (string p_Nombre, string p_categoria, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes, Nullable<DateTime> p_Fecha, string p_Localizacion, double p_Latitud, double p_Longitud)
 {
         EventoEN eventoEN = null;
         int oid;
@@ -63,13 +63,21 @@ public int CrearEvento (string p_Nombre, string p_categoria, string p_Descripcio
 
         eventoEN.MaxParticipantes = p_maxParticipantes;
 
+        eventoEN.Fecha = p_Fecha;
+
+        eventoEN.Localizacion = p_Localizacion;
+
+        eventoEN.Latitud = p_Latitud;
+
+        eventoEN.Longitud = p_Longitud;
+
         //Call to EventoCAD
 
         oid = _IEventoCAD.CrearEvento (eventoEN);
         return oid;
 }
 
-public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes)
+public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes, Nullable<DateTime> p_Fecha, string p_Localizacion, double p_Latitud, double p_Longitud)
 {
         EventoEN eventoEN = null;
 
@@ -81,6 +89,10 @@ public void ModificarEvento (int p_Evento_OID, string p_Nombre, string p_Descrip
         eventoEN.Tipo = p_Tipo;
         eventoEN.NumeroParticipantes = p_numeroParticipantes;
         eventoEN.MaxParticipantes = p_maxParticipantes;
+        eventoEN.Fecha = p_Fecha;
+        eventoEN.Localizacion = p_Localizacion;
+        eventoEN.Latitud = p_Latitud;
+        eventoEN.Longitud = p_Longitud;
         //Call to EventoCAD
 
         _IEventoCAD.ModificarEvento (eventoEN);

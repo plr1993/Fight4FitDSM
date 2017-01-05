@@ -110,6 +110,18 @@ public void ModifyDefault (EventoEN evento)
 
                 eventoEN.MaxParticipantes = evento.MaxParticipantes;
 
+
+                eventoEN.Fecha = evento.Fecha;
+
+
+                eventoEN.Localizacion = evento.Localizacion;
+
+
+                eventoEN.Latitud = evento.Latitud;
+
+
+                eventoEN.Longitud = evento.Longitud;
+
                 session.Update (eventoEN);
                 SessionCommit ();
         }
@@ -182,6 +194,18 @@ public void ModificarEvento (EventoEN evento)
 
 
                 eventoEN.MaxParticipantes = evento.MaxParticipantes;
+
+
+                eventoEN.Fecha = evento.Fecha;
+
+
+                eventoEN.Localizacion = evento.Localizacion;
+
+
+                eventoEN.Latitud = evento.Latitud;
+
+
+                eventoEN.Longitud = evento.Longitud;
 
                 session.Update (eventoEN);
                 SessionCommit ();
@@ -273,7 +297,7 @@ public System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size)
                 SessionRollBack ();
                 if (ex is Fight4FitGenNHibernate.Exceptions.ModelException)
                         throw ex;
-                throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
+            throw new Fight4FitGenNHibernate.Exceptions.DataLayerException ("Error in EventoCAD.", ex);
         }
 
 
