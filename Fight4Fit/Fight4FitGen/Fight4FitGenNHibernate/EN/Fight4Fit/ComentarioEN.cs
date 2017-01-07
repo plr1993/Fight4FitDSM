@@ -61,6 +61,13 @@ private Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom;
 
 
 
+/**
+ *	Atributo usuario_comenta
+ */
+private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario_comenta;
+
+
+
 
 
 
@@ -112,6 +119,12 @@ public virtual Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum Ti
 
 
 
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Usuario_comenta {
+        get { return usuario_comenta; } set { usuario_comenta = value;  }
+}
+
+
+
 
 
 public ComentarioEN()
@@ -121,20 +134,20 @@ public ComentarioEN()
 
 
 
-public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom
+public ComentarioEN(int id, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario_comenta
                     )
 {
-        this.init (Id, reporte, foto, evento, titulo, texto, likes, tipocom);
+        this.init (Id, reporte, foto, evento, titulo, texto, likes, tipocom, usuario_comenta);
 }
 
 
 public ComentarioEN(ComentarioEN comentario)
 {
-        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto, comentario.Likes, comentario.Tipocom);
+        this.init (Id, comentario.Reporte, comentario.Foto, comentario.Evento, comentario.Titulo, comentario.Texto, comentario.Likes, comentario.Tipocom, comentario.Usuario_comenta);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom)
+                   , System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN foto, Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN evento, string titulo, string texto, int likes, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipocom, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario_comenta)
 {
         this.Id = id;
 
@@ -152,6 +165,8 @@ private void init (int id
         this.Likes = likes;
 
         this.Tipocom = tipocom;
+
+        this.Usuario_comenta = usuario_comenta;
 }
 
 public override bool Equals (object obj)

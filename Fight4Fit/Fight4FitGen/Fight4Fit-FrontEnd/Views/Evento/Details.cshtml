@@ -48,10 +48,11 @@
 <h2>Comentarios: </h2>
 @foreach (var item in (List<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN>) @ViewData["lista"])
 {
-    <h3>@item.Titulo</h3>
+    <h3>@item.Titulo - @item.</h3>
     <p>@item.Texto</p>
 }
     <p>
+        @Html.ActionLink("Añadir galería de fotos", "../Galeria/Create", new { id = Model.id}) |
         @Html.ActionLink("Reportar evento", "../Reporte/Create", new { id = Model.id, var=3 }) |
         @Html.ActionLink("Añadir comentario", "../Comentario/Create", new { id = Model.id, var = 1 }) |
         @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |

@@ -99,6 +99,30 @@ public void ModifyDefault (UsuarioEN usuario)
 
                 usuarioEN.Bloqueado = usuario.Bloqueado;
 
+
+
+
+
+                usuarioEN.Tipo = usuario.Tipo;
+
+
+                usuarioEN.Nombre = usuario.Nombre;
+
+
+                usuarioEN.Apellidos = usuario.Apellidos;
+
+
+                usuarioEN.Telefono = usuario.Telefono;
+
+
+                usuarioEN.Localidad = usuario.Localidad;
+
+
+                usuarioEN.Provincia = usuario.Provincia;
+
+
+                usuarioEN.Direccion = usuario.Direccion;
+
                 session.Update (usuarioEN);
                 SessionCommit ();
         }
@@ -181,6 +205,27 @@ public void ModificarPerfil (UsuarioEN usuario)
 
                 usuarioEN.Bloqueado = usuario.Bloqueado;
 
+
+                usuarioEN.Tipo = usuario.Tipo;
+
+
+                usuarioEN.Nombre = usuario.Nombre;
+
+
+                usuarioEN.Apellidos = usuario.Apellidos;
+
+
+                usuarioEN.Telefono = usuario.Telefono;
+
+
+                usuarioEN.Localidad = usuario.Localidad;
+
+
+                usuarioEN.Provincia = usuario.Provincia;
+
+
+                usuarioEN.Direccion = usuario.Direccion;
+
                 session.Update (usuarioEN);
                 SessionCommit ();
         }
@@ -213,7 +258,7 @@ public void ApuntarseAEvento (string p_Usuario_OID, System.Collections.Generic.I
                 foreach (int item in p_evento_OIDs) {
                         eventoENAux = new Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN ();
                         eventoENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), item);
-                        eventoENAux.Usuario.Add (usuarioEN);
+                        eventoENAux.Crea = usuarioEN;
 
                         usuarioEN.Evento.Add (eventoENAux);
                 }
@@ -251,7 +296,7 @@ public void DesapuntarseAEvento (string p_Usuario_OID, System.Collections.Generi
                                 eventoENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN), item);
                                 if (usuarioEN.Evento.Contains (eventoENAux) == true) {
                                         usuarioEN.Evento.Remove (eventoENAux);
-                                        eventoENAux.Usuario.Remove (usuarioEN);
+                                        eventoENAux.Crea = null;
                                 }
                                 else
                                         throw new ModelException ("The identifier " + item + " in p_evento_OIDs you are trying to unrelationer, doesn't exist in UsuarioEN");

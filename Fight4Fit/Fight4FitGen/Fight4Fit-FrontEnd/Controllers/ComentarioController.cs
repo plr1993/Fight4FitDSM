@@ -67,6 +67,14 @@ namespace Fight4Fit_FrontEnd.Controllers
             {
                 ComentarioCP cp = new ComentarioCP();
                 cp.PublicarComentario(com.titulo, com.texto, com.idre, com.tipo);
+                if (com.tipo == TipoComentarioEnum.Foto)
+                {
+                    return RedirectToAction("Details", "Foto", new { id = com.idre});
+                }
+                else if (com.tipo == TipoComentarioEnum.Evento)
+                {
+                    return RedirectToAction("Details", "Evento", new { id = com.idre});
+                }
                 return View();
             }
             catch

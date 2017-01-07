@@ -43,15 +43,10 @@
 			
 			
 		  			
-						<bag name="Usuario" table="[evento_usuario]"  >
-							<key>
-								
-									<column name="FK_ID_idEvento"/> 
-							</key>
-      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN">
-									<column name="FK_Email_idUsuario"/> 
-      						</many-to-many>
-    					</bag>
+						<many-to-one name="Crea" class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN" >	
+								<column name="FK_Email_idUsuario"/> 
+						</many-to-one>
+											 					
 			
 		  			
 						<many-to-one name="Categoria" class="Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN" >	
@@ -95,6 +90,18 @@
 			
 			
 			
+			
+		  			
+						<bag name="Usuario_0" table="[usuario_0_evento_0]" inverse="true" >
+							<key>
+								
+									<column name="FK_ID_idEvento_0"/> 
+							</key>
+      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN">
+									<column name="FK_Email_idUsuario_0"/> 
+      						</many-to-many>
+    					</bag>
+					
 					
 					
 					

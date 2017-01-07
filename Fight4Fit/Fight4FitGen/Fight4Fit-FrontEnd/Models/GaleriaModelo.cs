@@ -13,6 +13,7 @@ namespace Fight4Fit_FrontEnd.Models
         public string NombreGaleria { get; set; }
         [ScaffoldColumn(false)]
         public int Evento { get; set; }
-
+        [ScaffoldColumn(false)]
+        public int idre { get; set; }
     }
 }

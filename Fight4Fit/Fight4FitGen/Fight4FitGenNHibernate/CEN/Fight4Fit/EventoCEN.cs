@@ -38,7 +38,7 @@ public IEventoCAD get_IEventoCAD ()
         return this._IEventoCAD;
 }
 
-public int CrearEvento (string p_Nombre, string p_categoria, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes, Nullable<DateTime> p_Fecha, string p_Localizacion, double p_Latitud, double p_Longitud)
+public int CrearEvento (string p_Nombre, string p_crea, string p_categoria, string p_Descripcion, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum p_Tipo, int p_numeroParticipantes, int p_maxParticipantes, Nullable<DateTime> p_Fecha, string p_Localizacion, double p_Latitud, double p_Longitud)
 {
         EventoEN eventoEN = null;
         int oid;
@@ -46,6 +46,14 @@ public int CrearEvento (string p_Nombre, string p_categoria, string p_Descripcio
         //Initialized EventoEN
         eventoEN = new EventoEN ();
         eventoEN.Nombre = p_Nombre;
+
+
+        if (p_crea != null) {
+                // El argumento p_crea -> Property crea es oid = false
+                // Lista de oids id
+                eventoEN.Crea = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
+                eventoEN.Crea.Email = p_crea;
+        }
 
 
         if (p_categoria != null) {
@@ -120,17 +128,17 @@ public System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size)
         list = _IEventoCAD.ReadAll (first, size);
         return list;
 }
-public void AnyadirParticipante (int p_Evento_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+public void AnyadirParticipante (int p_Evento_OID, string p_crea_OID)
 {
         //Call to EventoCAD
 
-        _IEventoCAD.AnyadirParticipante (p_Evento_OID, p_usuario_OIDs);
+        _IEventoCAD.AnyadirParticipante (p_Evento_OID, p_crea_OID);
 }
-public void EliminarParticipante (int p_Evento_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+public void EliminarParticipante (int p_Evento_OID, string p_crea_OID)
 {
         //Call to EventoCAD
 
-        _IEventoCAD.EliminarParticipante (p_Evento_OID, p_usuario_OIDs);
+        _IEventoCAD.EliminarParticipante (p_Evento_OID, p_crea_OID);
 }
 }
 }

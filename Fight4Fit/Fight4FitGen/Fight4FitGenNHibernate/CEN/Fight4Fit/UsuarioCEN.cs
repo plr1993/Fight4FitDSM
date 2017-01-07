@@ -38,7 +38,7 @@ public IUsuarioCAD get_IUsuarioCAD ()
         return this._IUsuarioCAD;
 }
 
-public string CrearUsuario (string p_Email, String p_Password, bool p_Bloqueado)
+public string CrearUsuario (string p_Email, String p_Password, bool p_Bloqueado, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoUsuarioEnum p_Tipo, string p_Nombre, string p_Apellidos, string p_Telefono, string p_Localidad, string p_Provincia, string p_Direccion)
 {
         UsuarioEN usuarioEN = null;
         string oid;
@@ -50,6 +50,20 @@ public string CrearUsuario (string p_Email, String p_Password, bool p_Bloqueado)
         usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
 
         usuarioEN.Bloqueado = p_Bloqueado;
+
+        usuarioEN.Tipo = p_Tipo;
+
+        usuarioEN.Nombre = p_Nombre;
+
+        usuarioEN.Apellidos = p_Apellidos;
+
+        usuarioEN.Telefono = p_Telefono;
+
+        usuarioEN.Localidad = p_Localidad;
+
+        usuarioEN.Provincia = p_Provincia;
+
+        usuarioEN.Direccion = p_Direccion;
 
         //Call to UsuarioCAD
 
@@ -63,7 +77,7 @@ public void DarDeBaja (string Email
         _IUsuarioCAD.DarDeBaja (Email);
 }
 
-public void ModificarPerfil (string p_Usuario_OID, String p_Password, bool p_Bloqueado)
+public void ModificarPerfil (string p_Usuario_OID, String p_Password, bool p_Bloqueado, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoUsuarioEnum p_Tipo, string p_Nombre, string p_Apellidos, string p_Telefono, string p_Localidad, string p_Provincia, string p_Direccion)
 {
         UsuarioEN usuarioEN = null;
 
@@ -72,6 +86,13 @@ public void ModificarPerfil (string p_Usuario_OID, String p_Password, bool p_Blo
         usuarioEN.Email = p_Usuario_OID;
         usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_Password);
         usuarioEN.Bloqueado = p_Bloqueado;
+        usuarioEN.Tipo = p_Tipo;
+        usuarioEN.Nombre = p_Nombre;
+        usuarioEN.Apellidos = p_Apellidos;
+        usuarioEN.Telefono = p_Telefono;
+        usuarioEN.Localidad = p_Localidad;
+        usuarioEN.Provincia = p_Provincia;
+        usuarioEN.Direccion = p_Direccion;
         //Call to UsuarioCAD
 
         _IUsuarioCAD.ModificarPerfil (usuarioEN);

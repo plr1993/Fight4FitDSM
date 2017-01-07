@@ -20,13 +20,6 @@ private int idSoporte;
 
 
 /**
- *	Atributo admin
- */
-private Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin;
-
-
-
-/**
  *	Atributo titulo
  */
 private string titulo;
@@ -47,6 +40,13 @@ private string respuesta;
 
 
 
+/**
+ *	Atributo admin-responde
+ */
+private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin - responde;
+
+
+
 
 
 
@@ -58,12 +58,6 @@ public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Usuario {
 
 public virtual int IdSoporte {
         get { return idSoporte; } set { idSoporte = value;  }
-}
-
-
-
-public virtual Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN Admin {
-        get { return admin; } set { admin = value;  }
 }
 
 
@@ -86,6 +80,12 @@ public virtual string Respuesta {
 
 
 
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Admin - responde {
+        get { return admin - responde; } set { admin - responde = value;  }
+}
+
+
+
 
 
 public SoporteEN()
@@ -94,33 +94,33 @@ public SoporteEN()
 
 
 
-public SoporteEN(int idSoporte, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta
+public SoporteEN(int idSoporte, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, string titulo, string texto, string respuesta, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin - responde
                  )
 {
-        this.init (IdSoporte, usuario, admin, titulo, texto, respuesta);
+        this.init (IdSoporte, usuario, titulo, texto, respuesta, admin - responde);
 }
 
 
 public SoporteEN(SoporteEN soporte)
 {
-        this.init (IdSoporte, soporte.Usuario, soporte.Admin, soporte.Titulo, soporte.Texto, soporte.Respuesta);
+        this.init (IdSoporte, soporte.Usuario, soporte.Titulo, soporte.Texto, soporte.Respuesta, soporte.Admin - responde);
 }
 
 private void init (int idSoporte
-                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN admin, string titulo, string texto, string respuesta)
+                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, string titulo, string texto, string respuesta, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin - responde)
 {
         this.IdSoporte = idSoporte;
 
 
         this.Usuario = usuario;
 
-        this.Admin = admin;
-
         this.Titulo = titulo;
 
         this.Texto = texto;
 
         this.Respuesta = respuesta;
+
+        this.Admin - responde = admin - responde;
 }
 
 public override bool Equals (object obj)

@@ -131,14 +131,6 @@
 			
 			
 			
-	<Compile Include="EN\Fight4Fit\PromotorEN.cs" />
-	<Compile Include="CEN\Fight4Fit\PromotorCEN.cs" />
-	<Compile Include="CAD\Fight4Fit\IPromotorCAD.cs" />
-	<Compile Include="CAD\Fight4Fit\PromotorCAD.cs" />
-	<Compile Include="CP\Fight4Fit\PromotorCP.cs" />
-			
-			
-			
 	<Compile Include="EN\Fight4Fit\SoporteEN.cs" />
 	<Compile Include="CEN\Fight4Fit\SoporteCEN.cs" />
 	<Compile Include="CAD\Fight4Fit\ISoporteCAD.cs" />
@@ -209,20 +201,11 @@
 			
 			
 			
-	<Compile Include="EN\Fight4Fit\AdminEN.cs" />
-	<Compile Include="CEN\Fight4Fit\AdminCEN.cs" />
-	<Compile Include="CAD\Fight4Fit\IAdminCAD.cs" />
-	<Compile Include="CAD\Fight4Fit\AdminCAD.cs" />
-	<Compile Include="CP\Fight4Fit\AdminCP.cs" />
-			
-			<Compile Include="CP\Fight4Fit\AdminCP_BloquearUsuario.cs" />
-			
-			
-			
 	<Compile Include="Enumerated\Fight4Fit\MotivoEnum.cs" />
 	<Compile Include="Enumerated\Fight4Fit\TipoEventoEnum.cs" />
 	<Compile Include="Enumerated\Fight4Fit\TipoReporteEnum.cs" />
 	<Compile Include="Enumerated\Fight4Fit\TipoComentarioEnum.cs" />
+	<Compile Include="Enumerated\Fight4Fit\TipoUsuarioEnum.cs" />
 	
 	
 
@@ -240,14 +223,12 @@
 		  
 	<EmbeddedResource Include="Mappings\Fight4Fit\evento.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\usuario.hbm.xml" />
-	<EmbeddedResource Include="Mappings\Fight4Fit\promotor.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\soporte.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\categoria.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\reporte.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\comentario.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\foto.hbm.xml" />
 	<EmbeddedResource Include="Mappings\Fight4Fit\galeria.hbm.xml" />
-	<EmbeddedResource Include="Mappings\Fight4Fit\admin.hbm.xml" />
 	
 	
 

@@ -105,6 +105,7 @@ public void ModifyDefault (ComentarioEN comentario)
 
                 comentarioEN.Tipocom = comentario.Tipocom;
 
+
                 session.Update (comentarioEN);
                 SessionCommit ();
         }

@@ -13,9 +13,9 @@ private string nombre;
 
 
 /**
- *	Atributo usuario
+ *	Atributo crea
  */
-private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario;
+private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN crea;
 
 
 
@@ -110,6 +110,13 @@ private double longitud;
 
 
 
+/**
+ *	Atributo usuario_0
+ */
+private System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario_0;
+
+
+
 
 
 
@@ -119,8 +126,8 @@ public virtual string Nombre {
 
 
 
-public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> Usuario {
-        get { return usuario; } set { usuario = value;  }
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Crea {
+        get { return crea; } set { crea = value;  }
 }
 
 
@@ -203,38 +210,44 @@ public virtual double Longitud {
 
 
 
-
-
-public EventoEN()
-{
-        usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
-        reporte = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN>();
-        comentario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN>();
+public virtual System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> Usuario_0 {
+        get { return usuario_0; } set { usuario_0 = value;  }
 }
 
 
 
-public EventoEN(int id, string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes, Nullable<DateTime> fecha, string localizacion, double latitud, double longitud
+
+
+public EventoEN()
+{
+        reporte = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN>();
+        comentario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN>();
+        usuario_0 = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
+}
+
+
+
+public EventoEN(int id, string nombre, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN crea, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes, Nullable<DateTime> fecha, string localizacion, double latitud, double longitud, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario_0
                 )
 {
-        this.init (Id, nombre, usuario, categoria, reporte, galeria, descripcion, comentario, tipo, numeroParticipantes, maxParticipantes, fecha, localizacion, latitud, longitud);
+        this.init (Id, nombre, crea, categoria, reporte, galeria, descripcion, comentario, tipo, numeroParticipantes, maxParticipantes, fecha, localizacion, latitud, longitud, usuario_0);
 }
 
 
 public EventoEN(EventoEN evento)
 {
-        this.init (Id, evento.Nombre, evento.Usuario, evento.Categoria, evento.Reporte, evento.Galeria, evento.Descripcion, evento.Comentario, evento.Tipo, evento.NumeroParticipantes, evento.MaxParticipantes, evento.Fecha, evento.Localizacion, evento.Latitud, evento.Longitud);
+        this.init (Id, evento.Nombre, evento.Crea, evento.Categoria, evento.Reporte, evento.Galeria, evento.Descripcion, evento.Comentario, evento.Tipo, evento.NumeroParticipantes, evento.MaxParticipantes, evento.Fecha, evento.Localizacion, evento.Latitud, evento.Longitud, evento.Usuario_0);
 }
 
 private void init (int id
-                   , string nombre, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes, Nullable<DateTime> fecha, string localizacion, double latitud, double longitud)
+                   , string nombre, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN crea, Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN categoria, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ReporteEN> reporte, Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN galeria, string descripcion, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN> comentario, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoEventoEnum tipo, int numeroParticipantes, int maxParticipantes, Nullable<DateTime> fecha, string localizacion, double latitud, double longitud, System.Collections.Generic.IList<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN> usuario_0)
 {
         this.Id = id;
 
 
         this.Nombre = nombre;
 
-        this.Usuario = usuario;
+        this.Crea = crea;
 
         this.Categoria = categoria;
 
@@ -259,6 +272,8 @@ private void init (int id
         this.Latitud = latitud;
 
         this.Longitud = longitud;
+
+        this.Usuario_0 = usuario_0;
 }
 
 public override bool Equals (object obj)

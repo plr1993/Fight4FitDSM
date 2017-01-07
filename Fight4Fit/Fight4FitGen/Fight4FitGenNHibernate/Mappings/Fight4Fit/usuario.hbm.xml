@@ -15,6 +15,27 @@
 					<property name="Bloqueado" type="boolean"> 
 						<column name="Bloqueado"  not-null="true"/>
 					</property>
+					<property name="Tipo" > 
+						<column name="Tipo"  not-null="true"/>
+					</property>
+					<property name="Nombre" type="string"> 
+						<column name="Nombre"  not-null="true"/>
+					</property>
+					<property name="Apellidos" type="string"> 
+						<column name="Apellidos"  not-null="true"/>
+					</property>
+					<property name="Telefono" type="string"> 
+						<column name="Telefono"  not-null="true"/>
+					</property>
+					<property name="Localidad" type="string"> 
+						<column name="Localidad"  not-null="true"/>
+					</property>
+					<property name="Provincia" type="string"> 
+						<column name="Provincia"  not-null="true"/>
+					</property>
+					<property name="Direccion" type="string"> 
+						<column name="Direccion"  not-null="true"/>
+					</property>
 			
 			
 			
@@ -31,15 +52,15 @@
 					
 			
 		  			
-						<bag name="Evento" table="[evento_usuario]" inverse="true" >
+						<bag name="Evento" >
 							<key>
+							
 								
-									<column name="FK_Email_idUsuario"/> 
-							</key>
-      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN">
-									<column name="FK_ID_idEvento"/> 
-      						</many-to-many>
-    					</bag>
+								<column name="FK_Email_idUsuario"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN"/>
+					    </bag>
+					
 			
 		  			
 						<bag name="Reporte" >
@@ -52,6 +73,56 @@
 					    </bag>
 					
 			
+			
+		  			
+						<bag name="Evento_0" table="[usuario_0_evento_0]"  >
+							<key>
+								
+									<column name="FK_Email_idUsuario_0"/> 
+							</key>
+      						<many-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN">
+									<column name="FK_ID_idEvento_0"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Comentario" >
+							<key>
+							
+								
+								<column name="FK_Email_idUsuario"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Soporte_1" >
+							<key>
+							
+								
+								<column name="FK_Email_idUsuario_0"/>
+					      	</key>
+							<one-to-many class="Fight4FitGenNHibernate.EN.Fight4Fit.SoporteEN"/>
+					    </bag>
+					
+			
+			
+			
+			
+			
+			
+			
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					

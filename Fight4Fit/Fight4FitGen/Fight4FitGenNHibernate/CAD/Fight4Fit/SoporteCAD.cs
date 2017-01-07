@@ -92,7 +92,6 @@ public void ModifyDefault (SoporteEN soporte)
                 SoporteEN soporteEN = (SoporteEN)session.Load (typeof(SoporteEN), soporte.IdSoporte);
 
 
-
                 soporteEN.Titulo = soporte.Titulo;
 
 
@@ -100,6 +99,7 @@ public void ModifyDefault (SoporteEN soporte)
 
 
                 soporteEN.Respuesta = soporte.Respuesta;
+
 
                 session.Update (soporteEN);
                 SessionCommit ();

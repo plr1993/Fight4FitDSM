@@ -44,6 +44,11 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Create()
         {
             GaleriaModelo gal = new GaleriaModelo();
+            String idr = RouteData.Values["id"].ToString();
+            int idref = Int32.Parse(idr);
+
+            gal.idre = idref;
+            
             return View(gal);
         }
 

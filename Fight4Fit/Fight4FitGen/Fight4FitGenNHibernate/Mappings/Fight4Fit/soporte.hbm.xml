@@ -30,14 +30,14 @@
 											 					
 			
 			
+			
+			
+			
 		  			
-						<many-to-one name="Admin" class="Fight4FitGenNHibernate.EN.Fight4Fit.AdminEN" >	
-								<column name="FK_Email_idAdmin"/> 
+						<many-to-one name="Admin-responde" class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN" >	
+								<column name="FK_Email_idUsuario_0"/> 
 						</many-to-one>
 											 					
-			
-			
-			
 					
 					
 					

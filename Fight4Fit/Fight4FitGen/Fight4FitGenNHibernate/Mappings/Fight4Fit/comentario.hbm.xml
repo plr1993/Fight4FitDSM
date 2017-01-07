@@ -53,6 +53,13 @@
 			
 			
 			
+			
+		  			
+						<many-to-one name="Usuario_comenta" class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN" >	
+								<column name="FK_Email_idUsuario"/> 
+						</many-to-one>
+											 					
+					
 					
 					
 					

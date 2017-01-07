@@ -122,6 +122,7 @@ public void ModifyDefault (EventoEN evento)
 
                 eventoEN.Longitud = evento.Longitud;
 
+
                 session.Update (eventoEN);
                 SessionCommit ();
         }
@@ -146,6 +147,13 @@ public int CrearEvento (EventoEN evento)
         try
         {
                 SessionInitializeTransaction ();
+                if (evento.Crea != null) {
+                        // Argumento OID y no colección.
+                        evento.Crea = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), evento.Crea.Email);
+
+                        evento.Crea.Evento
+                        .Add (evento);
+                }
                 if (evento.Categoria != null) {
                         // Argumento OID y no colección.
                         evento.Categoria = (Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.CategoriaEN), evento.Categoria.Nombre);
@@ -309,25 +317,17 @@ public System.Collections.Generic.IList<EventoEN> ReadAll (int first, int size)
         return result;
 }
 
-public void AnyadirParticipante (int p_Evento_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+public void AnyadirParticipante (int p_Evento_OID, string p_crea_OID)
 {
         Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN eventoEN = null;
         try
         {
                 SessionInitializeTransaction ();
                 eventoEN = (EventoEN)session.Load (typeof(EventoEN), p_Evento_OID);
-                Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuarioENAux = null;
-                if (eventoEN.Usuario == null) {
-                        eventoEN.Usuario = new System.Collections.Generic.List<Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN>();
-                }
+                eventoEN.Crea = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), p_crea_OID);
 
-                foreach (string item in p_usuario_OIDs) {
-                        usuarioENAux = new Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN ();
-                        usuarioENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), item);
-                        usuarioENAux.Evento.Add (eventoEN);
+                eventoEN.Crea.Evento.Add (eventoEN);
 
-                        eventoEN.Usuario.Add (usuarioENAux);
-                }
 
 
                 session.Update (eventoEN);
@@ -348,7 +348,7 @@ public void AnyadirParticipante (int p_Evento_OID, System.Collections.Generic.IL
         }
 }
 
-public void EliminarParticipante (int p_Evento_OID, System.Collections.Generic.IList<string> p_usuario_OIDs)
+public void EliminarParticipante (int p_Evento_OID, string p_crea_OID)
 {
         try
         {
@@ -356,18 +356,11 @@ public void EliminarParticipante (int p_Evento_OID, System.Collections.Generic.I
                 Fight4FitGenNHibernate.EN.Fight4Fit.EventoEN eventoEN = null;
                 eventoEN = (EventoEN)session.Load (typeof(EventoEN), p_Evento_OID);
 
-                Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuarioENAux = null;
-                if (eventoEN.Usuario != null) {
-                        foreach (string item in p_usuario_OIDs) {
-                                usuarioENAux = (Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN), item);
-                                if (eventoEN.Usuario.Contains (usuarioENAux) == true) {
-                                        eventoEN.Usuario.Remove (usuarioENAux);
-                                        usuarioENAux.Evento.Remove (eventoEN);
-                                }
-                                else
-                                        throw new ModelException ("The identifier " + item + " in p_usuario_OIDs you are trying to unrelationer, doesn't exist in EventoEN");
-                        }
+                if (eventoEN.Crea.Email == p_crea_OID) {
+                        eventoEN.Crea = null;
                 }
+                else
+                        throw new ModelException ("The identifier " + p_crea_OID + " in p_crea_OID you are trying to unrelationer, doesn't exist in EventoEN");
 
                 session.Update (eventoEN);
                 SessionCommit ();

@@ -381,6 +381,9 @@
     <Content Include="Views\Evento\Details.cshtml" />
     <Content Include="Views\Evento\Edit.cshtml" />
     <Content Include="Views\Comentario\Details.cshtml" />
+    <Content Include="Views\Galeria\Details.cshtml" />
+    <Content Include="Views\Galeria\Create.cshtml" />
+    <Content Include="Views\Galeria\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

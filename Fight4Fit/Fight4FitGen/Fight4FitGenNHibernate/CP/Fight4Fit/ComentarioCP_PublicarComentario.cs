@@ -9,7 +9,6 @@ using NHibernate.Exceptions;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
-using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 
 
 
@@ -21,7 +20,7 @@ namespace Fight4FitGenNHibernate.CP.Fight4Fit
 {
 public partial class ComentarioCP : BasicCP
 {
-public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (string p_Titulo, string p_Texto, int idref, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipo)
+public Fight4FitGenNHibernate.EN.Fight4Fit.ComentarioEN PublicarComentario (string p_Titulo, string p_Texto, int idref, Fight4FitGenNHibernate.Enumerated.Fight4Fit.TipoComentarioEnum tipo, int usuarioid)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Comentario_PublicarComentario) ENABLED START*/
 
