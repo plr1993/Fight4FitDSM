@@ -19,6 +19,9 @@ namespace Fight4Fit_FrontEnd.Models
         public int id { get; set; }
 
         [ScaffoldColumn(false)]
+        public int idgaleria { get; set; }
+
+        [ScaffoldColumn(false)]
         public String nombre { get; set; }
 
         [ScaffoldColumn(false)]

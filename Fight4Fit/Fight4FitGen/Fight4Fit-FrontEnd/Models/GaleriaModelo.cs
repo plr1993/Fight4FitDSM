@@ -14,6 +14,7 @@ namespace Fight4Fit_FrontEnd.Models
         [ScaffoldColumn(false)]
         public int Evento { get; set; }
         [ScaffoldColumn(false)]
-        public int idre { get; set; }
+        public int id { get; set; }
+
     }
 }

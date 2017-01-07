@@ -18,6 +18,7 @@ namespace Fight4Fit_FrontEnd.Models
         {
             GaleriaModelo gal = new GaleriaModelo();
 
+            gal.id = en.Id;
             gal.NombreGaleria = en.NombreGaleria;
             gal.Evento = en.Evento.Id;
 

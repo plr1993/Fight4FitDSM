@@ -60,7 +60,10 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Create()
         {
             FotoModelo fot = new FotoModelo();
+            String idr = RouteData.Values["id"].ToString();
+            int idref = Int32.Parse(idr);
 
+            fot.idgaleria = idref;
             return View(fot);
         }
 
@@ -70,6 +73,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         [HttpPost]
         public ActionResult Create(FotoModelo fot, HttpPostedFileBase file)
         {
+            int gal = fot.idgaleria;
             string fileName ="", path = "";
             // Verify that the user selected a file
             if (file != null && file.ContentLength > 0)
@@ -86,7 +90,7 @@ namespace Fight4Fit_FrontEnd.Controllers
            
                 fileName = "/Images/Uploads/" + fileName;
                 FotoCP cp = new FotoCP();
-                cp.SubirFoto(fot.nombre, "perico el de los palotes", fot.descripcion, 0, fileName);
+                cp.SubirFoto(fot.nombre, "perico el de los palotes", fot.descripcion, gal, 0, fileName);
                 return RedirectToAction("Index");
             
            

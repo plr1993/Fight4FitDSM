@@ -17,6 +17,7 @@ namespace Fight4Fit_FrontEnd.Models
             cat.descripcion = en.Descripcion;
 
             cat.ruta = en.Ruta;
+           
 
 
             return cat;

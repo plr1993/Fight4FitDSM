@@ -132,6 +132,13 @@ public int SubirFoto (FotoEN foto)
         try
         {
                 SessionInitializeTransaction ();
+                if (foto.Pertenece_a != null) {
+                        // Argumento OID y no colección.
+                        foto.Pertenece_a = (Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN)session.Load (typeof(Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN), foto.Pertenece_a.Id);
+
+                        foto.Pertenece_a.Compuesta_por
+                        .Add (foto);
+                }
 
                 session.Save (foto);
                 SessionCommit ();

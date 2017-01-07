@@ -7,11 +7,11 @@ using System.Web.Mvc;
 
 namespace Fight4Fit_FrontEnd.Models
 {
-    public class AssemblerUsuario
+    public class UsuarioAssembler
     {
-        public Usuario ConvertENToModelUI(UsuarioEN usrEN)
+        public UsuarioModelo ConvertENToModelUI(UsuarioEN usrEN)
         {
-            Usuario usr = new Usuario();
+            UsuarioModelo usr = new UsuarioModelo();
             usr.email = usrEN.Email;
             usr.password = usrEN.Password;
             usr.bloqueado = usrEN.Bloqueado;
@@ -28,9 +28,9 @@ namespace Fight4Fit_FrontEnd.Models
         }
 
 
-        public IList<Usuario> ConvertListENToModelUI(IList<UsuarioEN> usrsEN)
+        public IList<UsuarioModelo> ConvertListENToModelUI(IList<UsuarioEN> usrsEN)
         {
-            IList<Usuario> usrs = new List<Usuario>();
+            IList<UsuarioModelo> usrs = new List<UsuarioModelo>();
             foreach (UsuarioEN usrEN in usrsEN)
             {
                 usrs.Add(ConvertENToModelUI(usrEN));

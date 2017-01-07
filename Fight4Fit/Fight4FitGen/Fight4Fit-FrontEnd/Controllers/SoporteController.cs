@@ -56,7 +56,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         // POST: /Soporte/Create
 
         [HttpPost]
-        public ActionResult Create(SoporteModelo sprt, Usuario usr, HttpPostedFileBase file)
+        public ActionResult Create(SoporteModelo sprt, UsuarioModelo usr, HttpPostedFileBase file)
         {
             string filename = "", pathh = "";
             if (file != null && file.ContentLength > 0)

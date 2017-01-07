@@ -18,14 +18,10 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.NombreGaleria)
-         
-        </div>
-        <div class="editor-label">
-            @Html.Label("texto", "Numero evento:")
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Evento)
-        </div>
+         </div>
+
+            @Html.HiddenFor(model => model.Evento)
+        
 
         <p>
             <input type="submit" value="Crear categoria" />

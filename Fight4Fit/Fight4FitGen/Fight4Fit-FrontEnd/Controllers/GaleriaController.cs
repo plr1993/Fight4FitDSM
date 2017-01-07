@@ -31,9 +31,24 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Details(int id)
         {
             GaleriaModelo gal = null;
+            IList<FotoEN> lista = new List<FotoEN>();
+            IList<FotoEN> listagaleria = new List<FotoEN>();
             SessionInitialize();
             GaleriaEN galEN = new GaleriaCAD(session).ReadOIDDefault(id);
             gal = new GaleriaAssembler().ConvertENToModelUI(galEN);
+            FotoCEN fotos = new FotoCEN();
+            lista = fotos.ReadAll(0, -1);
+            foreach (FotoEN item in lista)
+            {
+                if (item.Pertenece_a != null)
+                {
+                    if (item.Pertenece_a.Id == id)
+                    {
+                        listagaleria.Add(item);
+                    }
+                }
+            }
+            ViewData["lista"] = listagaleria;
             SessionClose();
             return View(gal);
         }
@@ -47,7 +62,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             String idr = RouteData.Values["id"].ToString();
             int idref = Int32.Parse(idr);
 
-            gal.idre = idref;
+            gal.Evento = idref;
             
             return View(gal);
         }

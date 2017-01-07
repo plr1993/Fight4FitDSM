@@ -30,6 +30,9 @@ namespace Fight4Fit_FrontEnd.Controllers
         {
             IList<ComentarioEN> lista = new List<ComentarioEN>();
             IList<ComentarioEN> listaevento = new List<ComentarioEN>();
+
+            IList<GaleriaEN> lista2 = new List<GaleriaEN>();
+            IList<GaleriaEN> listagal = new List<GaleriaEN>();
             EventoModelo ev = null;
             SessionInitialize();
             EventoEN evEN = new EventoCAD(session).ReadOIDDefault(id);
@@ -47,6 +50,20 @@ namespace Fight4Fit_FrontEnd.Controllers
                 }
             }
             ViewData["lista"] = listaevento;
+            //galeria
+            GaleriaCEN galeria = new GaleriaCEN();
+            lista2 = galeria.ReadAll(0, -1);
+            foreach (GaleriaEN item in lista2)
+            {
+                if (item.Id != null)
+                {
+                    if (item.Evento.Id== id)
+                    {
+                        listagal.Add(item);
+                    }
+                }
+            }
+            ViewData["lista2"] = listagal;
             SessionClose();
             return View(ev);
         }

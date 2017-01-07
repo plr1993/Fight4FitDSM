@@ -1,4 +1,4 @@
-﻿@model Fight4Fit_FrontEnd.Models.GaleriaAssembler
+﻿@model Fight4Fit_FrontEnd.Models.GaleriaModelo
 
 @{
     ViewBag.Title = "Details";
@@ -7,9 +7,16 @@
 <h2>Details</h2>
 
 <fieldset>
-    <legend>GaleriaAssembler</legend>
+    <legend>GaleriaModelo</legend>
 </fieldset>
+@foreach (var item in (List<Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN>)@ViewData["lista"])
+{
+    <h3>@item.Nombre</h3>
+    <img height="300" width="300 " src="@Html.DisplayFor(modelItem => item.Ruta)" />
+}
+
 <p>
+    @Html.ActionLink("Añadir foto", "../Foto/Create", new { id=Model.id }) |
     @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
