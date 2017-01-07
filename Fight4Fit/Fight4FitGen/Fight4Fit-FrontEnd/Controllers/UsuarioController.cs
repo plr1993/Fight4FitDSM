@@ -1,14 +1,16 @@
-﻿
-using Fight4Fit_FrontEnd.Models;
-using Fight4FitGenNHibernate.CAD.Fight4Fit;
-using Fight4FitGenNHibernate.CEN.Fight4Fit;
-using Fight4FitGenNHibernate.EN.Fight4Fit;
+﻿using Fight4Fit_FrontEnd.Models;
 using MvcApplication1.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
+
+using System.IO;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
+
 namespace Fight4Fit_FrontEnd.Controllers
 {
     public class UsuarioController : BasicController
@@ -28,13 +30,15 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Details(string id)
         {
-
             SessionInitialize();
-            UsuarioModelo ev = null;
-            UsuarioEN evEN = new UsuarioCAD(session).ReadOIDDefault(id);
-            ev = new UsuarioAssembler().ConvertENToModelUI(evEN);
+            Usuario usr = null;
+
+            UsuarioEN usrEN = new UsuarioCAD(session).ReadOIDDefault(id);
+            usr = new AssemblerUsuario().ConvertENToModelUI(usrEN);
+
+
             SessionClose();
-            return View(ev);
+            return View(usr);
 
 
         }
@@ -44,7 +48,7 @@ namespace Fight4Fit_FrontEnd.Controllers
 
         public ActionResult Create(String mail)
         {
-            UsuarioModelo usr = new UsuarioModelo();
+            Usuario usr = new Usuario();
             usr.email = mail;
             return View(usr);
         }
@@ -53,14 +57,29 @@ namespace Fight4Fit_FrontEnd.Controllers
         // POST: /Usuario/Create
 
         [HttpPost]
-        public ActionResult Create(UsuarioModelo usr, HttpPostedFileBase file)
+        public ActionResult Create(Usuario usr, HttpPostedFileBase file)
         {
+            string filename = "", pathh = "";
+            if (file != null && file.ContentLength > 0)
+            {
+                filename = Path.GetFileName(file.FileName);
+                pathh = Path.Combine(Server.MapPath("~/Images/Uploads"), filename);
+                file.SaveAs(pathh);
 
-            UsuarioCEN usrCEN = new UsuarioCEN();
-            usrCEN.CrearUsuario(usr.email, usr.password, false, usr.tipo, usr.nombre, usr.apellidos, usr.telefono, usr.localidad, usr.provincia, usr.direccion);
+            }
+            try
+            {
+                filename = "*images/uploads/" + filename;
+                UsuarioCEN usrCEN = new UsuarioCEN();
+                usrCEN.CrearUsuario(usr.email, usr.password, false, usr.tipo, usr.nombre, usr.apellidos, usr.telefono, usr.localidad, usr.provincia, usr.direccion);
 
 
-            return RedirectToAction("Create", new { id = usr.email });
+                return RedirectToAction("Create", new { id = usr.email });
+            }
+            catch
+            {
+                return View();
+            }
         }
 
         //
@@ -69,10 +88,10 @@ namespace Fight4Fit_FrontEnd.Controllers
         public ActionResult Edit(string id)
         {
 
-            UsuarioModelo usr = null;
+            Usuario usr = null;
             SessionInitialize();
             UsuarioEN usrEN = new UsuarioCAD(session).ReadOIDDefault(id);
-            usr = new UsuarioAssembler().ConvertENToModelUI(usrEN);
+            usr = new AssemblerUsuario().ConvertENToModelUI(usrEN);
             SessionClose();
             return View();
         }
@@ -81,7 +100,7 @@ namespace Fight4Fit_FrontEnd.Controllers
         // POST: /Usuario/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(UsuarioModelo usr)
+        public ActionResult Edit(Usuario usr)
         {
             try
             {
@@ -109,7 +128,7 @@ namespace Fight4Fit_FrontEnd.Controllers
                 UsuarioCAD usrCAD = new UsuarioCAD(session);
                 UsuarioCEN usrCEN = new UsuarioCEN(usrCAD);
                 UsuarioEN usrEN = usrCEN.ReadOID(id);
-                UsuarioModelo usr = new UsuarioAssembler().ConvertENToModelUI(usrEN);
+                Usuario usr = new AssemblerUsuario().ConvertENToModelUI(usrEN);
 
                 SessionClose();
                 new UsuarioCEN().DarDeBaja(id);
@@ -138,5 +157,3 @@ namespace Fight4Fit_FrontEnd.Controllers
         }
     }
 }
-
-

@@ -20,7 +20,7 @@ namespace Fight4FitGenNHibernate.CP.Fight4Fit
 {
 public partial class FotoCP : BasicCP
 {
-public Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN SubirFoto (string p_Nombre, string p_Usuario, string p_Descripcion, int p_pertenece_a, int p_likes, string p_Ruta)
+public Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN SubirFoto (string p_Nombre, string p_Usuario, string p_Descripcion, int p_likes, string p_Ruta)
 {
         /*PROTECTED REGION ID(Fight4FitGenNHibernate.CP.Fight4Fit_Foto_SubirFoto) ENABLED START*/
 
@@ -52,10 +52,6 @@ public Fight4FitGenNHibernate.EN.Fight4Fit.FotoEN SubirFoto (string p_Nombre, st
                 fotoEN.Likes = p_likes;
 
                 fotoEN.Ruta = p_Ruta;
-
-                GaleriaCEN cen=new GaleriaCEN();
-
-                fotoEN.Pertenece_a = cen.ReadOID(p_pertenece_a);
 
                 //Call to FotoCAD
 

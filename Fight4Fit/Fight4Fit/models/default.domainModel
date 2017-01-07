@@ -245,26 +245,25 @@
     </elements>
     <elements xmi:type="es.ua.dlsi.ooh:Class" xmi:id="_u-LjoKB3Eeaf6MDpIatGpA" name="Foto" alias="Foto" asociationTarget="_xaJPwKB3Eeaf6MDpIatGpA" associationOrigin="_yR6lQKB3Eeaf6MDpIatGpA _mj96YKTrEeaYrOqZB-eJ9g">
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_MjSAQaB4Eeaf6MDpIatGpA" name="SubirFoto" operationType="New" type="Object" typeObject="_u-LjoKB3Eeaf6MDpIatGpA" customizedTransaction="true">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNENTgEeaXiqKCAvSv1Q" name="p_Nombre"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNEdTgEeaXiqKCAvSv1Q" name="p_Usuario"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNEtTgEeaXiqKCAvSv1Q" name="p_Descripcion"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNE9TgEeaXiqKCAvSv1Q" name="p_pertenece_a" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNFNTgEeaXiqKCAvSv1Q" name="p_likes" type="Integer"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNFdTgEeaXiqKCAvSv1Q" name="p_Ruta"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfRdENJjEeaBlO4nGGNZZw" name="p_Nombre"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfSEINJjEeaBlO4nGGNZZw" name="p_Usuario"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfSEIdJjEeaBlO4nGGNZZw" name="p_Descripcion"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfSEItJjEeaBlO4nGGNZZw" name="p_likes" type="Integer"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfSEI9JjEeaBlO4nGGNZZw" name="p_Ruta"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_MjSAQqB4Eeaf6MDpIatGpA" name="EditarFoto" operationType="Modifier" type="Void">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNFtTgEeaXiqKCAvSv1Q" name="p_Foto_OID" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNF9TgEeaXiqKCAvSv1Q" name="p_Nombre"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNGNTgEeaXiqKCAvSv1Q" name="p_Usuario"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNGdTgEeaXiqKCAvSv1Q" name="p_Descripcion"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNGtTgEeaXiqKCAvSv1Q" name="p_likes" type="Integer"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNG9TgEeaXiqKCAvSv1Q" name="p_Ruta"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfTSQNJjEeaBlO4nGGNZZw" name="p_Foto_OID" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfTSQdJjEeaBlO4nGGNZZw" name="p_Nombre"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfTSQtJjEeaBlO4nGGNZZw" name="p_Usuario"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfTSQ9JjEeaBlO4nGGNZZw" name="p_Descripcion"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfTSRNJjEeaBlO4nGGNZZw" name="p_likes" type="Integer"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfTSRdJjEeaBlO4nGGNZZw" name="p_Ruta"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_MjSARKB4Eeaf6MDpIatGpA" name="BorrarFoto" operationType="Destroy" type="Void">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNHNTgEeaXiqKCAvSv1Q" name="p_Foto_OID" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfT5UNJjEeaBlO4nGGNZZw" name="p_Foto_OID" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_sb0vUKdAEeaeIZPG8DB3sA" name="readOID" operationType="ReadOID" type="Object" typeObject="_u-LjoKB3Eeaf6MDpIatGpA">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNHdTgEeaXiqKCAvSv1Q" name="p_Foto_OID" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_OfUgYNJjEeaBlO4nGGNZZw" name="p_Foto_OID" type="OID" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_sb0vUqdAEeaeIZPG8DB3sA" name="readAll" operationType="ReadAll" type="Object" collectionType="List" typeObject="_u-LjoKB3Eeaf6MDpIatGpA"/>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_dJwu4KgOEeaDQqB3uiUxkA" name="darlike" type="Void">
@@ -276,24 +275,24 @@
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_98j9AKThEeaYrOqZB-eJ9g" alias="Nombre" name="Nombre"/>
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_PjbGAKTiEeaYrOqZB-eJ9g" alias="Usuario" name="Usuario"/>
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_SbLWQKTiEeaYrOqZB-eJ9g" alias="Descripcion" name="Descripcion"/>
-      <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_mj96YaTrEeaYrOqZB-eJ9g" alias="idGaleria" associationOrigin="_mj96YKTrEeaYrOqZB-eJ9g" name="pertenece_a" type="Object"/>
+      <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_mj96YaTrEeaYrOqZB-eJ9g" alias="idGaleria" lower="0" associationOrigin="_mj96YKTrEeaYrOqZB-eJ9g" name="pertenece_a" type="Object"/>
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_DsXGQKf0Eeakk6xBwLZsWQ" alias="likes" name="likes" type="Integer"/>
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_77vBINH5EeadH8KAsjBovA" alias="Ruta" name="Ruta"/>
     </elements>
     <elements xmi:type="es.ua.dlsi.ooh:Class" xmi:id="_vpQg8KB3Eeaf6MDpIatGpA" name="Galeria" alias="Galeria" asociationTarget="_mj96YKTrEeaYrOqZB-eJ9g" associationOrigin="_6-5jgKB3Eeaf6MDpIatGpA">
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_NSdacaB4Eeaf6MDpIatGpA" name="CrearGaleria" operationType="New" type="Object" typeObject="_vpQg8KB3Eeaf6MDpIatGpA">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNHtTgEeaXiqKCAvSv1Q" name="p_evento" type="OID" typeObject="_9p0F8JhFEeamA_JC3ucrJw"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNH9TgEeaXiqKCAvSv1Q" name="p_NombreGaleria"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_qkuNYNJ6EeaBlO4nGGNZZw" name="p_evento" type="OID" typeObject="_9p0F8JhFEeamA_JC3ucrJw"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_qkuNYdJ6EeaBlO4nGGNZZw" name="p_NombreGaleria"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_NSdacqB4Eeaf6MDpIatGpA" name="ModificarGaleria" operationType="Modifier" type="Void">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNINTgEeaXiqKCAvSv1Q" name="p_Galeria_OID" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNIdTgEeaXiqKCAvSv1Q" name="p_NombreGaleria"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_qku0cNJ6EeaBlO4nGGNZZw" name="p_Galeria_OID" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_qku0cdJ6EeaBlO4nGGNZZw" name="p_NombreGaleria"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_NSdadKB4Eeaf6MDpIatGpA" name="EliminarGaleria" operationType="Destroy" type="Void">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNItTgEeaXiqKCAvSv1Q" name="p_Galeria_OID" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_qkvbgNJ6EeaBlO4nGGNZZw" name="p_Galeria_OID" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_pLGlcKdAEeaeIZPG8DB3sA" name="readOID" operationType="ReadOID" type="Object" typeObject="_vpQg8KB3Eeaf6MDpIatGpA">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_J2QNI9TgEeaXiqKCAvSv1Q" name="p_Galeria_OID" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_qkwCkNJ6EeaBlO4nGGNZZw" name="p_Galeria_OID" type="OID" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_pLGlcqdAEeaeIZPG8DB3sA" name="readAll" operationType="ReadAll" type="Object" collectionType="List" typeObject="_vpQg8KB3Eeaf6MDpIatGpA"/>
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_6-5jgaB3Eeaf6MDpIatGpA" alias="idEvento" associationOrigin="_6-5jgKB3Eeaf6MDpIatGpA" name="evento" type="Object"/>
@@ -305,7 +304,7 @@
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_xaJPwKB3Eeaf6MDpIatGpA" name="foto_comentario" alias="foto_comentario" rolOrigin="_xaJPwaB3Eeaf6MDpIatGpA" rolTarget="_xaJPwqB3Eeaf6MDpIatGpA" classTarget="_u-LjoKB3Eeaf6MDpIatGpA" classOrigin="_p1dWUKB3Eeaf6MDpIatGpA" rolOriginName="foto" rolTargetName="comentario" rolOriginMultiplicity="0..1" rolTargetMultiplicity="0..*"/>
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_yR6lQKB3Eeaf6MDpIatGpA" name="reporte_foto" alias="reporte_foto" rolOrigin="_yR6lQaB3Eeaf6MDpIatGpA" rolTarget="_yR6lQqB3Eeaf6MDpIatGpA" classTarget="_hJz00KB3Eeaf6MDpIatGpA" classOrigin="_u-LjoKB3Eeaf6MDpIatGpA" rolOriginName="reporte" rolTargetName="foto" rolOriginMultiplicity="0..*" rolTargetMultiplicity="0..1"/>
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_6-5jgKB3Eeaf6MDpIatGpA" name="evento_galeria" alias="evento_galeria" rolOrigin="_6-5jgaB3Eeaf6MDpIatGpA" rolTarget="_6-5jgqB3Eeaf6MDpIatGpA" classTarget="_9p0F8JhFEeamA_JC3ucrJw" classOrigin="_vpQg8KB3Eeaf6MDpIatGpA" rolOriginName="evento" rolTargetName="galeria" rolOriginMultiplicity="1..1" rolTargetMultiplicity="0..1"/>
-    <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_mj96YKTrEeaYrOqZB-eJ9g" name="galeria_foto" alias="galeria_foto" rolOrigin="_mj96YaTrEeaYrOqZB-eJ9g" rolTarget="_mj96YqTrEeaYrOqZB-eJ9g" classTarget="_vpQg8KB3Eeaf6MDpIatGpA" classOrigin="_u-LjoKB3Eeaf6MDpIatGpA" rolOriginName="pertenece_a" rolTargetName="compuesta_por" rolOriginMultiplicity="1..1" rolTargetMultiplicity="0..*"/>
+    <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_mj96YKTrEeaYrOqZB-eJ9g" name="galeria_foto" alias="galeria_foto" rolOrigin="_mj96YaTrEeaYrOqZB-eJ9g" rolTarget="_mj96YqTrEeaYrOqZB-eJ9g" classTarget="_vpQg8KB3Eeaf6MDpIatGpA" classOrigin="_u-LjoKB3Eeaf6MDpIatGpA" rolOriginName="pertenece_a" rolTargetName="compuesta_por" rolOriginMultiplicity="0..1" rolTargetMultiplicity="0..*"/>
     <elements xmi:type="es.ua.dlsi.ooh:Association" xmi:id="_qN1YQKWUEeaAmK5uJPZ7EQ" name="evento_comentario" alias="evento_comentario" rolOrigin="_qN2mYKWUEeaAmK5uJPZ7EQ" rolTarget="_qN2mYaWUEeaAmK5uJPZ7EQ" classTarget="_9p0F8JhFEeamA_JC3ucrJw" classOrigin="_p1dWUKB3Eeaf6MDpIatGpA" rolOriginName="evento" rolTargetName="comentario" rolOriginMultiplicity="0..1" rolTargetMultiplicity="0..*"/>
     <elements xmi:type="es.ua.dlsi.ooh:Enumeration" xmi:id="_7eXE4KWUEeaAmK5uJPZ7EQ" name="Motivo">
       <enumerationLiterals xmi:type="es.ua.dlsi.ooh:EnumerationLiteral" xmi:id="__mjpUKWUEeaAmK5uJPZ7EQ" name="ofensivo" value="1"/>

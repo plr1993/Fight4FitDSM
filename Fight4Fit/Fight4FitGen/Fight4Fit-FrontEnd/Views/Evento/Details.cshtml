@@ -51,13 +51,6 @@
     <h3>@item.Titulo - @item.</h3>
     <p>@item.Texto</p>
 }
-
-@foreach (var item in (List<Fight4FitGenNHibernate.EN.Fight4Fit.GaleriaEN>)@ViewData["lista2"])
-{
-    @Html.ActionLink("Ver galería", "../Galeria/Details", new { id = Model.idgaleria })
-}
-
-
     <p>
         @Html.ActionLink("Añadir galería de fotos", "../Galeria/Create", new { id = Model.id}) |
         @Html.ActionLink("Reportar evento", "../Reporte/Create", new { id = Model.id, var=3 }) |

@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Fight4Fit_FrontEnd.Models
 {
-    public class UsuarioModelo
+    public class Usuario
     {
         [ScaffoldColumn(false)]
         public String email { get; set; }
