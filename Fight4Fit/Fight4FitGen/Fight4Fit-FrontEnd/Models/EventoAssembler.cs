@@ -23,6 +23,10 @@ namespace Fight4Fit_FrontEnd.Models
             art.Latitud = en.Latitud;
             art.Localizacion = en.Localizacion;
             art.Crea = en.Crea.Email;
+            if (en.Galeria != null)
+            {
+                art.idgaleria = en.Galeria.Id;
+            }
             return art;
         }
         public IList<EventoModelo> ConvertListENToModel(IList<EventoEN> ens)

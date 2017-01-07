@@ -13,7 +13,11 @@ namespace Fight4Fit_FrontEnd.Models
         [ScaffoldColumn(false)]
         public int id { get; set; }
 
+        [ScaffoldColumn(false)]
         public int numPart { get; set; }
+
+        [ScaffoldColumn(false)]
+        public int idgaleria { get; set; }
 
         [Display(Prompt = "Numero máximo de participantes", Description = "Numero máximo de participantes", Name = "numPartMax")]
         [Required(ErrorMessage = "Debe indicar un numero de participantes máximo")]
