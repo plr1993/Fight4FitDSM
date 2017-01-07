@@ -10,8 +10,14 @@ using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
 using Fight4Fit_FrontEnd.Filters;
 using Fight4Fit_FrontEnd.Models;
+using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.EN.Fight4Fit;
+using Fight4FitGenNHibernate.CAD.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
+using System.IO;
+using MvcApplication1.Models;
 
-namespace Fight4Fit_FrontEnd.Controllers
+namespace MvcApplication1.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]
@@ -72,15 +78,20 @@ namespace Fight4Fit_FrontEnd.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(RegisterModel model)
+        public ActionResult Register(RegisterModel model, HttpPostedFileBase file)
         {
             if (ModelState.IsValid)
             {
                 // Intento de registrar al usuario
                 try
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
-                    WebSecurity.Login(model.UserName, model.Password);
+                    // Invocamos a la lógica de negocio para crear un cliente.
+                    UsuarioCEN cli = new UsuarioCEN();
+
+                    cli.CrearUsuario(model.Nick, model.Password, true, TipoUsuarioEnum.Normal, model.Nombre, model.Apellidos, model.Telefono, model.Localidad, model.Provincia, model.Direccion);
+
+                    WebSecurity.CreateUserAndAccount(model.Nick, model.Password);
+                    WebSecurity.Login(model.Nick, model.Password);
                     return RedirectToAction("Index", "Home");
                 }
                 catch (MembershipCreateUserException e)
@@ -92,6 +103,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             // Si llegamos a este punto, es que se ha producido un error y volvemos a mostrar el formulario
             return View(model);
         }
+
 
         //
         // POST: /Account/Disassociate
@@ -240,7 +252,7 @@ namespace Fight4Fit_FrontEnd.Controllers
                 string loginData = OAuthWebSecurity.SerializeProviderUserId(result.Provider, result.ProviderUserId);
                 ViewBag.ProviderDisplayName = OAuthWebSecurity.GetOAuthClientData(result.Provider).DisplayName;
                 ViewBag.ReturnUrl = returnUrl;
-                return View("ExternalLoginConfirmation", new RegisterExternalLoginModel { UserName = result.UserName, ExternalLoginData = loginData });
+                return View("ExternalLoginConfirmation", new RegisterExternalLoginModel { correo = result.UserName, ExternalLoginData = loginData });
             }
         }
 
@@ -265,15 +277,18 @@ namespace Fight4Fit_FrontEnd.Controllers
                 // Insertar un nuevo usuario en la base de datos
                 using (UsersContext db = new UsersContext())
                 {
-                    UserProfile user = db.UserProfiles.FirstOrDefault(u => u.UserName.ToLower() == model.UserName.ToLower());
+                    UserProfile user = db.UserProfiles.FirstOrDefault(u => u.UserName.ToLower() == model.correo.ToLower());
                     // Comprobar si el usuario ya existe
                     if (user == null)
                     {
                         // Insertar el nombre en la tabla de perfiles
-                        db.UserProfiles.Add(new UserProfile { UserName = model.UserName });
+                        db.UserProfiles.Add(new UserProfile { UserName = model.correo });
+                        UsuarioCEN usuarioCEN = new UsuarioCEN();
+                        UsuarioEN usuarioEN = new UsuarioEN();
+                        usuarioCEN.CrearUsuario(model.correo, model.Password, true, TipoUsuarioEnum.Normal, model.Nombre, model.Apellidos, model.Telefono, model.Localidad, model.Provincia, model.Direccion);
                         db.SaveChanges();
 
-                        OAuthWebSecurity.CreateOrUpdateAccount(provider, providerUserId, model.UserName);
+                        OAuthWebSecurity.CreateOrUpdateAccount(provider, providerUserId, model.correo);
                         OAuthWebSecurity.Login(provider, providerUserId, createPersistentCookie: false);
 
                         return RedirectToLocal(returnUrl);
@@ -405,3 +420,4 @@ namespace Fight4Fit_FrontEnd.Controllers
         #endregion
     }
 }
+

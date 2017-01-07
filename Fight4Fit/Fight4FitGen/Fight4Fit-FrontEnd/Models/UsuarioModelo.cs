@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,6 +15,31 @@ namespace Fight4Fit_FrontEnd.Models
 
         [ScaffoldColumn(false)]
         public String password { get; set; }
+
+        [ScaffoldColumn(false)]
+        public bool bloqueado { get; set; }
+
+        [ScaffoldColumn(false)]
+        public TipoUsuarioEnum tipo { get; set; }
+
+        [ScaffoldColumn(false)]
+        public String nombre { get; set; }
+
+        [ScaffoldColumn(false)]
+        public String apellidos { get; set; }
+
+        [ScaffoldColumn(false)]
+        public String telefono { get; set; }
+
+        [ScaffoldColumn(false)]
+        public String  localidad { get; set; }
+
+        [ScaffoldColumn(false)]
+        public String provincia { get; set; }
+
+        [ScaffoldColumn(false)]
+        public String direccion { get; set; }
+
 
 
 

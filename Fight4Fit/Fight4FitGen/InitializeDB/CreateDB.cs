@@ -81,88 +81,74 @@ public static void InitializeData ()
         {
                 //CAD
                 IUsuarioCAD _IusuarioCAD = new UsuarioCAD ();
-                IAdminCAD _IAdminCAD = new AdminCAD ();
                 IEventoCAD _IEventoCAD = new EventoCAD ();
                 ICategoriaCAD _ICategoriaCAD = new CategoriaCAD ();
                 IReporteCAD _IReporteCAD = new ReporteCAD ();
-                IPromotorCAD _IPromotorCAD = new PromotorCAD ();
                 IGaleriaCAD _IGaleriaCAD = new GaleriaCAD ();
                 IComentarioCAD _IComentarioCAD = new ComentarioCAD ();
                 ISoporteCAD _ISoporteCAD = new SoporteCAD ();
 
                 //EN
                 UsuarioEN usuarioEN = new UsuarioEN ();
-                AdminEN adminEN = new AdminEN ();
                 EventoEN eventoEN = new EventoEN ();
                 CategoriaEN categoriaEN = new CategoriaEN ();
                 ReporteEN reporteEN = new ReporteEN ();
-                PromotorEN promotorEN = new PromotorEN ();
                 GaleriaEN galeriaEN = new GaleriaEN ();
                 ComentarioEN comentarioEN = new ComentarioEN ();
                 SoporteEN soporteEN = new SoporteEN ();
 
                 //CEN
                 UsuarioCEN usuarioCEN = new UsuarioCEN (_IusuarioCAD);
-                AdminCEN adminCEN = new AdminCEN (_IAdminCAD);
                 EventoCEN eventoCEN = new EventoCEN (_IEventoCAD);
                 CategoriaCEN categoriaCEN = new CategoriaCEN (_ICategoriaCAD);
                 ReporteCEN reporteCEN = new ReporteCEN (_IReporteCAD);
-                PromotorCEN promotorCEN = new PromotorCEN (_IPromotorCAD);
                 GaleriaCEN galeriaCEN = new GaleriaCEN (_IGaleriaCAD);
                 ComentarioCEN comentarioCEN = new ComentarioCEN (_IComentarioCAD);
                 SoporteCEN soporteCEN = new SoporteCEN (_ISoporteCAD);
 
                 //CP
-                AdminCP adminCP = new AdminCP ();
                 ReporteCP reporteCP = new ReporteCP ();
                 ComentarioCP comentarioCP = new ComentarioCP ();
 
                 //USUARIOS
                 UsuarioEN usuario1EN = new UsuarioEN ();
-                usuario1EN.Email = "Pepe";
-                usuario1EN.Password = "123";
-                usuarioCEN.CrearUsuario (usuario1EN.Email, usuario1EN.Password, false);
+                usuario1EN.Email = "luisberenguer96@gmail.com";
+                usuario1EN.Password = "123456qwe";
+                usuario1EN.Nombre = "Luis";
+                usuario1EN.Apellidos = "Berenguer";
+                usuario1EN.Telefono = "665644433";
+                usuario1EN.Localidad = "Novelda";
+                usuario1EN.Provincia = "Alicante";
+                usuario1EN.Direccion = "Calle to guapag 5 C";
+                usuarioCEN.CrearUsuario (usuario1EN.Email, usuario1EN.Password, false, TipoUsuarioEnum.Administrador, usuario1EN.Nombre, usuario1EN.Apellidos, usuario1EN.Telefono, usuario1EN.Localidad, usuario1EN.Provincia, usuario1EN.Direccion);
+
                 UsuarioEN usuario2EN = new UsuarioEN ();
-                usuario2EN.Email = "Pyol";
-                usuario2EN.Password = "123";
-                usuarioCEN.CrearUsuario (usuario2EN.Email, usuario2EN.Password, false);
+                usuario2EN.Email = "victoriahodelin@gmail.com";
+                usuario2EN.Password = "123456qwe";
+                usuario2EN.Nombre = "Victoria";
+                usuario2EN.Apellidos = "Hodelin";
+                usuario2EN.Telefono = "665644433";
+                usuario2EN.Localidad = "Orihuela";
+                usuario2EN.Provincia = "Alicante";
+                usuario2EN.Direccion = "Calle to guapag 5 C";
+                usuarioCEN.CrearUsuario (usuario2EN.Email, usuario2EN.Password, false, TipoUsuarioEnum.Administrador, usuario2EN.Nombre, usuario2EN.Apellidos, usuario2EN.Telefono, usuario2EN.Localidad, usuario2EN.Provincia, usuario2EN.Direccion);
+
                 UsuarioEN usuario3EN = new UsuarioEN ();
-                usuario3EN.Email = "Luis";
-                usuario3EN.Password = "123";
-                usuarioCEN.CrearUsuario (usuario3EN.Email, usuario3EN.Password, false);
-                UsuarioEN usuario4EN = new UsuarioEN ();
-                usuario4EN.Email = "Viki";
-                usuario4EN.Password = "123";
-                usuarioCEN.CrearUsuario (usuario4EN.Email, usuario4EN.Password, false);
-                UsuarioEN usuario5EN = new UsuarioEN ();
-                usuario5EN.Email = "Juan";
-                usuario5EN.Password = "123";
-                usuarioCEN.CrearUsuario (usuario5EN.Email, usuario5EN.Password, false);
+                usuario3EN.Email = "pablolope93@gmail.com";
+                usuario3EN.Password = "123456qwe";
+                usuario3EN.Nombre = "Pablo";
+                usuario3EN.Apellidos = "Lopez";
+                usuario3EN.Telefono = "665644433";
+                usuario3EN.Localidad = "Aspe";
+                usuario3EN.Provincia = "Alicante";
+                usuario3EN.Direccion = "Calle to guapag 5 C";
+                usuarioCEN.CrearUsuario (usuario3EN.Email, usuario3EN.Password, false, TipoUsuarioEnum.Administrador, usuario3EN.Nombre, usuario3EN.Apellidos, usuario3EN.Telefono, usuario3EN.Localidad, usuario3EN.Provincia, usuario3EN.Direccion);
+                usuarioCEN.CrearUsuario ("raul@gmail.com", usuario3EN.Password, false, TipoUsuarioEnum.Normal, usuario3EN.Nombre, usuario3EN.Apellidos, usuario3EN.Telefono, usuario3EN.Localidad, usuario3EN.Provincia, usuario3EN.Direccion);
+                usuarioCEN.CrearUsuario ("juan@gmail.com", usuario3EN.Password, false, TipoUsuarioEnum.Normal, usuario3EN.Nombre, usuario3EN.Apellidos, usuario3EN.Telefono, usuario3EN.Localidad, usuario3EN.Provincia, usuario3EN.Direccion);
+                usuarioCEN.CrearUsuario ("raul1@gmail.com", usuario3EN.Password, true, TipoUsuarioEnum.Normal, usuario3EN.Nombre, usuario3EN.Apellidos, usuario3EN.Telefono, usuario3EN.Localidad, usuario3EN.Provincia, usuario3EN.Direccion);
+                usuarioCEN.CrearUsuario ("raul2@gmail.com", usuario3EN.Password, false, TipoUsuarioEnum.Promotor, usuario3EN.Nombre, usuario3EN.Apellidos, usuario3EN.Telefono, usuario3EN.Localidad, usuario3EN.Provincia, usuario3EN.Direccion);
+                usuarioCEN.CrearUsuario ("raul3@gmail.com", usuario3EN.Password, true, TipoUsuarioEnum.Promotor, usuario3EN.Nombre, usuario3EN.Apellidos, usuario3EN.Telefono, usuario3EN.Localidad, usuario3EN.Provincia, usuario3EN.Direccion);
 
-                //PROMOTOR
-                PromotorEN promotor1EN = new PromotorEN ();
-                promotor1EN.Email = "Hector";
-                promotor1EN.Password = "123";
-                promotor1EN.CIF = "12345678";
-                promotorCEN.CrearUsuarioProm (promotor1EN.Email, promotor1EN.Password, false, promotor1EN.CIF);
-
-                PromotorEN promotor2EN = new PromotorEN ();
-                promotor2EN.Email = "Marcos";
-                promotor2EN.Password = "223";
-                promotor2EN.CIF = "22345678";
-                promotorCEN.CrearUsuarioProm (promotor2EN.Email, promotor2EN.Password, false, promotor2EN.CIF);
-
-                PromotorEN promotor3EN = new PromotorEN ();
-                promotor3EN.Email = "Lola";
-                promotor3EN.Password = "323";
-                promotor3EN.CIF = "32345678";
-                promotorCEN.CrearUsuarioProm (promotor3EN.Email, promotor3EN.Password, false, promotor3EN.CIF);
-
-                //ADMIN
-                adminEN = new AdminEN ();
-                adminEN.Email = "josss";
-                adminEN.Password = "183";
-                adminCEN.CrearUsuarioAdmin (adminEN.Email, adminEN.Password, false);
 
                 //CATEGORIA
                 categoriaEN = new CategoriaEN ();
@@ -187,7 +173,7 @@ public static void InitializeData ()
                 eventoEN.Localizacion = "China";
                 eventoEN.Latitud = 1234123;
                 eventoEN.Longitud = 123123;
-                int ev1 = eventoCEN.CrearEvento ("La copa del meao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date1, eventoEN.Localizacion, eventoEN.Latitud, eventoEN.Longitud);
+                int ev1 = eventoCEN.CrearEvento ("La copa del meao", "juan@gmail.com", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date1, eventoEN.Localizacion, eventoEN.Latitud, eventoEN.Longitud);
 
                 EventoEN evento1EN = new EventoEN ();
                 evento1EN = new EventoEN ();
@@ -197,9 +183,9 @@ public static void InitializeData ()
                 evento1EN.Latitud = 1234123;
                 evento1EN.Longitud = 123123;
                 evento1EN.Tipo = TipoEventoEnum.Evento;
-                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date12, evento1EN.Localizacion, evento1EN.Latitud, evento1EN.Longitud);
+                int ev2 = eventoCEN.CrearEvento ("La copa del cagao", "raul@gmail.com", eventoEN.Categoria.Nombre, eventoEN.Descripcion, eventoEN.Tipo, 0, 32, date12, evento1EN.Localizacion, evento1EN.Latitud, evento1EN.Longitud);
 
-                //COMENTARIO
+                /*/ / COMENTARIO
                 comentarioEN = new ComentarioEN ();
                 comentarioEN.Titulo = "Futbol";
                 comentarioEN.Texto = "El futbol es muy divertido";
@@ -216,7 +202,7 @@ public static void InitializeData ()
                 comentario3EN.Titulo = "Tenis";
                 comentario3EN.Texto = "El tenis es muy divertido";
                 comentarioCP.PublicarComentario (comentario3EN.Titulo, comentario3EN.Texto, ev1, TipoComentarioEnum.Evento);
-
+                * /
 
 
 

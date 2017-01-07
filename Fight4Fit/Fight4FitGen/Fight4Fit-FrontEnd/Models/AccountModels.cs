@@ -5,8 +5,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 
-namespace Fight4Fit_FrontEnd.Models
+
+namespace MvcApplication1.Models
 {
     public class UsersContext : DbContext
     {
@@ -25,13 +27,50 @@ namespace Fight4Fit_FrontEnd.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+
     }
 
     public class RegisterExternalLoginModel
     {
         [Required]
+        [Display(Name = "correo")]
+        public string correo { get; set; }
+
+        [Required]
         [Display(Name = "Nombre de usuario")]
-        public string UserName { get; set; }
+        public string Nombre { get; set; }
+
+        [Required]
+        [Display(Name = "Apellidos")]
+        public string Apellidos { get; set; }
+
+        [Required]
+        [Display(Name = "Direccion")]
+        public string Direccion { get; set; }
+
+
+        [Required]
+        [Display(Name = "Telefono")]
+        public string Telefono { get; set; }
+
+        [Required]
+        [Display(Name = "Localidad")]
+        public string Localidad { get; set; }
+
+        [Required]
+        [Display(Name = "Provincia")]
+        public string Provincia { get; set; }
+
+        [Required]
+        [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Contraseña")]
+        public string Password { get; set; }
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirmar contraseña")]
+        [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
+        public string ConfirmPassword { get; set; }
 
         public string ExternalLoginData { get; set; }
     }
@@ -73,8 +112,33 @@ namespace Fight4Fit_FrontEnd.Models
     public class RegisterModel
     {
         [Required]
+        [Display(Name = "Correo del usuario")]
+        public string Nick { get; set; }
+
+        [Required]
         [Display(Name = "Nombre de usuario")]
-        public string UserName { get; set; }
+        public string Nombre { get; set; }
+
+        [Required]
+        [Display(Name = "Apellidos")]
+        public string Apellidos { get; set; }
+
+        [Required]
+        [Display(Name = "Direccion")]
+        public string Direccion { get; set; }
+
+
+        [Required]
+        [Display(Name = "Telefono")]
+        public string Telefono { get; set; }
+
+        [Required]
+        [Display(Name = "Localidad")]
+        public string Localidad { get; set; }
+
+        [Required]
+        [Display(Name = "Provincia")]
+        public string Provincia { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
@@ -86,6 +150,7 @@ namespace Fight4Fit_FrontEnd.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+
     }
 
     public class ExternalLogin
@@ -95,3 +160,5 @@ namespace Fight4Fit_FrontEnd.Models
         public string ProviderUserId { get; set; }
     }
 }
+
+

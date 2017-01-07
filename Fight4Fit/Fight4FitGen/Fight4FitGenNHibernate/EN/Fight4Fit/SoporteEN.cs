@@ -41,9 +41,9 @@ private string respuesta;
 
 
 /**
- *	Atributo admin-responde
+ *	Atributo admin_responde
  */
-private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin - responde;
+private Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin_responde;
 
 
 
@@ -80,8 +80,8 @@ public virtual string Respuesta {
 
 
 
-public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Admin - responde {
-        get { return admin - responde; } set { admin - responde = value;  }
+public virtual Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN Admin_responde {
+        get { return admin_responde; } set { admin_responde = value;  }
 }
 
 
@@ -94,20 +94,20 @@ public SoporteEN()
 
 
 
-public SoporteEN(int idSoporte, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, string titulo, string texto, string respuesta, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin - responde
+public SoporteEN(int idSoporte, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, string titulo, string texto, string respuesta, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin_responde
                  )
 {
-        this.init (IdSoporte, usuario, titulo, texto, respuesta, admin - responde);
+        this.init (IdSoporte, usuario, titulo, texto, respuesta, admin_responde);
 }
 
 
 public SoporteEN(SoporteEN soporte)
 {
-        this.init (IdSoporte, soporte.Usuario, soporte.Titulo, soporte.Texto, soporte.Respuesta, soporte.Admin - responde);
+        this.init (IdSoporte, soporte.Usuario, soporte.Titulo, soporte.Texto, soporte.Respuesta, soporte.Admin_responde);
 }
 
 private void init (int idSoporte
-                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, string titulo, string texto, string respuesta, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin - responde)
+                   , Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN usuario, string titulo, string texto, string respuesta, Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN admin_responde)
 {
         this.IdSoporte = idSoporte;
 
@@ -120,7 +120,7 @@ private void init (int idSoporte
 
         this.Respuesta = respuesta;
 
-        this.Admin - responde = admin - responde;
+        this.Admin_responde = admin_responde;
 }
 
 public override bool Equals (object obj)

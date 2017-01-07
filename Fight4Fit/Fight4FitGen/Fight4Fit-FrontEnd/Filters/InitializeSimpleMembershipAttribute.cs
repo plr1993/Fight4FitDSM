@@ -5,6 +5,7 @@ using System.Threading;
 using System.Web.Mvc;
 using WebMatrix.WebData;
 using Fight4Fit_FrontEnd.Models;
+using MvcApplication1.Models;
 
 namespace Fight4Fit_FrontEnd.Filters
 {

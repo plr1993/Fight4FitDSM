@@ -44,5 +44,8 @@ namespace Fight4Fit_FrontEnd.Models
         [Display(Prompt = "Fecha del evento", Description = "Fecha del evento", Name = "Fecha ")]
         [Required(ErrorMessage = "Debe indicar una fecha para el evento")]
         public DateTime? Fecha { get; set; }
+
+        public string Crea { get; set; }
     }
 }
+

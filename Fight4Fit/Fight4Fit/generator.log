@@ -3402,3 +3402,1401 @@ enc:utf-8
 ../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.core.dll
 ../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.framework.dll
 5065 [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - workflow completed in 4203ms!
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.2.1, Build v201306110341
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+245  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit'
+429  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+475  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+551  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe:10
+551  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+689  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+966  [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen]
+configuroConf:C:\Users\OIDEWin7\AppData\Local\Temp\OOH4RIA6764868822274345571.cfg
+enc:utf-8
+1104 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+2038 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 0.934s
+2038 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 821
+2038 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 72
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2192 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCAD
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+enc:utf-8
+2253 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCAD
+enc:utf-8
+2299 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCAD
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+enc:utf-8
+2314 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCAD
+enc:utf-8
+2345 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCAD
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+enc:utf-8
+2376 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCAD
+enc:utf-8
+2406 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoCAD
+enc:utf-8
+2437 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaCAD
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2605 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCEN
+enc:utf-8
+2636 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCEN
+enc:utf-8
+2667 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCEN
+enc:utf-8
+2682 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCEN
+enc:utf-8
+2699 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCEN
+enc:utf-8
+2716 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCEN
+enc:utf-8
+2732 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoCEN
+enc:utf-8
+2749 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaCEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e64738 (name: CrearEvento, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1626d54 (name: ModificarEvento, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1c758ac (name: BorrarEvento, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e39c73 (name: CompartirEvento, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1225652 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@400542 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@b85f9 (name: AnyadirParticipante, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2884 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@ae9b55 (name: EliminarParticipante, visibility: Public, operationType: Unrelationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bbffcd (name: CrearUsuario, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@33b74f (name: IniciarSesion, visibility: Public, operationType: Custom, description: null, type: Boolean, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: true, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8f5957 (name: DarDeBaja, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@122c3c3 (name: ModificarPerfil, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@119fb47 (name: ApuntarseAEvento, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1de4cb2 (name: DesapuntarseAEvento, visibility: Public, operationType: Unrelationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@13671df (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2901 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@eda5c9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2918 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3ef382 (name: NuevaConsulta, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2918 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@41772e (name: EliminarConsulta, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2918 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19b7cce (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2918 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@e99e4a (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2918 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@dd9eb7 (name: Responder, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: true, paging: false, customizedTransaction: false)
+enc:utf-8
+2935 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@14abbdc (name: CrearCategoria, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2935 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@167f35d (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2935 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@156695f (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2935 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@514af7 (name: NuevoReporte, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+2951 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@a94ee4 (name: EliminarReporte, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2951 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6379eb (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2951 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1d48005 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2951 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1f116cc (name: vincularFoto, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2951 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1309333 (name: vincularComentario, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2951 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1239d7d (name: vincularEvento, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2968 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5eefef (name: PublicarComentario, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19f45b1 (name: BorrarComentario, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@18190fc (name: EditarComentario, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bc55de (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@d04d3d (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1ec71f8 (name: darlike, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@902638 (name: vincFoto, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3002 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@16813f3 (name: vincEv, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3019 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8c12ac (name: SubirFoto, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1597028 (name: EditarFoto, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@482e36 (name: BorrarFoto, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@18dfcc1 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7ddf94 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e2d654 (name: darlike, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@16efaab (name: CrearGaleria, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@9bf450 (name: ModificarGaleria, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@11d00c0 (name: EliminarGaleria, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1b699ef (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3036 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@9604d9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3070 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoEN
+enc:utf-8
+3104 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioEN
+enc:utf-8
+3138 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteEN
+enc:utf-8
+3171 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaEN
+enc:utf-8
+3188 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteEN
+enc:utf-8
+3205 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioEN
+enc:utf-8
+3239 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoEN
+enc:utf-8
+3272 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+3374 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3374 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+enc:utf-8
+enc:utf-8
+3424 [main] INFO         org.eclipse.xpand2.Generator  - Written 64 files to outlet [default](../Fight4FitGen)
+3424 [main] INFO         org.eclipse.xpand2.Generator  - Skipped writing of 17 files to outlet [default](../Fight4FitGen)
+3424 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CreateSolution
+3441 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.UpdateSolution
+3441 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CopyDLLs
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Antlr3.Runtime.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Castle.DynamicProxy2.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\desktop.ini
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Iesi.Collections.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\LinFu.DynamicProxy.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\log4net.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.ByteCode.Castle.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.ByteCode.LinFu.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.core.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.framework.dll
+3441 [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - workflow completed in 2890ms!
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+16   [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.2.1, Build v201306110341
+16   [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
+16   [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+16   [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe
+16   [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+266  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit'
+453  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+500  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+594  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe:10
+594  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+719  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+986  [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen]
+configuroConf:C:\Users\OIDEWin7\AppData\Local\Temp\OOH4RIA3334762789466432596.cfg
+enc:utf-8
+1126 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+2111 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 0.985s
+2111 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 821
+2111 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 72
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2252 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCAD
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+enc:utf-8
+2315 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCAD
+enc:utf-8
+2346 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCAD
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+enc:utf-8
+2377 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCAD
+enc:utf-8
+2393 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCAD
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+enc:utf-8
+2424 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCAD
+LA clase origen: Comentario y el nombre de rol: usuario
+DISTINTO en: asoOrigin: foto_comentario. El nombre del rol origen: foto de el rol destino: usuario
+DISTINTO en: asoOrigin: evento_comentario. El nombre del rol origen: evento de el rol destino: usuario
+DISTINTO en: asoOrigin: usuario_comentario. El nombre del rol origen: usuario_comenta de el rol destino: usuario
+LA clase destino: Comentario y el nombre de rol: usuario
+DISTINTO en: asoTarget: comentario_reporte. El nombre del rol destino: reporte de el rol origen: usuario
+LA clase de getAttributeOtherSide es: Comentario y el nombre de rol: usuarioel result es: null
+LA clase origen: Comentario y el nombre de rol: usuario
+DISTINTO en: asoOrigin: foto_comentario. El nombre del rol origen: foto de el rol destino: usuario
+DISTINTO en: asoOrigin: evento_comentario. El nombre del rol origen: evento de el rol destino: usuario
+DISTINTO en: asoOrigin: usuario_comentario. El nombre del rol origen: usuario_comenta de el rol destino: usuario
+LA clase destino: Comentario y el nombre de rol: usuario
+DISTINTO en: asoTarget: comentario_reporte. El nombre del rol destino: reporte de el rol origen: usuario
+LA clase de getAttributeOtherSide es: Comentario y el nombre de rol: usuarioel result es: null
+2424 [main] ERROR        org.eclipse.xpand2.Generator  - Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+java.lang.RuntimeException: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getFeature(PolymorphicResolver.java:112)
+	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getExtension(PolymorphicResolver.java:56)
+	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:97)
+	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:1)
+	at org.eclipse.internal.xtend.util.Cache.get(Cache.java:26)
+	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtensionForTypes(ExecutionContextImpl.java:371)
+	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtension(ExecutionContextImpl.java:382)
+	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
+	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
+	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
+	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
+	at org.eclipse.internal.xpand2.ast.ExpressionStatement.evaluateInternal(ExpressionStatement.java:45)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:93)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:101)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:93)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.FileStatement.evaluateInternal(FileStatement.java:86)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:192)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.xpand2.Generator.invokeInternal2(Generator.java:322)
+	at org.eclipse.xtend.expression.AbstractExpressionsUsingWorkflowComponent.invokeInternal(AbstractExpressionsUsingWorkflowComponent.java:232)
+	at org.eclipse.emf.mwe.core.lib.AbstractWorkflowComponent.invoke(AbstractWorkflowComponent.java:126)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
+	at org.eclipse.emf.mwe.core.WorkflowEngine.executeWorkflow(WorkflowEngine.java:174)
+	at org.eclipse.emf.mwe.core.WorkflowEngine.run(WorkflowEngine.java:53)
+	at org.eclipse.emf.mwe.core.WorkflowRunner.doRun(WorkflowRunner.java:174)
+	at org.eclipse.emf.mwe.core.WorkflowRunner.main(WorkflowRunner.java:70)
+2440 [main] ERROR        org.eclipse.xpand2.Generator  - Error in Component nhibernate.generator of type org.eclipse.xpand2.Generator: 
+	EvaluationException : Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+	persistence::nhibernate::netnhibernateCAD.xpt[11024,15] on line 211 '.getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName()'
+	persistence::nhibernate::netnhibernateCAD.xpt[371,39] on line 15 'EXPAND nhibernateCADs FOREACH .classes()'                                                              
+	persistence::nhibernate::netnhibernateCAD.xpt[287,10] on line 10 'EXPAND CAD'                                                                                            
+	persistence::CAD.xpt[64,54] on line 4 'EXPAND persistence::nhibernate::netnhibernateCAD::main'                                                                           
+	workflow::nhibernate::workflow.xpt[453,29] on line 13 'EXPAND persistence::CAD::main'                                                                                    
+	workflow::nhibernate::workflow.xpt[113,72] on line 6 'EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual'                                                   
+	[23,52] on line 1 'EXPAND workflow::nhibernate::workflow::main FOR true'                                                                                                 
+
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - Workflow interrupted. Reason: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPRESSION: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@164240d; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@2fad19; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@1dbb1e2; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@cadd41; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FOREACH o.argsNotPrimitiveType() AS arg»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@54db99; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@1e8ec2f; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FOREACH operations AS o»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FILE .getCADDirectory()»...«ENDFILE»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: nhibernateCADs : Class; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND nhibernateCADs FOREACH .classes(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: CAD : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND CAD; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND persistence::nhibernate::netnhibernateCAD::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND persistence::CAD::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: nHibernateGeneration : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : Boolean; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2440 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND workflow::nhibernate::workflow::main FOR true; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.2.1, Build v201306110341
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+266  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit'
+438  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+500  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+594  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe:10
+594  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+719  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+1017 [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen]
+configuroConf:C:\Users\OIDEWin7\AppData\Local\Temp\OOH4RIA4672717833477108651.cfg
+enc:utf-8
+1142 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+2064 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 0.922s
+2064 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 821
+2064 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 72
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2227 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCAD
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+enc:utf-8
+2290 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCAD
+enc:utf-8
+2321 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCAD
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+enc:utf-8
+2352 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCAD
+enc:utf-8
+2368 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCAD
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+enc:utf-8
+2399 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCAD
+LA clase origen: Comentario y el nombre de rol: usuario
+DISTINTO en: asoOrigin: foto_comentario. El nombre del rol origen: foto de el rol destino: usuario
+DISTINTO en: asoOrigin: evento_comentario. El nombre del rol origen: evento de el rol destino: usuario
+DISTINTO en: asoOrigin: usuario_comentario. El nombre del rol origen: usuario_comenta de el rol destino: usuario
+LA clase destino: Comentario y el nombre de rol: usuario
+DISTINTO en: asoTarget: comentario_reporte. El nombre del rol destino: reporte de el rol origen: usuario
+LA clase de getAttributeOtherSide es: Comentario y el nombre de rol: usuarioel result es: null
+LA clase origen: Comentario y el nombre de rol: usuario
+DISTINTO en: asoOrigin: foto_comentario. El nombre del rol origen: foto de el rol destino: usuario
+DISTINTO en: asoOrigin: evento_comentario. El nombre del rol origen: evento de el rol destino: usuario
+DISTINTO en: asoOrigin: usuario_comentario. El nombre del rol origen: usuario_comenta de el rol destino: usuario
+LA clase destino: Comentario y el nombre de rol: usuario
+DISTINTO en: asoTarget: comentario_reporte. El nombre del rol destino: reporte de el rol origen: usuario
+LA clase de getAttributeOtherSide es: Comentario y el nombre de rol: usuarioel result es: null
+2399 [main] ERROR        org.eclipse.xpand2.Generator  - Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+java.lang.RuntimeException: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getFeature(PolymorphicResolver.java:112)
+	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getExtension(PolymorphicResolver.java:56)
+	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:97)
+	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:1)
+	at org.eclipse.internal.xtend.util.Cache.get(Cache.java:26)
+	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtensionForTypes(ExecutionContextImpl.java:371)
+	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtension(ExecutionContextImpl.java:382)
+	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
+	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
+	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
+	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
+	at org.eclipse.internal.xpand2.ast.ExpressionStatement.evaluateInternal(ExpressionStatement.java:45)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:93)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:101)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:93)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.FileStatement.evaluateInternal(FileStatement.java:86)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:192)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.xpand2.Generator.invokeInternal2(Generator.java:322)
+	at org.eclipse.xtend.expression.AbstractExpressionsUsingWorkflowComponent.invokeInternal(AbstractExpressionsUsingWorkflowComponent.java:232)
+	at org.eclipse.emf.mwe.core.lib.AbstractWorkflowComponent.invoke(AbstractWorkflowComponent.java:126)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
+	at org.eclipse.emf.mwe.core.WorkflowEngine.executeWorkflow(WorkflowEngine.java:174)
+	at org.eclipse.emf.mwe.core.WorkflowEngine.run(WorkflowEngine.java:53)
+	at org.eclipse.emf.mwe.core.WorkflowRunner.doRun(WorkflowRunner.java:174)
+	at org.eclipse.emf.mwe.core.WorkflowRunner.main(WorkflowRunner.java:70)
+2415 [main] ERROR        org.eclipse.xpand2.Generator  - Error in Component nhibernate.generator of type org.eclipse.xpand2.Generator: 
+	EvaluationException : Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+	persistence::nhibernate::netnhibernateCAD.xpt[11024,15] on line 211 '.getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName()'
+	persistence::nhibernate::netnhibernateCAD.xpt[371,39] on line 15 'EXPAND nhibernateCADs FOREACH .classes()'                                                              
+	persistence::nhibernate::netnhibernateCAD.xpt[287,10] on line 10 'EXPAND CAD'                                                                                            
+	persistence::CAD.xpt[64,54] on line 4 'EXPAND persistence::nhibernate::netnhibernateCAD::main'                                                                           
+	workflow::nhibernate::workflow.xpt[453,29] on line 13 'EXPAND persistence::CAD::main'                                                                                    
+	workflow::nhibernate::workflow.xpt[113,72] on line 6 'EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual'                                                   
+	[23,52] on line 1 'EXPAND workflow::nhibernate::workflow::main FOR true'                                                                                                 
+
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - Workflow interrupted. Reason: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPRESSION: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@164240d; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@2fad19; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@1dbb1e2; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@cadd41; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FOREACH o.argsNotPrimitiveType() AS arg»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@54db99; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@1e8ec2f; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FOREACH operations AS o»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FILE .getCADDirectory()»...«ENDFILE»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: nhibernateCADs : Class; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND nhibernateCADs FOREACH .classes(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: CAD : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND CAD; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND persistence::nhibernate::netnhibernateCAD::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND persistence::CAD::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: nHibernateGeneration : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : Boolean; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+2415 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND workflow::nhibernate::workflow::main FOR true; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.2.1, Build v201306110341
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+265  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit'
+437  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+484  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+562  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe:10
+562  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+718  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+1001 [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen]
+configuroConf:C:\Users\OIDEWin7\AppData\Local\Temp\OOH4RIA272233913110111560.cfg
+enc:utf-8
+1126 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+2126 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 1.0s
+2126 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 821
+2126 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 72
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2284 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCAD
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+enc:utf-8
+2331 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCAD
+enc:utf-8
+2378 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCAD
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+enc:utf-8
+2409 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCAD
+enc:utf-8
+2424 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCAD
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+enc:utf-8
+2456 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCAD
+enc:utf-8
+2487 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoCAD
+enc:utf-8
+2503 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaCAD
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2674 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCEN
+enc:utf-8
+2706 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCEN
+enc:utf-8
+2721 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCEN
+enc:utf-8
+2753 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCEN
+enc:utf-8
+2768 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCEN
+enc:utf-8
+2784 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCEN
+enc:utf-8
+2799 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoCEN
+enc:utf-8
+2815 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaCEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e64738 (name: CrearEvento, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1626d54 (name: ModificarEvento, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1c758ac (name: BorrarEvento, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e39c73 (name: CompartirEvento, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1225652 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@400542 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@b85f9 (name: AnyadirParticipante, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2940 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@ae9b55 (name: EliminarParticipante, visibility: Public, operationType: Unrelationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bbffcd (name: CrearUsuario, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@33b74f (name: IniciarSesion, visibility: Public, operationType: Custom, description: null, type: Boolean, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: true, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8f5957 (name: DarDeBaja, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@122c3c3 (name: ModificarPerfil, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@119fb47 (name: ApuntarseAEvento, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1de4cb2 (name: DesapuntarseAEvento, visibility: Public, operationType: Unrelationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@13671df (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@eda5c9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3ef382 (name: NuevaConsulta, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@41772e (name: EliminarConsulta, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19b7cce (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@e99e4a (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2956 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@dd9eb7 (name: Responder, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: true, paging: false, customizedTransaction: false)
+enc:utf-8
+2971 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@14abbdc (name: CrearCategoria, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2971 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@167f35d (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2971 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@156695f (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3003 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@514af7 (name: NuevoReporte, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3003 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@a94ee4 (name: EliminarReporte, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3003 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6379eb (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3018 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1d48005 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3018 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1f116cc (name: vincularFoto, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3018 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1309333 (name: vincularComentario, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3018 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1239d7d (name: vincularEvento, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3018 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5eefef (name: PublicarComentario, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3034 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19f45b1 (name: BorrarComentario, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3034 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@18190fc (name: EditarComentario, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3034 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bc55de (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3034 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@d04d3d (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3034 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1ec71f8 (name: darlike, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3049 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@902638 (name: vincFoto, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3049 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@16813f3 (name: vincEv, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3049 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8c12ac (name: SubirFoto, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3081 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1597028 (name: EditarFoto, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3081 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@482e36 (name: BorrarFoto, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3081 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@18dfcc1 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3081 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7ddf94 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3081 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e2d654 (name: darlike, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3112 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@16efaab (name: CrearGaleria, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3112 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@9bf450 (name: ModificarGaleria, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3112 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@11d00c0 (name: EliminarGaleria, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3112 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1b699ef (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3112 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@9604d9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3128 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoEN
+enc:utf-8
+3160 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioEN
+enc:utf-8
+3207 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteEN
+enc:utf-8
+3238 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaEN
+enc:utf-8
+3254 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteEN
+enc:utf-8
+3269 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioEN
+enc:utf-8
+3300 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoEN
+enc:utf-8
+3316 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+3425 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3457 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+enc:utf-8
+enc:utf-8
+3488 [main] INFO         org.eclipse.xpand2.Generator  - Written 3 files to outlet [default](../Fight4FitGen)
+3488 [main] INFO         org.eclipse.xpand2.Generator  - Skipped writing of 78 files to outlet [default](../Fight4FitGen)
+3488 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CreateSolution
+3504 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.UpdateSolution
+3504 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CopyDLLs
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Antlr3.Runtime.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Castle.DynamicProxy2.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\desktop.ini
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Iesi.Collections.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\LinFu.DynamicProxy.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\log4net.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.ByteCode.Castle.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.ByteCode.LinFu.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.core.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.framework.dll
+3504 [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - workflow completed in 2942ms!
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.2.1, Build v201306110341
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+723  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit'
+942  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+1036 [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+1146 [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe:10
+1146 [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+1362 [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+1956 [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen]
+configuroConf:C:\Users\OIDEWin7\AppData\Local\Temp\OOH4RIA2105589101896058244.cfg
+enc:utf-8
+2787 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+3788 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 1.001s
+3788 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 820
+3788 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 72
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+3945 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCAD
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+enc:utf-8
+4007 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCAD
+enc:utf-8
+4054 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCAD
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+enc:utf-8
+4085 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCAD
+enc:utf-8
+4101 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCAD
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+enc:utf-8
+4134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCAD
+LA clase origen: Comentario y el nombre de rol: usuario
+DISTINTO en: asoOrigin: foto_comentario. El nombre del rol origen: foto de el rol destino: usuario
+DISTINTO en: asoOrigin: evento_comentario. El nombre del rol origen: evento de el rol destino: usuario
+DISTINTO en: asoOrigin: usuario_comentario. El nombre del rol origen: usuario_comenta de el rol destino: usuario
+LA clase destino: Comentario y el nombre de rol: usuario
+DISTINTO en: asoTarget: comentario_reporte. El nombre del rol destino: reporte de el rol origen: usuario
+LA clase de getAttributeOtherSide es: Comentario y el nombre de rol: usuarioel result es: null
+LA clase origen: Comentario y el nombre de rol: usuario
+DISTINTO en: asoOrigin: foto_comentario. El nombre del rol origen: foto de el rol destino: usuario
+DISTINTO en: asoOrigin: evento_comentario. El nombre del rol origen: evento de el rol destino: usuario
+DISTINTO en: asoOrigin: usuario_comentario. El nombre del rol origen: usuario_comenta de el rol destino: usuario
+LA clase destino: Comentario y el nombre de rol: usuario
+DISTINTO en: asoTarget: comentario_reporte. El nombre del rol destino: reporte de el rol origen: usuario
+LA clase de getAttributeOtherSide es: Comentario y el nombre de rol: usuarioel result es: null
+4150 [main] ERROR        org.eclipse.xpand2.Generator  - Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+java.lang.RuntimeException: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getFeature(PolymorphicResolver.java:112)
+	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getExtension(PolymorphicResolver.java:56)
+	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:97)
+	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:1)
+	at org.eclipse.internal.xtend.util.Cache.get(Cache.java:26)
+	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtensionForTypes(ExecutionContextImpl.java:371)
+	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtension(ExecutionContextImpl.java:382)
+	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
+	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
+	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
+	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
+	at org.eclipse.internal.xpand2.ast.ExpressionStatement.evaluateInternal(ExpressionStatement.java:45)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:93)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:101)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:93)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.IfStatement.evaluateInternal(IfStatement.java:96)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.FileStatement.evaluateInternal(FileStatement.java:86)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:192)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:176)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:249)
+	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:228)
+	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
+	at org.eclipse.xpand2.Generator.invokeInternal2(Generator.java:322)
+	at org.eclipse.xtend.expression.AbstractExpressionsUsingWorkflowComponent.invokeInternal(AbstractExpressionsUsingWorkflowComponent.java:232)
+	at org.eclipse.emf.mwe.core.lib.AbstractWorkflowComponent.invoke(AbstractWorkflowComponent.java:126)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
+	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
+	at org.eclipse.emf.mwe.core.WorkflowEngine.executeWorkflow(WorkflowEngine.java:174)
+	at org.eclipse.emf.mwe.core.WorkflowEngine.run(WorkflowEngine.java:53)
+	at org.eclipse.emf.mwe.core.WorkflowRunner.doRun(WorkflowRunner.java:174)
+	at org.eclipse.emf.mwe.core.WorkflowRunner.main(WorkflowRunner.java:70)
+4181 [main] ERROR        org.eclipse.xpand2.Generator  - Error in Component nhibernate.generator of type org.eclipse.xpand2.Generator: 
+	EvaluationException : Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+	persistence::nhibernate::netnhibernateCAD.xpt[11024,15] on line 211 '.getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName()'
+	persistence::nhibernate::netnhibernateCAD.xpt[371,39] on line 15 'EXPAND nhibernateCADs FOREACH .classes()'                                                              
+	persistence::nhibernate::netnhibernateCAD.xpt[287,10] on line 10 'EXPAND CAD'                                                                                            
+	persistence::CAD.xpt[64,54] on line 4 'EXPAND persistence::nhibernate::netnhibernateCAD::main'                                                                           
+	workflow::nhibernate::workflow.xpt[453,29] on line 13 'EXPAND persistence::CAD::main'                                                                                    
+	workflow::nhibernate::workflow.xpt[113,72] on line 6 'EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual'                                                   
+	[23,52] on line 1 'EXPAND workflow::nhibernate::workflow::main FOR true'                                                                                                 
+
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - Workflow interrupted. Reason: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void]
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPRESSION: .getAttributeOtherSide(this,arg.formattedName().argument2Property().toFirstLower()).formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@164240d; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@2fad19; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@1dbb1e2; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@cadd41; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FOREACH o.argsNotPrimitiveType() AS arg»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@54db99; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: org.eclipse.internal.xpand2.ast.IfStatement@1e8ec2f; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FOREACH operations AS o»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: «FILE .getCADDirectory()»...«ENDFILE»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: nhibernateCADs : Class; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND nhibernateCADs FOREACH .classes(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: CAD : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND CAD; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND persistence::nhibernate::netnhibernateCAD::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND persistence::CAD::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: nHibernateGeneration : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: main : Boolean; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+4181 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String formattedName(Attribute this) and String formattedName(Enumeration this) for param types [Void](Element: EXPAND workflow::nhibernate::workflow::main FOR true; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen])
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.2.1, Build v201306110341
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
+0    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe
+16   [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+294  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\OIDEWin7\Favorites\Desktop\Fight4FitDSM\Fight4Fit'
+464  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+526  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+604  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/OIDEWin7/Favorites/Desktop/Fight4FitDSM/Fight4Fit/Fight4Fit/templates/workflow/generator.mwe:10
+604  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+759  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+1054 [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../Fight4FitGen(overwrite=false,append=false,fileEncoding=utf-8), ../Fight4FitGen]
+configuroConf:C:\Users\OIDEWin7\AppData\Local\Temp\OOH4RIA6560614078142199029.cfg
+enc:utf-8
+1210 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+2173 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 0.963s
+2173 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 820
+2173 [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 72
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2328 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCAD
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: crea
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: crea
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: crea
+LA clase destino: Evento y el nombre de rol: crea
+Encontrado en: asoTarget: evento_usuario El nombre de rol origen (generado): evento y el nombre del rol destino:crea
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+LA clase origen: Evento y el nombre de rol: categoria
+DISTINTO en: asoOrigin: reporte_evento. El nombre del rol origen: reporte de el rol destino: categoria
+DISTINTO en: asoOrigin: usuario_0_evento_0. El nombre del rol origen: usuario_0 de el rol destino: categoria
+LA clase destino: Evento y el nombre de rol: categoria
+DISTINTO en: asoTarget: evento_usuario. El nombre del rol destino: crea de el rol origen: categoria
+Encontrado en: asoTarget: evento_categoria El nombre de rol origen (generado): evento y el nombre del rol destino:categoria
+enc:utf-8
+2390 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCAD
+enc:utf-8
+2421 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCAD
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+LA clase origen: Soporte y el nombre de rol: usuario
+LA clase destino: Soporte y el nombre de rol: usuario
+Encontrado en: asoTarget: soporte_usuario El nombre de rol origen (generado): soporte y el nombre del rol destino:usuario
+enc:utf-8
+2452 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCAD
+enc:utf-8
+2483 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCAD
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+LA clase origen: Reporte y el nombre de rol: usuario
+DISTINTO en: asoOrigin: comentario_reporte. El nombre del rol origen: comentario de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_reporte. El nombre del rol origen: usuario y el nombre de rol destino: reporte
+enc:utf-8
+2514 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCAD
+enc:utf-8
+2545 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoCAD
+enc:utf-8
+2576 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaCAD
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+LA clase origen: Galeria y el nombre de rol: evento
+Encontrado en: asoOrigin: evento_galeria. El nombre del rol origen: evento y el nombre de rol destino: galeria
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+2778 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoCEN
+enc:utf-8
+2793 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCEN
+enc:utf-8
+2824 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteCEN
+enc:utf-8
+2840 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaCEN
+enc:utf-8
+2855 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteCEN
+enc:utf-8
+2886 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioCEN
+enc:utf-8
+2902 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoCEN
+enc:utf-8
+2917 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaCEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e64738 (name: CrearEvento, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1626d54 (name: ModificarEvento, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1c758ac (name: BorrarEvento, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e39c73 (name: CompartirEvento, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1225652 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@400542 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@b85f9 (name: AnyadirParticipante, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3041 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@ae9b55 (name: EliminarParticipante, visibility: Public, operationType: Unrelationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bbffcd (name: CrearUsuario, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@33b74f (name: IniciarSesion, visibility: Public, operationType: Custom, description: null, type: Boolean, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: true, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8f5957 (name: DarDeBaja, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@122c3c3 (name: ModificarPerfil, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@119fb47 (name: ApuntarseAEvento, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1de4cb2 (name: DesapuntarseAEvento, visibility: Public, operationType: Unrelationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@13671df (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3056 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@eda5c9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3072 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3ef382 (name: NuevaConsulta, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3072 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@41772e (name: EliminarConsulta, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3072 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19b7cce (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3072 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@e99e4a (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3072 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@dd9eb7 (name: Responder, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: true, paging: false, customizedTransaction: false)
+enc:utf-8
+3087 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@14abbdc (name: CrearCategoria, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3087 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@167f35d (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3087 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@156695f (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3103 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@514af7 (name: NuevoReporte, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@a94ee4 (name: EliminarReporte, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6379eb (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1d48005 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1f116cc (name: vincularFoto, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1309333 (name: vincularComentario, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1239d7d (name: vincularEvento, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5eefef (name: PublicarComentario, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: false, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19f45b1 (name: BorrarComentario, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@18190fc (name: EditarComentario, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bc55de (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@d04d3d (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1ec71f8 (name: darlike, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@902638 (name: vincFoto, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@16813f3 (name: vincEv, visibility: Public, operationType: Relationer, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3149 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8c12ac (name: SubirFoto, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: true)
+enc:utf-8
+3165 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1597028 (name: EditarFoto, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3165 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@482e36 (name: BorrarFoto, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3165 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@18dfcc1 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3165 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7ddf94 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3165 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1e2d654 (name: darlike, visibility: Public, operationType: Custom, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3180 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@16efaab (name: CrearGaleria, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3180 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@9bf450 (name: ModificarGaleria, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3180 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@11d00c0 (name: EliminarGaleria, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3180 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1b699ef (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3180 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@9604d9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3213 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EventoEN
+enc:utf-8
+3244 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioEN
+enc:utf-8
+3271 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - SoporteEN
+enc:utf-8
+3317 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - CategoriaEN
+enc:utf-8
+3333 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ReporteEN
+enc:utf-8
+3364 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ComentarioEN
+enc:utf-8
+3379 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - FotoEN
+enc:utf-8
+3410 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - GaleriaEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+3503 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3503 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3518 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3518 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3518 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3518 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3518 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+3518 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - EN
+enc:utf-8
+enc:utf-8
+3549 [main] INFO         org.eclipse.xpand2.Generator  - Written 2 files to outlet [default](../Fight4FitGen)
+3549 [main] INFO         org.eclipse.xpand2.Generator  - Skipped writing of 79 files to outlet [default](../Fight4FitGen)
+3549 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CreateSolution
+3565 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.UpdateSolution
+3565 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CopyDLLs
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Antlr3.Runtime.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Castle.DynamicProxy2.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\desktop.ini
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\Iesi.Collections.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\LinFu.DynamicProxy.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\log4net.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.ByteCode.Castle.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.ByteCode.LinFu.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\NHibernate.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.core.dll
+../Fight4FitGen\Fight4FitGenNHibernate\AppLib\nunit.framework.dll
+3580 [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - workflow completed in 2976ms!

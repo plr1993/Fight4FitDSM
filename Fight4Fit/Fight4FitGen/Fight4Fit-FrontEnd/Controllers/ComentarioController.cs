@@ -66,7 +66,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             try
             {
                 ComentarioCP cp = new ComentarioCP();
-                cp.PublicarComentario(com.titulo, com.texto, com.idre, com.tipo);
+               // cp.PublicarComentario(com.titulo, com.texto, com.idre, com.tipo);
                 if (com.tipo == TipoComentarioEnum.Foto)
                 {
                     return RedirectToAction("Details", "Foto", new { id = com.idre});

@@ -71,7 +71,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             {
                 filename = "*images/uploads/" + filename;
                 UsuarioCEN usrCEN = new UsuarioCEN();
-                usrCEN.CrearUsuario(usr.email, usr.password, false);
+                usrCEN.CrearUsuario(usr.email, usr.password, false, usr.tipo, usr.nombre, usr.apellidos, usr.telefono, usr.localidad, usr.provincia, usr.direccion);
 
 
                 return RedirectToAction("Create", new { id = usr.email });
@@ -105,7 +105,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             try
             {
                 UsuarioCEN usrCEN = new UsuarioCEN();
-                usrCEN.ModificarPerfil(usr.email, usr.password, true);
+                usrCEN.ModificarPerfil(usr.email, usr.password, usr.bloqueado, usr.tipo, usr.nombre, usr.apellidos, usr.telefono, usr.localidad, usr.provincia, usr.direccion);
 
                 return RedirectToAction("Modifica", new { id = usr.email });
             }

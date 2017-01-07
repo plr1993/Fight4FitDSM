@@ -9,6 +9,7 @@ using NHibernate.Exceptions;
 using Fight4FitGenNHibernate.EN.Fight4Fit;
 using Fight4FitGenNHibernate.CAD.Fight4Fit;
 using Fight4FitGenNHibernate.CEN.Fight4Fit;
+using Fight4FitGenNHibernate.Enumerated.Fight4Fit;
 
 
 

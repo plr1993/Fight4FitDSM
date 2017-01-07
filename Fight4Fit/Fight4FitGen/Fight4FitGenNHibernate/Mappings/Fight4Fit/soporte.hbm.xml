@@ -34,7 +34,7 @@
 			
 			
 		  			
-						<many-to-one name="Admin-responde" class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN" >	
+						<many-to-one name="Admin_responde" class="Fight4FitGenNHibernate.EN.Fight4Fit.UsuarioEN" >	
 								<column name="FK_Email_idUsuario_0"/> 
 						</many-to-one>
 											 					

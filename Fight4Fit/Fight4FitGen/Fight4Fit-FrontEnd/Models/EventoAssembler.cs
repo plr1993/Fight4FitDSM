@@ -22,6 +22,7 @@ namespace Fight4Fit_FrontEnd.Models
             art.Longitud = en.Longitud;
             art.Latitud = en.Latitud;
             art.Localizacion = en.Localizacion;
+            art.Crea = en.Crea.Email;
             return art;
         }
         public IList<EventoModelo> ConvertListENToModel(IList<EventoEN> ens)
@@ -35,3 +36,4 @@ namespace Fight4Fit_FrontEnd.Models
         }
     }
 }
+

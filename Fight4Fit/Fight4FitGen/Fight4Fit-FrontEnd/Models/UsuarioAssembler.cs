@@ -14,6 +14,14 @@ namespace Fight4Fit_FrontEnd.Models
             Usuario usr = new Usuario();
             usr.email = usrEN.Email;
             usr.password = usrEN.Password;
+            usr.bloqueado = usrEN.Bloqueado;
+            usr.tipo = usrEN.Tipo;
+            usr.nombre = usrEN.Nombre;
+            usr.apellidos = usrEN.Apellidos;
+            usr.telefono = usrEN.Telefono;
+            usr.localidad = usrEN.Localidad;
+            usr.provincia = usrEN.Provincia;
+            usr.direccion = usrEN.Direccion;
             //  usr.bloqueado = usrEN.;
 
             return usr;
