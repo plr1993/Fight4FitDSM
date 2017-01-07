@@ -35,6 +35,10 @@
     <p>@item.Texto</p>
 }
 
+<div>
+    @Html.Action("Create", "Comentario", new { id = Model.id, var = 2 });
+</div>
+
 <p>
     @Html.ActionLink("Me gusta", "Darlike", new { id = Model.id }) |
     @Html.ActionLink("Reportar foto", "../Reporte/Create", new { id = Model.id, var = 1 }) |

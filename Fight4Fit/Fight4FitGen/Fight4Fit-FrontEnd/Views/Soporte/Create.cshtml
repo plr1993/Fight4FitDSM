@@ -5,46 +5,100 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
 
-@using (Html.BeginForm()) {
+
+
+
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+
+    <body>
+@using (Html.BeginForm())
+{
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <p>asasasasd sadsdasasasasd sadsdasasasasd sadsd asasasasd sadsdasasasasd sadsd
+                        asasasasd sadsd asasasasd sadsdasasasasd sadsdasasasasd sadsdasasasasd sadsd
+                        asasasasd sadsdasasasasd sadsd asasasasd sadsd
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <p>asasasasd sadsdasasasasd sadsdasasasasd sadsd asasasasd sadsdasasasasd sadsd
+                        asasasasd sadsd asasasasd sadsdasasasasd sadsdasasasasd sadsdasasasasd sadsd
+                        asasasasd sadsdasasasasd sadsd asasasasd sadsd</p>
+                </div>
 
-    <fieldset>
-        <legend>SoporteModelo</legend>
+            </div>
+        </div>
+        <div class="jumbotron text-center">
+            <h1>Escribe tu consulta</h1>
+            <p>Bla blablablaala a ablabalablaa</p>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.titulo)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.titulo)
-            @Html.ValidationMessageFor(model => model.titulo)
+            <div class="editor-field">
+                <input class="text-box single-line" id="titulo" name="titulo" type="text" value="Asunto" style="width:100%;">
+                
+                @Html.ValidationMessageFor(model => model.titulo)
+            </div>
+
+            <div class="editor-field">
+                <div class="form-group">
+
+                    <textarea class="form-control" rows="5" id="texto" name="texto"></textarea>
+                </div>
+                
+                @Html.ValidationMessageFor(model => model.texto)
+
+                
+            </div>
+            
+            <p>
+                <input type="submit" class="btn btn-info" value="Enviar">
+            </p>
+
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.texto)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.texto)
-            @Html.ValidationMessageFor(model => model.texto)
-        </div>
-        <div class="editor-label">
-            @Html.DisplayNameFor(model => model.nomUsuario)
-        </div>
-        <div class="display-field">
-            @Html.DisplayFor(model => model.nomUsuario)
-        </div>
-        <p>
-            <input type="submit" value="Create" />
-        </p>
-    </fieldset>
-}
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+            <fieldset>
+                <legend>SoporteModelo</legend>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.titulo)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.titulo)
+                    @Html.ValidationMessageFor(model => model.titulo)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.texto)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.texto)
+                    @Html.ValidationMessageFor(model => model.texto)
+                </div>
+                <div class="editor-label">
+                    @Html.DisplayNameFor(model => model.nomUsuario)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.nomUsuario)
+                </div>
+                <p>
+                    <input type="submit" value="Create" />
+                </p>
+            </fieldset>
+            }
+
+            <div>
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+
+            @section Scripts {
+                @Scripts.Render("~/bundles/jqueryval")
+            }
+</body>

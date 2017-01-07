@@ -67,7 +67,7 @@ namespace Fight4Fit_FrontEnd.Controllers
             {
                 ComentarioCP cp = new ComentarioCP();
                 cp.PublicarComentario(com.titulo, com.texto, com.idre, com.tipo);
-                return RedirectToAction("Index");
+                return View();
             }
             catch
             {
